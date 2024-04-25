@@ -18,13 +18,21 @@ def format_dates(old_format):
         new_format = "19"+ old_format.replace(".", "-")
     return new_format
 
+def write_cypherFile(to_path, lst_commands):
+    with open(to_path, 'w') as file:
+        for query_str in lst_commands:
+            file.write(query_str + ";\n")
+
 def sql_command_controller(command):
     lst_tables = []
+    lst_commands = []
 
     command_words = command.split(' ')
     cleaned_command = [string.replace("\n", "").lower() for string in command_words]
     type_command = cleaned_command[0:2]
     
+
+    new_command = ""
     if type_command == ["insert", "into"]:
             if cleaned_command[2] not in lst_tables:
                 lst_tables.append(cleaned_command[2])
@@ -43,23 +51,17 @@ def sql_command_controller(command):
 
                 #Insert into APPOINTMENT (SCHEDULED_ON,APPOINTMENT_DATE,APPOINTMENT_TIME,IDDOCTOR,IDEPISODE)
                 #values (to_date('21.09.22','RR.MM.DD'),to_date('21.10.23','RR.MM.DD'),'16:18','13','20'); 
-                new_appointment_command = f"""
-                    CREATE (:Appointment {{
-                        scheduled_on: date("{data_list[0]}"),
-                        appointment_date: date("{data_list[1]}"),
-                        appointment_time: "{data_list[2]}",
-                        iddoctor: {data_list[3]},
-                        idepisode: {data_list[4]}
-                    }})
+                new_command = f"""
+CREATE (:Appointment {{
+    scheduled_on: date("{data_list[0]}"),
+    appointment_date: date("{data_list[1]}"),
+    appointment_time: "{data_list[2]}",
+    iddoctor: {data_list[3]},
+    idepisode: {data_list[4]}
+}})
                 """
 
-                #print(new_appointment_command)
-            
             elif cleaned_command[2] == "prescription":
-
-                format = cleaned_command[3].split(",")
-                format[0], format[-1] = format[0].replace("(", ""), format[-1].replace(")", "")
-
                 #Insert into PRESCRIPTION (PRESCRIPTION_DATE,DOSAGE,IDMEDICINE,IDEPISODE)
                 #values (to_date('23.01.10','RR.MM.DD'),'3','5','136');
 
@@ -70,16 +72,16 @@ def sql_command_controller(command):
                 print(data_list)
 
 
-                f"""
-                    CREATE (:Prescription {{
-                        prescription_date: date({data_list[0]}),
-                        dosage: {data_list[1]},
-                        idmedicine: '{data_list[2]}',
-                        idepisode: '{data_list[3]}'
-                    }});
+                new_command = f"""
+CREATE (:Prescription {{
+    prescription_date: date({data_list[0]}),
+    dosage: {data_list[1]},
+    idmedicine: '{data_list[2]}',
+    idepisode: '{data_list[3]}'
+}});
 
                 """
-                pass
+
             elif cleaned_command[2] == "bill":
                 pass
             elif cleaned_command[2] == "hospitalization":
@@ -113,34 +115,31 @@ def sql_command_controller(command):
             else:
                 print(f"\n {cleaned_command[2]}")
 
-
+    print(new_command)
+    return new_command
 
 
 
         
 
 
-def parse_sql(sql_file):
+def parse_sql(sql_file, output_file):
     # Read the SQL file
     with open(sql_file, 'r') as file:
         sql_script = file.read()
 
+    lst_commands = []
     sql_commands = sql_script.split(';')
     for c in sql_commands:
-        sql_command_controller(c)
+        new_command = sql_command_controller(c)
+        lst_commands.append(new_command)
 
 
-
-    #create_table_patterns = re.findall(r'CREATE TABLE(.*?);', sql_script, re.DOTALL)
-    #create_view_patterns = re.findall(r'CREATE VIEW(.*?);', sql_script, re.DOTALL)
+    write_cypherFile(output_file, lst_commands)
     
-    
-    # Similarly, extract other sections like CREATE PROCEDURE, CREATE TRIGGER, etc.
 
-    # Process each section to extract information about tables, columns, etc.
-    # Construct Cypher queries based on the extracted information.
 
-    # Return the parsed information (e.g., tables, columns, views, etc.)
+
     return 0 #tables_info, views_info, procedures_info, triggers_info
 
 def generate_cypher(tables_info, views_info, procedures_info, triggers_info):
@@ -168,7 +167,4 @@ if __name__ == "__main__":
     sql_file = 'hospitalv4.sql'
     output_file = 'output.cypher'
 
-    #tables_info, views_info, procedures_info, triggers_info = parse_sql(sql_file)
-    data = parse_sql(sql_file)
-    #cypher_queries = generate_cypher(tables_info, views_info, procedures_info, triggers_info)
-    #write_to_cypher_file(cypher_queries, output_file)
+    parse_sql(sql_file, output_file)
