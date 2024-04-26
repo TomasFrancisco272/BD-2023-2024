@@ -1,11 +1,998 @@
 
+CREATE (:Department {
+    dept_head: john smith,
+    dept_name: cardiology_1,
+    emp_count: '2'
+});
+               
+CREATE (:Department {
+    dept_head: michael williams,
+    dept_name: emergency_2,
+    emp_count: '3'
+});
+               
+CREATE (:Department {
+    dept_head: emily johnson,
+    dept_name: diagnostic_3,
+    emp_count: '3'
+});
+               
+CREATE (:Department {
+    dept_head: jessica brown,
+    dept_name: cardiology_4,
+    emp_count: '2'
+});
+               
+CREATE (:Department {
+    dept_head: christopher lee,
+    dept_name: emergency_1,
+    emp_count: '2'
+});
+               
+CREATE (:Department {
+    dept_head: matthew martinez,
+    dept_name: diagnostic_1,
+    emp_count: '1'
+});
+               
+CREATE (:Department {
+    dept_head: sophia hernandez,
+    dept_name: cardiology_3,
+    emp_count: '3'
+});
+               
+CREATE (:Department {
+    dept_head: ethan lopez,
+    dept_name: cardiology_2,
+    emp_count: '3'
+});
+               
+CREATE (:Department {
+    dept_head: travis smith,
+    dept_name: diagnostic_2,
+    emp_count: '3'
+});
+               
+CREATE (:Department {
+    dept_head: amanda taylor,
+    dept_name: pediatrics,
+    emp_count: '2'
+});
+               
+CREATE (:Department {
+    dept_head: daniel garcia,
+    dept_name: orthopedics,
+    emp_count: '2'
+});
+               
+CREATE (:Department {
+    dept_head: olivia rodriguez,
+    dept_name: neurology,
+    emp_count: '1'
+});
+               
+CREATE (:Department {
+    dept_head: noah martinez,
+    dept_name: oncology,
+    emp_count: '1'
+});
+               
+CREATE (:Department {
+    dept_head: isabella hernandez,
+    dept_name: radiology,
+    emp_count: '5'
+});
+               
+CREATE (:Department {
+    dept_head: william johnson,
+    dept_name: surgery,
+    emp_count: '4'
+});
+               
+CREATE (:Department {
+    dept_head: sophia lopez,
+    dept_name: ophthalmology,
+    emp_count: '5'
+});
+               
+CREATE (:Department {
+    dept_head: ethan brown,
+    dept_name: gynecology,
+    emp_count: '5'
+});
+               
+CREATE (:Department {
+    dept_head: olivia wilson,
+    dept_name: urology,
+    emp_count: '4'
+});
+               
+CREATE (:Department {
+    dept_head: alexander lee,
+    dept_name: dermatology,
+    emp_count: '6'
+});
+               
+CREATE (:Department {
+    dept_head: mia garcia,
+    dept_name: hematology,
+    emp_count: '4'
+});
+               
+CREATE (:Department {
+    dept_head: james martinez,
+    dept_name: endocrinology,
+    emp_count: '4'
+});
+               
+CREATE (:Department {
+    dept_head: sophia anderson,
+    dept_name: pulmonology,
+    emp_count: '4'
+});
+               
+CREATE (:Department {
+    dept_head: oliver wilson,
+    dept_name: nephrology,
+    emp_count: '4'
+});
+               
+CREATE (:Department {
+    dept_head: ava hernandez,
+    dept_name: otolaryngology,
+    emp_count: '5'
+});
+               
+CREATE (:Department {
+    dept_head: lucas lopez,
+    dept_name: rheumatology,
+    emp_count: '5'
+});
+               
+CREATE (:Department {
+    dept_head: emma brown,
+    dept_name: dentistry,
+    emp_count: '10'
+});
+               
+CREATE (:Department {
+    dept_head: daniel lee,
+    dept_name: psychiatry,
+    emp_count: '4'
+});
+               
+CREATE (:Insurance {
+    policy_number: 'pol001',
+    provider: 'abc insurance',
+    insurance_plan: 'standard plan',
+    co_pay: '50',
+    coverage: 'full coverage',
+    maternity: 'y',
+    dental: 'n',
+    optical: 'y'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol002',
+    provider: 'xyz insurance',
+    insurance_plan: 'premium plan',
+    co_pay: '30',
+    coverage: 'partial coverage',
+    maternity: 'n',
+    dental: 'y',
+    optical: 'y'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol003',
+    provider: 'def insurance',
+    insurance_plan: 'basic plan',
+    co_pay: '20',
+    coverage: 'limited coverage',
+    maternity: 'y',
+    dental: 'n',
+    optical: 'n'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol004',
+    provider: 'ghi insurance',
+    insurance_plan: 'gold plan',
+    co_pay: '40',
+    coverage: 'full coverage',
+    maternity: 'n',
+    dental: 'y',
+    optical: 'y'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol005',
+    provider: 'jkl insurance',
+    insurance_plan: 'silver plan',
+    co_pay: '35',
+    coverage: 'partial coverage',
+    maternity: 'y',
+    dental: 'n',
+    optical: 'y'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol006',
+    provider: 'mno insurance',
+    insurance_plan: 'bronze plan',
+    co_pay: '25',
+    coverage: 'limited coverage',
+    maternity: 'n',
+    dental: 'y',
+    optical: 'n'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol007',
+    provider: 'pqr insurance',
+    insurance_plan: 'platinum plan',
+    co_pay: '60',
+    coverage: 'full coverage',
+    maternity: 'y',
+    dental: 'y',
+    optical: 'y'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol008',
+    provider: 'stu insurance',
+    insurance_plan: 'family plan',
+    co_pay: '45',
+    coverage: 'partial coverage',
+    maternity: 'y',
+    dental: 'y',
+    optical: 'n'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol009',
+    provider: 'vwx insurance',
+    insurance_plan: 'corporate plan',
+    co_pay: '55',
+    coverage: 'full coverage',
+    maternity: 'n',
+    dental: 'n',
+    optical: 'y'
+});
+                
+CREATE (:Insurance {
+    policy_number: 'pol010',
+    provider: 'yza insurance',
+    insurance_plan: 'student plan',
+    co_pay: '15',
+    coverage: 'limited coverage',
+    maternity: 'n',
+    dental: 'n',
+    optical: 'n'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '1',
+    record_date: 'paracetamol',
+    relation: '50'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '2',
+    record_date: 'ibuprofen',
+    relation: '30'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '3',
+    record_date: 'amoxicillin',
+    relation: '20'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '4',
+    record_date: 'ciprofloxacin',
+    relation: '25'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '5',
+    record_date: 'lisinopril',
+    relation: '40'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '6',
+    record_date: 'atorvastatin',
+    relation: '35'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '7',
+    record_date: 'metformin',
+    relation: '45'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '8',
+    record_date: 'levothyroxine',
+    relation: '40'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '9',
+    record_date: 'simvastatin',
+    relation: '30'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '10',
+    record_date: 'amlodipine',
+    relation: '35'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '11',
+    record_date: 'hydrochlorothiazide',
+    relation: '25'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '12',
+    record_date: 'losartan',
+    relation: '30'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '13',
+    record_date: 'azithromycin',
+    relation: '20'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '14',
+    record_date: 'omeprazole',
+    relation: '40'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '15',
+    record_date: 'prednisone',
+    relation: '35'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '16',
+    record_date: 'metoprolol',
+    relation: '30'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '17',
+    record_date: 'warfarin',
+    relation: '25'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '18',
+    record_date: 'fluoxetine',
+    relation: '20'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '19',
+    record_date: 'alprazolam',
+    relation: '25'
+});
+                
+CREATE (:Emergency_contact {
+    condition: '20',
+    record_date: 'hydrocodone',
+    relation: '30'
+});
+                
+CREATE (:Room {
+    room_type: 'single',
+    room_cost: '100'
+});
+                
+CREATE (:Room {
+    room_type: 'double',
+    room_cost: '150'
+});
+                
+CREATE (:Room {
+    room_type: 'suite',
+    room_cost: '250'
+});
+                
+CREATE (:Room {
+    room_type: 'standard',
+    room_cost: '80'
+});
+                
+CREATE (:Room {
+    room_type: 'deluxe',
+    room_cost: '200'
+});
+                
+CREATE (:Room {
+    room_type: 'vip',
+    room_cost: '300'
+});
+                
+CREATE (:Room {
+    room_type: 'economy',
+    room_cost: '70'
+});
+                
+CREATE (:Room {
+    room_type: 'family',
+    room_cost: '180'
+});
+                
+CREATE (:Room {
+    room_type: 'penthouse',
+    room_cost: '500'
+});
+                
+CREATE (:Room {
+    room_type: 'executive',
+    room_cost: '400'
+});
+                
+CREATE (:Room {
+    room_type: 'single',
+    room_cost: '120'
+});
+                
+CREATE (:Room {
+    room_type: 'double',
+    room_cost: '180'
+});
+                
+CREATE (:Room {
+    room_type: 'suite',
+    room_cost: '280'
+});
+                
+CREATE (:Room {
+    room_type: 'standard',
+    room_cost: '90'
+});
+                
+CREATE (:Room {
+    room_type: 'deluxe',
+    room_cost: '220'
+});
+                
+CREATE (:Room {
+    room_type: 'vip',
+    room_cost: '320'
+});
+                
+CREATE (:Room {
+    room_type: 'economy',
+    room_cost: '80'
+});
+                
+CREATE (:Room {
+    room_type: 'family',
+    room_cost: '200'
+});
+                
+CREATE (:Room {
+    room_type: 'penthouse',
+    room_cost: '550'
+});
+                
+CREATE (:Room {
+    room_type: 'executive',
+    room_cost: '420'
+});
+                
+CREATE (:Room {
+    room_type: 'single',
+    room_cost: '100'
+});
+                
+CREATE (:Room {
+    room_type: 'double',
+    room_cost: '150'
+});
+                
+CREATE (:Room {
+    room_type: 'suite',
+    room_cost: '250'
+});
+                
+CREATE (:Room {
+    room_type: 'standard',
+    room_cost: '80'
+});
+                
+CREATE (:Room {
+    room_type: 'deluxe',
+    room_cost: '200'
+});
+                
+CREATE (:Room {
+    room_type: 'vip',
+    room_cost: '300'
+});
+                
+CREATE (:Room {
+    room_type: 'economy',
+    room_cost: '70'
+});
+                
+CREATE (:Room {
+    room_type: 'family',
+    room_cost: '180'
+});
+                
+CREATE (:Room {
+    room_type: 'penthouse',
+    room_cost: '500'
+});
+                
+CREATE (:Room {
+    room_type: 'executive',
+    room_cost: '400'
+});
+                
+CREATE (:Room {
+    room_type: 'single',
+    room_cost: '120'
+});
+                
+CREATE (:Room {
+    room_type: 'double',
+    room_cost: '180'
+});
+                
+CREATE (:Room {
+    room_type: 'suite',
+    room_cost: '280'
+});
+                
+CREATE (:Room {
+    room_type: 'standard',
+    room_cost: '90'
+});
+                
+CREATE (:Room {
+    room_type: 'deluxe',
+    room_cost: '220'
+});
+                
+CREATE (:Room {
+    room_type: 'vip',
+    room_cost: '320'
+});
+                
+CREATE (:Room {
+    room_type: 'economy',
+    room_cost: '80'
+});
+                
+CREATE (:Room {
+    room_type: 'family',
+    room_cost: '200'
+});
+                
+CREATE (:Room {
+    room_type: 'penthouse',
+    room_cost: '550'
+});
+                
+CREATE (:Room {
+    room_type: 'executive',
+    room_cost: '420'
+});
+                
+CREATE (:Room {
+    room_type: 'single',
+    room_cost: '100'
+});
+                
+CREATE (:Room {
+    room_type: 'double',
+    room_cost: '150'
+});
+                
+CREATE (:Room {
+    room_type: 'suite',
+    room_cost: '250'
+});
+                
+CREATE (:Room {
+    room_type: 'standard',
+    room_cost: '80'
+});
+                
+CREATE (:Room {
+    room_type: 'deluxe',
+    room_cost: '200'
+});
+                
+CREATE (:Room {
+    room_type: 'vip',
+    room_cost: '300'
+});
+                
+CREATE (:Room {
+    room_type: 'economy',
+    room_cost: '70'
+});
+                
+CREATE (:Room {
+    room_type: 'family',
+    room_cost: '180'
+});
+                
+CREATE (:Room {
+    room_type: 'penthouse',
+    room_cost: '500'
+});
+                
+CREATE (:Room {
+    room_type: 'executive',
+    room_cost: '400'
+});
+                
+CREATE (:Room {
+    room_type: 'single',
+    room_cost: '120'
+});
+                
+CREATE (:Room {
+    room_type: 'double',
+    room_cost: '180'
+});
+                
+CREATE (:Room {
+    room_type: 'suite',
+    room_cost: '280'
+});
+                
+CREATE (:Room {
+    room_type: 'standard',
+    room_cost: '90'
+});
+                
+CREATE (:Room {
+    room_type: 'deluxe',
+    room_cost: '220'
+});
+                
+CREATE (:Room {
+    room_type: 'vip',
+    room_cost: '320'
+});
+                
+CREATE (:Room {
+    room_type: 'economy',
+    room_cost: '80'
+});
+                
+CREATE (:Room {
+    room_type: 'family',
+    room_cost: '200'
+});
+                
+CREATE (:Room {
+    room_type: 'penthouse',
+    room_cost: '550'
+});
+                
+CREATE (:Room {
+    room_type: 'executive',
+    room_cost: '420'
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'john doe',
+    phone: '111-222-3333',
+    relation: 'father',
+    idpatient: '1',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'jane smith',
+    phone: '222-333-4444',
+    relation: 'mother',
+    idpatient: '2',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'alice johnson',
+    phone: '333-444-5555',
+    relation: 'sister',
+    idpatient: '3',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'bob brown',
+    phone: '444-555-6666',
+    relation: 'brother',
+    idpatient: '4',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'sarah wilson',
+    phone: '555-666-7777',
+    relation: 'spouse',
+    idpatient: '5',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'michael clark',
+    phone: '666-777-8888',
+    relation: 'friend',
+    idpatient: '6',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'emily white',
+    phone: '777-888-9999',
+    relation: 'relative',
+    idpatient: '7',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'david lee',
+    phone: '888-999-0000',
+    relation: 'parent',
+    idpatient: '8',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'jennifer martinez',
+    phone: '999-000-1111',
+    relation: 'sibling',
+    idpatient: '9',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'daniel harris',
+    phone: '000-111-2222',
+    relation: 'friend',
+    idpatient: '10',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'emma thompson',
+    phone: '111-222-3323',
+    relation: 'sibling',
+    idpatient: '1',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'matthew evans',
+    phone: '222-333-4444',
+    relation: 'spouse',
+    idpatient: '7',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'olivia rodriguez',
+    phone: '333-444-5555',
+    relation: 'parent',
+    idpatient: '4',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'james wilson',
+    phone: '444-555-6666',
+    relation: 'sibling',
+    idpatient: '6',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'ava anderson',
+    phone: '555-666-7777',
+    relation: 'friend',
+    idpatient: '7',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'logan taylor',
+    phone: '666-777-8888',
+    relation: 'spouse',
+    idpatient: '77',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'sophia scott',
+    phone: '777-888-9999',
+    relation: 'relative',
+    idpatient: '66',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'ethan lewis',
+    phone: '888-999-0000',
+    relation: 'sibling',
+    idpatient: '55',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'mia martinez',
+    phone: '999-000-1111',
+    relation: 'parent',
+    idpatient: '44',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: 'noah harris',
+    phone: '000-111-2222',
+    relation: 'friend',
+    idpatient: '22',
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'flu',
+    record_date: ' '2023-01-15',
+    relation: 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'allergy',
+    record_date: ' '2023-03-05',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'broken arm',
+    record_date: ' '2023-04-20',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'pneumonia',
+    record_date: ' '2023-07-10',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'headache',
+    record_date: ' '2023-09-08',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'asthma',
+    record_date: ' '2023-10-15',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'diabetes',
+    record_date: ' '2023-12-25',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'hypertension',
+    record_date: ' '2024-02-14',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'arthritis',
+    record_date: ' '2024-04-01',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'migraine',
+    record_date: ' '2024-06-18',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'common cold',
+    record_date: ' '2023-02-10',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'anxiety',
+    record_date: ' '2023-05-05',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'stomach ulcer',
+    record_date: ' '2023-08-22',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'bronchitis',
+    record_date: ' '2023-10-30',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'rheumatoid arthritis',
+    record_date: ' '2023-12-10',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'insomnia',
+    record_date: ' '2024-01-18',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'high cholesterol',
+    record_date: ' '2024-03-03',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'concussion',
+    record_date: ' '2024-05-20',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'gastritis',
+    record_date: ' '2024-07-15',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'osteoporosis',
+    record_date: ' '2024-09-05',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'gastritis',
+    record_date: ' '2024-07-15',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'common cold',
+    record_date: ' '2023-02-10',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'anxiety',
+    record_date: ' '2023-05-05',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'stomach ulcer',
+    record_date: ' '2023-08-22',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'bronchitis',
+    record_date: ' '2023-10-30',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
+CREATE (:Emergency_contact {
+    condition: 'rheumatoid arthritis',
+    record_date: ' '2023-12-10',
+    relation: ' 'yyyy-mm-dd')'
+});
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 9,
     idmedicine: '3',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -13,7 +1000,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -21,7 +1007,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -29,7 +1014,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
@@ -37,7 +1021,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '145'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
@@ -45,7 +1028,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '145'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
@@ -53,7 +1035,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '145'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
@@ -61,7 +1042,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '145'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
@@ -69,7 +1049,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '145'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
@@ -77,7 +1056,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '145'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -85,7 +1063,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -93,7 +1070,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -101,7 +1077,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -109,7 +1084,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -117,7 +1091,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -125,7 +1098,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
@@ -133,7 +1105,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '146'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
@@ -141,7 +1112,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '147'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
@@ -149,7 +1119,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '147'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
@@ -157,7 +1126,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '147'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
@@ -165,7 +1133,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '147'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
@@ -173,7 +1140,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '147'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
@@ -181,7 +1147,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '147'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -189,7 +1154,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -197,7 +1161,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -205,7 +1168,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -213,7 +1175,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -221,7 +1182,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -229,7 +1189,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -237,7 +1196,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -245,7 +1203,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
@@ -253,7 +1210,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '148'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -261,7 +1217,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '149'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -269,7 +1224,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '149'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -277,7 +1231,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '149'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -285,7 +1238,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '149'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -293,7 +1245,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '149'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -301,7 +1252,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '149'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-10),
@@ -309,7 +1259,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '150'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -317,7 +1266,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '151'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -325,7 +1273,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '151'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -333,7 +1280,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '151'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -341,7 +1287,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '151'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -349,7 +1294,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -357,7 +1301,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -365,7 +1308,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -373,7 +1315,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -381,7 +1322,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -389,7 +1329,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -397,7 +1336,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -405,7 +1343,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -413,7 +1350,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
@@ -421,7 +1357,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '152'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
@@ -429,7 +1364,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '153'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
@@ -437,7 +1371,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '153'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
@@ -445,7 +1378,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '153'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
@@ -453,7 +1385,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '153'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
@@ -461,7 +1392,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '153'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
@@ -469,7 +1399,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '153'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -477,7 +1406,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '154'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -485,7 +1413,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '154'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -493,7 +1420,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '154'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -501,7 +1427,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '154'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -509,7 +1434,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '154'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -517,7 +1441,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '154'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -525,7 +1448,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -533,7 +1455,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -541,7 +1462,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -549,7 +1469,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -557,7 +1476,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -565,7 +1483,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -573,7 +1490,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -581,7 +1497,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '155'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-29),
@@ -589,7 +1504,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '156'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-29),
@@ -597,7 +1511,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '156'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
@@ -605,7 +1518,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '157'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
@@ -613,7 +1525,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '157'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
@@ -621,7 +1532,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '157'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
@@ -629,7 +1539,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '157'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
@@ -637,7 +1546,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '157'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -645,7 +1553,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -653,7 +1560,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -661,7 +1567,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -669,7 +1574,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -677,7 +1581,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
@@ -685,7 +1588,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '159'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
@@ -693,7 +1595,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '159'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
@@ -701,7 +1602,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '160'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
@@ -709,7 +1609,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '161'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
@@ -717,7 +1616,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '161'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
@@ -725,7 +1623,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '161'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
@@ -733,7 +1630,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '161'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
@@ -741,7 +1637,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '161'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
@@ -749,7 +1644,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '161'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-25),
@@ -757,7 +1651,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '162'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-25),
@@ -765,7 +1658,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '162'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-25),
@@ -773,7 +1665,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '162'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-09),
@@ -781,7 +1672,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '163'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-09),
@@ -789,7 +1679,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '163'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
@@ -797,7 +1686,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '164'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
@@ -805,7 +1693,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '164'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
@@ -813,7 +1700,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '164'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
@@ -821,7 +1707,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '164'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
@@ -829,7 +1714,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '164'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
@@ -837,7 +1721,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '164'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -845,7 +1728,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -853,7 +1735,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -861,7 +1742,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -869,7 +1749,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -877,7 +1756,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -885,7 +1763,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -893,7 +1770,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
@@ -901,7 +1777,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '165'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -909,7 +1784,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -917,7 +1791,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -925,7 +1798,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -933,7 +1805,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -941,7 +1812,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -949,7 +1819,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
@@ -957,7 +1826,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '166'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
@@ -965,7 +1833,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '167'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
@@ -973,7 +1840,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '167'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
@@ -981,7 +1847,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '167'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
@@ -989,7 +1854,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '167'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -997,7 +1861,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -1005,7 +1868,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -1013,7 +1875,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -1021,7 +1882,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -1029,7 +1889,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -1037,7 +1896,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
@@ -1045,7 +1903,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '168'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-16),
@@ -1053,7 +1910,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '169'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-02-16),
@@ -1061,7 +1917,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '169'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1069,7 +1924,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1077,7 +1931,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1085,7 +1938,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1093,7 +1945,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1101,7 +1952,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1109,7 +1959,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1117,7 +1966,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
@@ -1125,7 +1973,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '170'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
@@ -1133,7 +1980,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '171'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
@@ -1141,7 +1987,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '171'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
@@ -1149,7 +1994,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '171'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
@@ -1157,7 +2001,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '171'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
@@ -1165,7 +2008,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '171'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1173,7 +2015,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1181,7 +2022,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1189,7 +2029,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1197,7 +2036,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1205,7 +2043,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1213,7 +2050,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1221,7 +2057,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1229,7 +2064,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
@@ -1237,7 +2071,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '172'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
@@ -1245,7 +2078,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '173'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
@@ -1253,7 +2085,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '173'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
@@ -1261,7 +2092,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '173'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
@@ -1269,7 +2099,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '173'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1277,7 +2106,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1285,7 +2113,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1293,7 +2120,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1301,7 +2127,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1309,7 +2134,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1317,7 +2141,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1325,7 +2148,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1333,7 +2155,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
@@ -1341,7 +2162,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '174'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
@@ -1349,7 +2169,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '175'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
@@ -1357,7 +2176,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '175'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
@@ -1365,7 +2183,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '175'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
@@ -1373,7 +2190,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '175'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
@@ -1381,7 +2197,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '175'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
@@ -1389,7 +2204,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '175'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1397,7 +2211,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1405,7 +2218,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1413,7 +2225,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1421,7 +2232,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1429,7 +2239,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1437,7 +2246,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1445,7 +2253,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1453,7 +2260,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1461,7 +2267,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
@@ -1469,7 +2274,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '176'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -1477,7 +2281,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '177'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-31),
@@ -1485,7 +2288,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '178'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -1493,7 +2295,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -1501,7 +2302,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -1509,7 +2309,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -1517,7 +2316,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -1525,7 +2323,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1533,7 +2330,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1541,7 +2337,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1549,7 +2344,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1557,7 +2351,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1565,7 +2358,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1573,7 +2365,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
@@ -1581,7 +2372,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '180'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -1589,7 +2379,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -1597,7 +2386,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -1605,7 +2393,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -1613,7 +2400,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -1621,7 +2407,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -1629,7 +2414,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -1637,7 +2421,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -1645,7 +2428,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -1653,7 +2435,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
@@ -1661,7 +2442,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '183'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
@@ -1669,7 +2449,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '183'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
@@ -1677,7 +2456,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '183'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -1685,7 +2463,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -1693,7 +2470,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -1701,7 +2477,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -1709,7 +2484,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -1717,7 +2491,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-09),
@@ -1725,7 +2498,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '185'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -1733,7 +2505,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -1741,7 +2512,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -1749,7 +2519,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -1757,7 +2526,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -1765,7 +2533,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
@@ -1773,7 +2540,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '187'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1781,7 +2547,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1789,7 +2554,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1797,7 +2561,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1805,7 +2568,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1813,7 +2575,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1821,7 +2582,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1829,7 +2589,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
@@ -1837,7 +2596,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '188'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
@@ -1845,7 +2603,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '189'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
@@ -1853,7 +2610,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '189'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
@@ -1861,7 +2617,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '189'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1869,7 +2624,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1877,7 +2631,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1885,7 +2638,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1893,7 +2645,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1901,7 +2652,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1909,7 +2659,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1917,7 +2666,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1925,7 +2673,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
@@ -1933,7 +2680,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '190'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -1941,7 +2687,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -1949,7 +2694,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -1957,7 +2701,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -1965,7 +2708,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -1973,7 +2715,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
@@ -1981,7 +2722,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '192'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
@@ -1989,7 +2729,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '192'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
@@ -1997,7 +2736,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '192'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
@@ -2005,7 +2743,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '193'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -2013,7 +2750,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -2021,7 +2757,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
@@ -2029,7 +2764,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '195'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
@@ -2037,7 +2771,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '195'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2045,7 +2778,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2053,7 +2785,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2061,7 +2792,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2069,7 +2799,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2077,7 +2806,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2085,7 +2813,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
@@ -2093,7 +2820,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '196'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
@@ -2101,7 +2827,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '197'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
@@ -2109,7 +2834,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '197'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -2117,7 +2841,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -2125,7 +2848,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -2133,7 +2855,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -2141,7 +2862,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -2149,7 +2869,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -2157,7 +2876,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -2165,7 +2883,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '200'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -2173,7 +2890,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '200'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -2181,7 +2897,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '200'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -2189,7 +2904,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -2197,7 +2911,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -2205,7 +2918,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -2213,7 +2925,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
@@ -2221,7 +2932,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '38'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
@@ -2229,7 +2939,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '38'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-15),
@@ -2237,7 +2946,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '39'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-10-02),
@@ -2245,7 +2953,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '40'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -2253,7 +2960,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -2261,7 +2967,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -2269,7 +2974,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -2277,7 +2981,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
@@ -2285,7 +2988,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '43'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
@@ -2293,7 +2995,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '43'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-04),
@@ -2301,7 +3002,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '44'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
@@ -2309,7 +3009,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '45'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
@@ -2317,7 +3016,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '45'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
@@ -2325,7 +3023,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '45'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -2333,7 +3030,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -2341,7 +3037,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -2349,7 +3044,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
@@ -2357,7 +3051,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '48'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
@@ -2365,7 +3058,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '48'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-15),
@@ -2373,7 +3065,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '49'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-12-17),
@@ -2381,7 +3072,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '50'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
@@ -2389,7 +3079,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '51'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
@@ -2397,7 +3086,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '51'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -2405,7 +3093,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -2413,7 +3100,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -2421,7 +3107,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -2429,7 +3114,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
@@ -2437,7 +3121,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '53'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
@@ -2445,7 +3128,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '58'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
@@ -2453,7 +3135,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '58'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
@@ -2461,7 +3142,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '58'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -2469,7 +3149,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -2477,7 +3156,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -2485,7 +3163,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -2493,7 +3170,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
@@ -2501,7 +3177,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '60'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
@@ -2509,7 +3184,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '60'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -2517,7 +3191,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -2525,7 +3198,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -2533,7 +3205,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -2541,7 +3212,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -2549,7 +3219,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -2557,7 +3226,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -2565,7 +3233,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -2573,7 +3240,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -2581,7 +3247,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -2589,7 +3254,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -2597,7 +3261,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -2605,7 +3268,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
@@ -2613,7 +3275,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '68'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
@@ -2621,7 +3282,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '68'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
@@ -2629,7 +3289,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '69'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
@@ -2637,7 +3296,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '69'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
@@ -2645,7 +3303,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '69'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-10),
@@ -2653,7 +3310,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '70'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
@@ -2661,7 +3317,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '71'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
@@ -2669,7 +3324,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '71'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
@@ -2677,7 +3331,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '71'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-29),
@@ -2685,7 +3338,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '74'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-09),
@@ -2693,7 +3345,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '81'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-02),
@@ -2701,7 +3352,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '83'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -2709,7 +3359,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -2717,7 +3366,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -2725,7 +3373,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -2733,7 +3380,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -2741,7 +3387,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -2749,7 +3394,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -2757,7 +3401,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -2765,7 +3408,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -2773,7 +3415,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -2781,7 +3422,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -2789,7 +3429,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -2797,7 +3436,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -2805,7 +3443,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -2813,7 +3450,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -2821,7 +3457,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -2829,7 +3464,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -2837,7 +3471,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -2845,7 +3478,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -2853,7 +3485,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -2861,7 +3492,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -2869,7 +3499,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -2877,7 +3506,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -2885,7 +3513,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -2893,7 +3520,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -2901,7 +3527,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -2909,7 +3534,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -2917,7 +3541,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -2925,7 +3548,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -2933,7 +3555,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
@@ -2941,7 +3562,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '187'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
@@ -2949,7 +3569,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '187'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
@@ -2957,7 +3576,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '192'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
@@ -2965,7 +3583,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '193'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
@@ -2973,7 +3590,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '193'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -2981,7 +3597,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -2989,7 +3604,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -2997,7 +3611,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
@@ -3005,7 +3618,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '195'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
@@ -3013,7 +3625,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '195'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
@@ -3021,7 +3632,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '195'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -3029,7 +3639,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -3037,7 +3646,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -3045,7 +3653,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -3053,7 +3660,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -3061,7 +3667,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -3069,7 +3674,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
@@ -3077,7 +3681,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '3'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
@@ -3085,7 +3688,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '3'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
@@ -3093,7 +3695,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '5'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
@@ -3101,7 +3702,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '5'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
@@ -3109,7 +3709,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '6'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
@@ -3117,7 +3716,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '6'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
@@ -3125,7 +3723,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '6'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -3133,7 +3730,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -3141,7 +3737,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '96'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -3149,7 +3744,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '96'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -3157,7 +3751,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -3165,7 +3758,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-03-01),
@@ -3173,7 +3765,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '116'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -3181,7 +3772,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -3189,7 +3779,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -3197,7 +3786,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -3205,7 +3793,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
@@ -3213,7 +3800,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '127'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -3221,7 +3807,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -3229,7 +3814,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -3237,7 +3821,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -3245,7 +3828,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -3253,7 +3835,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -3261,7 +3842,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -3269,7 +3849,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -3277,7 +3856,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '158'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
@@ -3285,7 +3863,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '159'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
@@ -3293,7 +3870,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '159'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
@@ -3301,7 +3877,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '69'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-10),
@@ -3309,7 +3884,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '70'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
@@ -3317,7 +3891,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '71'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -3325,7 +3898,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
@@ -3333,7 +3905,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '98'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -3341,7 +3912,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -3349,7 +3919,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -3357,7 +3926,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -3365,7 +3933,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -3373,7 +3940,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -3381,7 +3947,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -3389,7 +3954,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '177'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-31),
@@ -3397,7 +3961,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '178'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -3405,7 +3968,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -3413,7 +3975,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -3421,7 +3982,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
@@ -3429,7 +3989,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '179'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -3437,7 +3996,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -3445,7 +4003,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
@@ -3453,7 +4010,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '181'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -3461,7 +4017,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -3469,7 +4024,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
@@ -3477,7 +4031,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '182'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
@@ -3485,7 +4038,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '183'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
@@ -3493,7 +4045,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '183'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
@@ -3501,7 +4052,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '183'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -3509,7 +4059,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -3517,7 +4066,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
@@ -3525,7 +4073,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '184'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-11-09),
@@ -3533,7 +4080,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '185'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -3541,7 +4087,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -3549,7 +4094,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -3557,7 +4101,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
@@ -3565,7 +4108,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '186'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
@@ -3573,7 +4115,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '187'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
@@ -3581,7 +4122,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '189'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
@@ -3589,7 +4129,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '189'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
@@ -3597,7 +4136,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '189'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -3605,7 +4143,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -3613,7 +4150,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -3621,7 +4157,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
@@ -3629,7 +4164,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '191'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
@@ -3637,7 +4171,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '192'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
@@ -3645,7 +4178,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '193'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -3653,7 +4185,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
@@ -3661,7 +4192,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '194'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
@@ -3669,7 +4199,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '195'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
@@ -3677,7 +4206,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '197'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
@@ -3685,7 +4213,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '197'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -3693,7 +4220,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -3701,7 +4227,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
@@ -3709,7 +4234,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '198'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
@@ -3717,7 +4241,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '199'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -3725,7 +4248,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -3733,7 +4255,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -3741,7 +4262,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -3749,7 +4269,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -3757,7 +4276,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -3765,7 +4283,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -3773,7 +4290,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -3781,7 +4297,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-19),
@@ -3789,7 +4304,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '14'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -3797,7 +4311,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -3805,7 +4318,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -3813,7 +4325,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -3821,7 +4332,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -3829,7 +4339,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -3837,7 +4346,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -3845,7 +4353,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -3853,7 +4360,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -3861,7 +4367,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -3869,7 +4374,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -3877,7 +4381,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -3885,7 +4388,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-04),
@@ -3893,7 +4395,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '31'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -3901,7 +4402,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -3909,7 +4409,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -3917,7 +4416,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -3925,7 +4423,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
@@ -3933,7 +4430,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '42'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
@@ -3941,7 +4437,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '42'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
@@ -3949,7 +4444,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '54'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
@@ -3957,7 +4451,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '54'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -3965,7 +4458,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -3973,7 +4465,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -3981,7 +4472,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -3989,7 +4479,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-20),
@@ -3997,7 +4486,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '56'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -4005,7 +4493,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -4013,7 +4500,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -4021,7 +4507,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-23),
@@ -4029,7 +4514,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '63'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-23),
@@ -4037,7 +4521,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '63'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-18),
@@ -4045,7 +4528,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '72'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-18),
@@ -4053,7 +4535,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '72'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-24),
@@ -4061,7 +4542,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '73'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -4069,7 +4549,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -4077,7 +4556,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -4085,7 +4563,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -4093,7 +4570,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -4101,7 +4577,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -4109,7 +4584,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -4117,7 +4591,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
@@ -4125,7 +4598,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '109'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
@@ -4133,7 +4605,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '109'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
@@ -4141,7 +4612,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '111'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
@@ -4149,7 +4619,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '111'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
@@ -4157,7 +4626,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '111'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-08-15),
@@ -4165,7 +4633,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '112'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
@@ -4173,7 +4640,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '113'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
@@ -4181,7 +4647,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '113'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -4189,7 +4654,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -4197,7 +4661,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -4205,7 +4668,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -4213,7 +4675,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -4221,7 +4682,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-15),
@@ -4229,7 +4689,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '119'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
@@ -4237,7 +4696,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '120'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
@@ -4245,7 +4703,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '120'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-06-18),
@@ -4253,7 +4710,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '122'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-06-18),
@@ -4261,7 +4717,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '122'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-26),
@@ -4269,7 +4724,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '125'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -4277,7 +4731,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -4285,7 +4738,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -4293,7 +4745,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -4301,7 +4752,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
@@ -4309,7 +4759,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '127'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
@@ -4317,7 +4766,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '127'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
@@ -4325,7 +4773,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '1'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
@@ -4333,7 +4780,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '1'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
@@ -4341,7 +4787,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '1'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
@@ -4349,7 +4794,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '1'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
@@ -4357,7 +4801,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '1'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4365,7 +4808,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4373,7 +4815,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4381,7 +4822,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4389,7 +4829,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4397,7 +4836,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4405,7 +4843,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
@@ -4413,7 +4850,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '2'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
@@ -4421,7 +4857,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '3'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
@@ -4429,7 +4864,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '3'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-29),
@@ -4437,7 +4871,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '4'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
@@ -4445,7 +4878,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '5'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
@@ -4453,7 +4885,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '5'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
@@ -4461,7 +4892,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '5'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
@@ -4469,7 +4899,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '5'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
@@ -4477,7 +4906,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '6'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
@@ -4485,7 +4913,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '6'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
@@ -4493,7 +4920,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '6'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4501,7 +4927,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4509,7 +4934,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4517,7 +4941,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4525,7 +4948,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4533,7 +4955,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4541,7 +4962,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
@@ -4549,7 +4969,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '7'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4557,7 +4976,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4565,7 +4983,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4573,7 +4990,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4581,7 +4997,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4589,7 +5004,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4597,7 +5011,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -4605,7 +5018,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '8'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -4613,7 +5025,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -4621,7 +5032,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -4629,7 +5039,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -4637,7 +5046,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -4645,7 +5053,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '9'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
@@ -4653,7 +5060,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '10'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
@@ -4661,7 +5067,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '10'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
@@ -4669,7 +5074,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '10'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
@@ -4677,7 +5081,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '10'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
@@ -4685,7 +5088,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '10'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
@@ -4693,7 +5095,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '10'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -4701,7 +5102,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -4709,7 +5109,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -4717,7 +5116,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
@@ -4725,7 +5123,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '11'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
@@ -4733,7 +5130,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '12'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
@@ -4741,7 +5137,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '12'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
@@ -4749,7 +5144,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '12'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
@@ -4757,7 +5151,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '12'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4765,7 +5158,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4773,7 +5165,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4781,7 +5172,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4789,7 +5179,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4797,7 +5186,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4805,7 +5193,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
@@ -4813,7 +5200,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '13'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-04-19),
@@ -4821,7 +5207,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '14'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
@@ -4829,7 +5214,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '15'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
@@ -4837,7 +5221,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '15'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
@@ -4845,7 +5228,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '15'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
@@ -4853,7 +5235,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '15'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
@@ -4861,7 +5242,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '15'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
@@ -4869,7 +5249,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '15'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
@@ -4877,7 +5256,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '16'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
@@ -4885,7 +5263,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '16'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
@@ -4893,7 +5270,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '16'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
@@ -4901,7 +5277,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '16'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
@@ -4909,7 +5284,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '16'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
@@ -4917,7 +5291,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '16'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-08),
@@ -4925,7 +5298,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '17'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-08),
@@ -4933,7 +5305,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '17'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
@@ -4941,7 +5312,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '18'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
@@ -4949,7 +5319,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '18'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
@@ -4957,7 +5326,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '18'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
@@ -4965,7 +5333,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '18'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
@@ -4973,7 +5340,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '18'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
@@ -4981,7 +5347,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '18'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
@@ -4989,7 +5354,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '19'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
@@ -4997,7 +5361,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '19'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
@@ -5005,7 +5368,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '19'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
@@ -5013,7 +5375,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '19'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
@@ -5021,7 +5382,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '19'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
@@ -5029,7 +5389,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '19'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
@@ -5037,7 +5396,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '20'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
@@ -5045,7 +5403,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '20'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
@@ -5053,7 +5410,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '20'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
@@ -5061,7 +5417,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '20'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
@@ -5069,7 +5424,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '20'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
@@ -5077,7 +5431,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '20'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
@@ -5085,7 +5438,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '21'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
@@ -5093,7 +5445,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '21'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
@@ -5101,7 +5452,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '21'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
@@ -5109,7 +5459,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '21'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
@@ -5117,7 +5466,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '21'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
@@ -5125,7 +5473,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '21'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5133,7 +5480,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5141,7 +5487,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5149,7 +5494,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5157,7 +5501,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5165,7 +5508,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5173,7 +5515,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5181,7 +5522,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5189,7 +5529,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '22'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5197,7 +5536,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '23'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5205,7 +5543,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '23'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -5213,7 +5550,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '23'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -5221,7 +5557,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '24'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -5229,7 +5564,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '24'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -5237,7 +5571,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '24'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -5245,7 +5578,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '24'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -5253,7 +5585,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '24'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -5261,7 +5592,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '24'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-11),
@@ -5269,7 +5599,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '25'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5277,7 +5606,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '26'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5285,7 +5613,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '26'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5293,7 +5620,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '26'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -5301,7 +5627,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -5309,7 +5634,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
@@ -5317,7 +5641,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '27'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -5325,7 +5648,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -5333,7 +5655,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -5341,7 +5662,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -5349,7 +5669,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
@@ -5357,7 +5676,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '28'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -5365,7 +5683,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -5373,7 +5690,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -5381,7 +5697,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -5389,7 +5704,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
@@ -5397,7 +5711,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '29'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
@@ -5405,7 +5718,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '30'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
@@ -5413,7 +5725,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '30'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
@@ -5421,7 +5732,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '30'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
@@ -5429,7 +5739,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '30'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
@@ -5437,7 +5746,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '30'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-06-04),
@@ -5445,7 +5753,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '31'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5453,7 +5760,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5461,7 +5767,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5469,7 +5774,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5477,7 +5781,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5485,7 +5788,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5493,7 +5795,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5501,7 +5802,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
@@ -5509,7 +5809,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '32'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -5517,7 +5816,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -5525,7 +5823,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -5533,7 +5830,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
@@ -5541,7 +5837,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '33'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-16),
@@ -5549,7 +5844,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '34'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-16),
@@ -5557,7 +5851,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '34'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-16),
@@ -5565,7 +5858,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '35'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
@@ -5573,7 +5865,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '36'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
@@ -5581,7 +5872,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '36'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
@@ -5589,7 +5879,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '36'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
@@ -5597,7 +5886,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '36'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -5605,7 +5893,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -5613,7 +5900,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -5621,7 +5907,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
@@ -5629,7 +5914,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '37'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
@@ -5637,7 +5921,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '38'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
@@ -5645,7 +5928,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '38'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
@@ -5653,7 +5935,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '38'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
@@ -5661,7 +5942,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '38'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-10-02),
@@ -5669,7 +5949,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '40'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5677,7 +5956,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5685,7 +5963,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5693,7 +5970,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5701,7 +5977,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
@@ -5709,7 +5984,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '41'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
@@ -5717,7 +5991,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '42'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
@@ -5725,7 +5998,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '42'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
@@ -5733,7 +6005,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '42'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
@@ -5741,7 +6012,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '43'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
@@ -5749,7 +6019,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '43'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
@@ -5757,7 +6026,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '43'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
@@ -5765,7 +6033,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '45'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
@@ -5773,7 +6040,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '45'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
@@ -5781,7 +6047,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '45'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
@@ -5789,7 +6054,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '46'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
@@ -5797,7 +6061,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '46'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
@@ -5805,7 +6068,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '46'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -5813,7 +6075,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -5821,7 +6082,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -5829,7 +6089,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
@@ -5837,7 +6096,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '47'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
@@ -5845,7 +6103,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '48'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
@@ -5853,7 +6110,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '48'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-15),
@@ -5861,7 +6117,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '49'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-15),
@@ -5869,7 +6124,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '49'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
@@ -5877,7 +6131,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '51'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
@@ -5885,7 +6138,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '51'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
@@ -5893,7 +6145,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '51'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
@@ -5901,7 +6152,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '51'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -5909,7 +6159,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -5917,7 +6166,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
@@ -5925,7 +6173,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '52'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
@@ -5933,7 +6180,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '53'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
@@ -5941,7 +6187,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '53'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
@@ -5949,7 +6194,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '53'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
@@ -5957,7 +6201,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '54'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
@@ -5965,7 +6208,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '54'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
@@ -5973,7 +6215,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '54'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -5981,7 +6222,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -5989,7 +6229,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
@@ -5997,7 +6236,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '55'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-20),
@@ -6005,7 +6243,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '56'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-04-20),
@@ -6013,7 +6250,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '56'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6021,7 +6257,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6029,7 +6264,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6037,7 +6271,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6045,7 +6278,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '57'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
@@ -6053,7 +6285,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '58'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
@@ -6061,7 +6292,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '58'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -6069,7 +6299,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -6077,7 +6306,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -6085,7 +6313,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
@@ -6093,7 +6320,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '59'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
@@ -6101,7 +6327,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '60'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
@@ -6109,7 +6334,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '60'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
@@ -6117,7 +6341,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '60'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -6125,7 +6348,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -6133,7 +6355,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -6141,7 +6362,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -6149,7 +6369,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
@@ -6157,7 +6376,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '61'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2016-12-12),
@@ -6165,7 +6383,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '62'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-23),
@@ -6173,7 +6390,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '63'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -6181,7 +6397,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -6189,7 +6404,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -6197,7 +6411,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
@@ -6205,7 +6418,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '64'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -6213,7 +6425,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -6221,7 +6432,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
@@ -6229,7 +6439,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '65'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-09),
@@ -6237,7 +6446,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '66'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-27),
@@ -6245,7 +6453,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '67'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
@@ -6253,7 +6460,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '68'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
@@ -6261,7 +6467,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '68'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
@@ -6269,7 +6474,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '68'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
@@ -6277,7 +6481,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '69'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-02-10),
@@ -6285,7 +6488,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '70'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
@@ -6293,7 +6495,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '71'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
@@ -6301,7 +6502,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '71'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-11-18),
@@ -6309,7 +6509,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '72'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-01-24),
@@ -6317,7 +6516,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '73'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-11-29),
@@ -6325,7 +6523,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '74'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -6333,7 +6530,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -6341,7 +6537,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -6349,7 +6544,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -6357,7 +6551,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
@@ -6365,7 +6558,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '75'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -6373,7 +6565,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -6381,7 +6572,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6389,7 +6579,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6397,7 +6586,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -6405,7 +6593,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -6413,7 +6600,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -6421,7 +6607,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -6429,7 +6614,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -6437,7 +6621,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -6445,7 +6628,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
@@ -6453,7 +6635,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '93'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -6461,7 +6642,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '94'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -6469,7 +6649,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '94'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -6477,7 +6656,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '94'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -6485,7 +6663,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '94'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
@@ -6493,7 +6670,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '94'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
@@ -6501,7 +6677,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '95'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
@@ -6509,7 +6684,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '95'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
@@ -6517,7 +6691,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '95'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
@@ -6525,7 +6698,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '95'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
@@ -6533,7 +6705,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '95'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -6541,7 +6712,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '96'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
@@ -6549,7 +6719,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '97'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
@@ -6557,7 +6726,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '97'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
@@ -6565,7 +6733,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '97'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
@@ -6573,7 +6740,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '97'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
@@ -6581,7 +6747,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '97'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
@@ -6589,7 +6754,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '97'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
@@ -6597,7 +6761,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '98'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
@@ -6605,7 +6768,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '98'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
@@ -6613,7 +6775,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '98'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-28),
@@ -6621,7 +6782,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '99'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-28),
@@ -6629,7 +6789,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '99'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -6637,7 +6796,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -6645,7 +6803,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -6653,7 +6810,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -6661,7 +6817,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -6669,7 +6824,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
@@ -6677,7 +6831,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '100'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6685,7 +6838,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6693,7 +6845,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6701,7 +6852,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6709,7 +6859,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6717,7 +6866,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6725,7 +6873,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
@@ -6733,7 +6880,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '101'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
@@ -6741,7 +6887,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '102'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
@@ -6749,7 +6894,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '102'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
@@ -6757,7 +6901,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '102'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
@@ -6765,7 +6908,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '102'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
@@ -6773,7 +6915,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '102'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
@@ -6781,7 +6922,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '102'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -6789,7 +6929,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '103'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -6797,7 +6936,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '103'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -6805,7 +6943,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '103'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -6813,7 +6950,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '103'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -6821,7 +6957,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '103'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
@@ -6829,7 +6964,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '103'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
@@ -6837,7 +6971,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '104'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
@@ -6845,7 +6978,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '104'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
@@ -6853,7 +6985,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '104'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
@@ -6861,7 +6992,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '104'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -6869,7 +6999,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -6877,7 +7006,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -6885,7 +7013,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -6893,7 +7020,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -6901,7 +7027,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
@@ -6909,7 +7034,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '105'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6917,7 +7041,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6925,7 +7048,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6933,7 +7055,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6941,7 +7062,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6949,7 +7069,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6957,7 +7076,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6965,7 +7083,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
@@ -6973,7 +7090,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '106'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-04-29),
@@ -6981,7 +7097,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '107'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -6989,7 +7104,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '108'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -6997,7 +7111,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '108'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -7005,7 +7118,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '108'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -7013,7 +7125,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '108'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
@@ -7021,7 +7132,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '108'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
@@ -7029,7 +7139,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '109'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
@@ -7037,7 +7146,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '109'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
@@ -7045,7 +7153,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '109'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
@@ -7053,7 +7160,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '110'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
@@ -7061,7 +7167,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '110'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
@@ -7069,7 +7174,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '110'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
@@ -7077,7 +7181,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '110'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
@@ -7085,7 +7188,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '110'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
@@ -7093,7 +7195,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '111'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
@@ -7101,7 +7202,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '111'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
@@ -7109,7 +7209,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '111'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-08-15),
@@ -7117,7 +7216,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '112'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-08-15),
@@ -7125,7 +7223,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '112'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
@@ -7133,7 +7230,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '113'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
@@ -7141,7 +7237,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '113'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-15),
@@ -7149,7 +7244,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '114'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-15),
@@ -7157,7 +7251,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '114'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-05-15),
@@ -7165,7 +7258,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '114'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -7173,7 +7265,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -7181,7 +7272,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
@@ -7189,7 +7279,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '115'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-03-01),
@@ -7197,7 +7286,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '116'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -7205,7 +7293,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
@@ -7213,7 +7300,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '117'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7221,7 +7307,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7229,7 +7314,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7237,7 +7321,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7245,7 +7328,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7253,7 +7335,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7261,7 +7342,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7269,7 +7349,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
@@ -7277,7 +7356,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '118'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-15),
@@ -7285,7 +7363,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '119'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-15),
@@ -7293,7 +7370,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '119'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
@@ -7301,7 +7377,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '120'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
@@ -7309,7 +7384,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '120'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
@@ -7317,7 +7391,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '120'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -7325,7 +7398,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '121'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -7333,7 +7405,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '121'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -7341,7 +7412,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '121'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -7349,7 +7419,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '121'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -7357,7 +7426,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '121'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
@@ -7365,7 +7433,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '121'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-06-18),
@@ -7373,7 +7440,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '122'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7381,7 +7447,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7389,7 +7454,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7397,7 +7461,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7405,7 +7468,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7413,7 +7475,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7421,7 +7482,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
@@ -7429,7 +7489,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '123'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
@@ -7437,7 +7496,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '124'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
@@ -7445,7 +7503,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '124'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
@@ -7453,7 +7510,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '124'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
@@ -7461,7 +7517,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '124'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-26),
@@ -7469,7 +7524,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '125'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-26),
@@ -7477,7 +7531,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '125'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -7485,7 +7538,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -7493,7 +7545,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -7501,7 +7552,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
@@ -7509,7 +7559,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '126'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
@@ -7517,7 +7566,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '127'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
@@ -7525,7 +7573,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '127'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
@@ -7533,7 +7580,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '127'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7541,7 +7587,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7549,7 +7594,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7557,7 +7601,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7565,7 +7608,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7573,7 +7615,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7581,7 +7622,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
@@ -7589,7 +7629,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '128'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -7597,7 +7636,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -7605,7 +7643,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -7613,7 +7650,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -7621,7 +7657,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -7629,7 +7664,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
@@ -7637,7 +7671,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '130'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
@@ -7645,7 +7678,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '130'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
@@ -7653,7 +7685,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '130'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
@@ -7661,7 +7692,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '130'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -7669,7 +7699,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -7677,7 +7706,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -7685,7 +7713,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -7693,7 +7720,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7701,7 +7727,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7709,7 +7734,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7717,7 +7741,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7725,7 +7748,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7733,7 +7755,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7741,7 +7762,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7749,7 +7769,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
@@ -7757,7 +7776,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '132'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -7765,7 +7783,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -7773,7 +7790,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '77'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
@@ -7781,7 +7797,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '77'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-29),
@@ -7789,7 +7804,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '78'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7797,7 +7811,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7805,7 +7818,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7813,7 +7825,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7821,7 +7832,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7829,7 +7839,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7837,7 +7846,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
@@ -7845,7 +7853,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '79'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
@@ -7853,7 +7860,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '80'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
@@ -7861,7 +7867,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '80'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
@@ -7869,7 +7874,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '80'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
@@ -7877,7 +7881,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '80'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
@@ -7885,7 +7888,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '80'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
@@ -7893,7 +7895,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '80'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-09),
@@ -7901,7 +7902,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '81'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-09),
@@ -7909,7 +7909,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '81'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -7917,7 +7916,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '82'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -7925,7 +7923,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '82'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-09-02),
@@ -7933,7 +7930,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '83'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-24),
@@ -7941,7 +7937,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '84'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-02-24),
@@ -7949,7 +7944,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '84'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -7957,7 +7951,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -7965,7 +7958,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -7973,7 +7965,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
@@ -7981,7 +7972,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '86'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -7989,7 +7979,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -7997,7 +7986,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -8005,7 +7993,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -8013,7 +8000,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
@@ -8021,7 +8007,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '87'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -8029,7 +8014,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -8037,7 +8021,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -8045,7 +8028,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -8053,7 +8035,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
@@ -8061,7 +8042,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '88'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-11),
@@ -8069,7 +8049,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '89'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-11),
@@ -8077,7 +8056,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '89'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-28),
@@ -8085,7 +8063,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '90'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -8093,7 +8070,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -8101,7 +8077,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
@@ -8109,7 +8084,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '91'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -8117,7 +8091,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
@@ -8125,7 +8098,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '92'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
@@ -8133,7 +8105,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '133'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
@@ -8141,7 +8112,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '133'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
@@ -8149,7 +8119,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '133'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -8157,7 +8126,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -8165,7 +8133,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -8173,7 +8140,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -8181,7 +8147,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
@@ -8189,7 +8154,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '134'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-07-21),
@@ -8197,7 +8161,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '135'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
@@ -8205,7 +8168,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '136'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
@@ -8213,7 +8175,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '136'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
@@ -8221,7 +8182,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '136'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -8229,7 +8189,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '137'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
@@ -8237,7 +8196,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '138'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
@@ -8245,7 +8203,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '138'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8253,7 +8210,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8261,7 +8217,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8269,7 +8224,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8277,7 +8231,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8285,7 +8238,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8293,7 +8245,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8301,7 +8252,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8309,7 +8259,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -8317,7 +8266,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -8325,7 +8273,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -8333,7 +8280,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -8341,7 +8287,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -8349,7 +8294,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
@@ -8357,7 +8301,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '141'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8365,7 +8308,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8373,7 +8315,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8381,7 +8322,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8389,7 +8329,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8397,7 +8336,6 @@ CREATE (:Prescription {
     idmedicine: '8',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8405,7 +8343,6 @@ CREATE (:Prescription {
     idmedicine: '10',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
@@ -8413,7 +8350,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '143'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
@@ -8421,7 +8357,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '143'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -8429,7 +8364,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '144'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -8437,7 +8371,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -8445,7 +8378,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
@@ -8453,7 +8385,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '129'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -8461,7 +8392,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -8469,7 +8399,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
@@ -8477,7 +8406,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '131'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
@@ -8485,7 +8413,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '76'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-03-29),
@@ -8493,7 +8420,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '78'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -8501,7 +8427,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '82'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -8509,7 +8434,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '82'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
@@ -8517,7 +8441,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '82'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-07-24),
@@ -8525,7 +8448,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '85'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
@@ -8533,7 +8455,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '133'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
@@ -8541,7 +8462,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '133'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-07-21),
@@ -8549,7 +8469,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '135'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
@@ -8557,7 +8476,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '136'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
@@ -8565,7 +8483,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '136'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
@@ -8573,7 +8490,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '137'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
@@ -8581,7 +8497,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '138'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
@@ -8589,7 +8504,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '138'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8597,7 +8511,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8605,7 +8518,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
@@ -8613,7 +8525,6 @@ CREATE (:Prescription {
     idmedicine: '7',
     idepisode: '139'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8621,7 +8532,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8629,7 +8539,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
@@ -8637,7 +8546,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '140'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8645,7 +8553,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8653,7 +8560,6 @@ CREATE (:Prescription {
     idmedicine: '4',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8661,7 +8567,6 @@ CREATE (:Prescription {
     idmedicine: '6',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
@@ -8669,7 +8574,6 @@ CREATE (:Prescription {
     idmedicine: '9',
     idepisode: '142'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
@@ -8677,7 +8581,6 @@ CREATE (:Prescription {
     idmedicine: '1',
     idepisode: '143'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
@@ -8685,7 +8588,6 @@ CREATE (:Prescription {
     idmedicine: '3',
     idepisode: '143'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
@@ -8693,7 +8595,6 @@ CREATE (:Prescription {
     idmedicine: '5',
     idepisode: '143'
 });
-
                 
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
@@ -8701,7 +8602,6 @@ CREATE (:Prescription {
     idmedicine: '2',
     idepisode: '46'
 });
-
                 
 CREATE (:Appointment {
     scheduled_on: date("2013-11-20"),
