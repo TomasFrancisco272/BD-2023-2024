@@ -1,992 +1,4330 @@
 
 CREATE (:Department {
-    dept_head: john smith,
-    dept_name: cardiology_1,
-    emp_count: '2'
+    dept_head: 'john smith',
+    dept_name: 'cardiology_1',
+    emp_count: ''2''
 });
                
 CREATE (:Department {
-    dept_head: michael williams,
-    dept_name: emergency_2,
-    emp_count: '3'
+    dept_head: 'michael williams',
+    dept_name: 'emergency_2',
+    emp_count: ''3''
 });
                
 CREATE (:Department {
-    dept_head: emily johnson,
-    dept_name: diagnostic_3,
-    emp_count: '3'
+    dept_head: 'emily johnson',
+    dept_name: 'diagnostic_3',
+    emp_count: ''3''
 });
                
 CREATE (:Department {
-    dept_head: jessica brown,
-    dept_name: cardiology_4,
-    emp_count: '2'
+    dept_head: 'jessica brown',
+    dept_name: 'cardiology_4',
+    emp_count: ''2''
 });
                
 CREATE (:Department {
-    dept_head: christopher lee,
-    dept_name: emergency_1,
-    emp_count: '2'
+    dept_head: 'christopher lee',
+    dept_name: 'emergency_1',
+    emp_count: ''2''
 });
                
 CREATE (:Department {
-    dept_head: matthew martinez,
-    dept_name: diagnostic_1,
-    emp_count: '1'
+    dept_head: 'matthew martinez',
+    dept_name: 'diagnostic_1',
+    emp_count: ''1''
 });
                
 CREATE (:Department {
-    dept_head: sophia hernandez,
-    dept_name: cardiology_3,
-    emp_count: '3'
+    dept_head: 'sophia hernandez',
+    dept_name: 'cardiology_3',
+    emp_count: ''3''
 });
                
 CREATE (:Department {
-    dept_head: ethan lopez,
-    dept_name: cardiology_2,
-    emp_count: '3'
+    dept_head: 'ethan lopez',
+    dept_name: 'cardiology_2',
+    emp_count: ''3''
 });
                
 CREATE (:Department {
-    dept_head: travis smith,
-    dept_name: diagnostic_2,
-    emp_count: '3'
+    dept_head: 'travis smith',
+    dept_name: 'diagnostic_2',
+    emp_count: ''3''
 });
                
 CREATE (:Department {
-    dept_head: amanda taylor,
-    dept_name: pediatrics,
-    emp_count: '2'
+    dept_head: 'amanda taylor',
+    dept_name: 'pediatrics',
+    emp_count: ''2''
 });
                
 CREATE (:Department {
-    dept_head: daniel garcia,
-    dept_name: orthopedics,
-    emp_count: '2'
+    dept_head: 'daniel garcia',
+    dept_name: 'orthopedics',
+    emp_count: ''2''
 });
                
 CREATE (:Department {
-    dept_head: olivia rodriguez,
-    dept_name: neurology,
-    emp_count: '1'
+    dept_head: 'olivia rodriguez',
+    dept_name: 'neurology',
+    emp_count: ''1''
 });
                
 CREATE (:Department {
-    dept_head: noah martinez,
-    dept_name: oncology,
-    emp_count: '1'
+    dept_head: 'noah martinez',
+    dept_name: 'oncology',
+    emp_count: ''1''
 });
                
 CREATE (:Department {
-    dept_head: isabella hernandez,
-    dept_name: radiology,
-    emp_count: '5'
+    dept_head: 'isabella hernandez',
+    dept_name: 'radiology',
+    emp_count: ''5''
 });
                
 CREATE (:Department {
-    dept_head: william johnson,
-    dept_name: surgery,
-    emp_count: '4'
+    dept_head: 'william johnson',
+    dept_name: 'surgery',
+    emp_count: ''4''
 });
                
 CREATE (:Department {
-    dept_head: sophia lopez,
-    dept_name: ophthalmology,
-    emp_count: '5'
+    dept_head: 'sophia lopez',
+    dept_name: 'ophthalmology',
+    emp_count: ''5''
 });
                
 CREATE (:Department {
-    dept_head: ethan brown,
-    dept_name: gynecology,
-    emp_count: '5'
+    dept_head: 'ethan brown',
+    dept_name: 'gynecology',
+    emp_count: ''5''
 });
                
 CREATE (:Department {
-    dept_head: olivia wilson,
-    dept_name: urology,
-    emp_count: '4'
+    dept_head: 'olivia wilson',
+    dept_name: 'urology',
+    emp_count: ''4''
 });
                
 CREATE (:Department {
-    dept_head: alexander lee,
-    dept_name: dermatology,
-    emp_count: '6'
+    dept_head: 'alexander lee',
+    dept_name: 'dermatology',
+    emp_count: ''6''
 });
                
 CREATE (:Department {
-    dept_head: mia garcia,
-    dept_name: hematology,
-    emp_count: '4'
+    dept_head: 'mia garcia',
+    dept_name: 'hematology',
+    emp_count: ''4''
 });
                
 CREATE (:Department {
-    dept_head: james martinez,
-    dept_name: endocrinology,
-    emp_count: '4'
+    dept_head: 'james martinez',
+    dept_name: 'endocrinology',
+    emp_count: ''4''
 });
                
 CREATE (:Department {
-    dept_head: sophia anderson,
-    dept_name: pulmonology,
-    emp_count: '4'
+    dept_head: 'sophia anderson',
+    dept_name: 'pulmonology',
+    emp_count: ''4''
 });
                
 CREATE (:Department {
-    dept_head: oliver wilson,
-    dept_name: nephrology,
-    emp_count: '4'
+    dept_head: 'oliver wilson',
+    dept_name: 'nephrology',
+    emp_count: ''4''
 });
                
 CREATE (:Department {
-    dept_head: ava hernandez,
-    dept_name: otolaryngology,
-    emp_count: '5'
+    dept_head: 'ava hernandez',
+    dept_name: 'otolaryngology',
+    emp_count: ''5''
 });
                
 CREATE (:Department {
-    dept_head: lucas lopez,
-    dept_name: rheumatology,
-    emp_count: '5'
+    dept_head: 'lucas lopez',
+    dept_name: 'rheumatology',
+    emp_count: ''5''
 });
                
 CREATE (:Department {
-    dept_head: emma brown,
-    dept_name: dentistry,
-    emp_count: '10'
+    dept_head: 'emma brown',
+    dept_name: 'dentistry',
+    emp_count: ''10''
 });
                
 CREATE (:Department {
-    dept_head: daniel lee,
-    dept_name: psychiatry,
-    emp_count: '4'
+    dept_head: 'daniel lee',
+    dept_name: 'psychiatry',
+    emp_count: ''4''
 });
                
 CREATE (:Insurance {
+    policy_number: ''pol001'',
+    provider: ''abc insurance'',
+    insurance_plan: ''standard plan'',
+    co_pay: ''50'',
+    coverage: ''full coverage'',
+    maternity: ''y'',
+    dental: ''n'',
+    optical: ''y''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol002'',
+    provider: ''xyz insurance'',
+    insurance_plan: ''premium plan'',
+    co_pay: ''30'',
+    coverage: ''partial coverage'',
+    maternity: ''n'',
+    dental: ''y'',
+    optical: ''y''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol003'',
+    provider: ''def insurance'',
+    insurance_plan: ''basic plan'',
+    co_pay: ''20'',
+    coverage: ''limited coverage'',
+    maternity: ''y'',
+    dental: ''n'',
+    optical: ''n''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol004'',
+    provider: ''ghi insurance'',
+    insurance_plan: ''gold plan'',
+    co_pay: ''40'',
+    coverage: ''full coverage'',
+    maternity: ''n'',
+    dental: ''y'',
+    optical: ''y''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol005'',
+    provider: ''jkl insurance'',
+    insurance_plan: ''silver plan'',
+    co_pay: ''35'',
+    coverage: ''partial coverage'',
+    maternity: ''y'',
+    dental: ''n'',
+    optical: ''y''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol006'',
+    provider: ''mno insurance'',
+    insurance_plan: ''bronze plan'',
+    co_pay: ''25'',
+    coverage: ''limited coverage'',
+    maternity: ''n'',
+    dental: ''y'',
+    optical: ''n''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol007'',
+    provider: ''pqr insurance'',
+    insurance_plan: ''platinum plan'',
+    co_pay: ''60'',
+    coverage: ''full coverage'',
+    maternity: ''y'',
+    dental: ''y'',
+    optical: ''y''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol008'',
+    provider: ''stu insurance'',
+    insurance_plan: ''family plan'',
+    co_pay: ''45'',
+    coverage: ''partial coverage'',
+    maternity: ''y'',
+    dental: ''y'',
+    optical: ''n''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol009'',
+    provider: ''vwx insurance'',
+    insurance_plan: ''corporate plan'',
+    co_pay: ''55'',
+    coverage: ''full coverage'',
+    maternity: ''n'',
+    dental: ''n'',
+    optical: ''y''
+});
+                
+CREATE (:Insurance {
+    policy_number: ''pol010'',
+    provider: ''yza insurance'',
+    insurance_plan: ''student plan'',
+    co_pay: ''15'',
+    coverage: ''limited coverage'',
+    maternity: ''n'',
+    dental: ''n'',
+    optical: ''n''
+});
+                
+CREATE (:Patient {
+    patient_fname: 'john',
+    patient_lname: 'doe',
+    blood_type: 'a+',
+    phone: '123-456-7890',
+    email: 'john.doe@example.com',
+    gender: 'male',
     policy_number: 'pol001',
-    provider: 'abc insurance',
-    insurance_plan: 'standard plan',
-    co_pay: '50',
-    coverage: 'full coverage',
-    maternity: 'y',
-    dental: 'n',
-    optical: 'y'
+    birthday: date('to_date(1985-07-15')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'jane',
+    patient_lname: 'smith',
+    blood_type: 'o-',
+    phone: '987-654-3210',
+    email: 'jane.smith@example.com',
+    gender: 'female',
     policy_number: 'pol002',
-    provider: 'xyz insurance',
-    insurance_plan: 'premium plan',
-    co_pay: '30',
-    coverage: 'partial coverage',
-    maternity: 'n',
-    dental: 'y',
-    optical: 'y'
+    birthday: date('to_date(1990-03-20')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'michael',
+    patient_lname: 'johnson',
+    blood_type: 'b+',
+    phone: '567-890-1234',
+    email: 'michael.johnson@example.com',
+    gender: 'male',
     policy_number: 'pol003',
-    provider: 'def insurance',
-    insurance_plan: 'basic plan',
-    co_pay: '20',
-    coverage: 'limited coverage',
-    maternity: 'y',
-    dental: 'n',
-    optical: 'n'
+    birthday: date('to_date(1982-11-10')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'emily',
+    patient_lname: 'brown',
+    blood_type: 'ab-',
+    phone: '789-012-3456',
+    email: 'emily.brown@example.com',
+    gender: 'female',
     policy_number: 'pol004',
-    provider: 'ghi insurance',
-    insurance_plan: 'gold plan',
-    co_pay: '40',
-    coverage: 'full coverage',
-    maternity: 'n',
-    dental: 'y',
-    optical: 'y'
+    birthday: date('to_date(1978-04-25')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'william',
+    patient_lname: 'martinez',
+    blood_type: 'a-',
+    phone: '234-567-8901',
+    email: 'william.martinez@example.com',
+    gender: 'male',
     policy_number: 'pol005',
-    provider: 'jkl insurance',
-    insurance_plan: 'silver plan',
-    co_pay: '35',
-    coverage: 'partial coverage',
-    maternity: 'y',
-    dental: 'n',
-    optical: 'y'
+    birthday: date('to_date(1995-09-03')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'sophia',
+    patient_lname: 'garcia',
+    blood_type: 'o+',
+    phone: '890-123-4567',
+    email: 'sophia.garcia@example.com',
+    gender: 'female',
     policy_number: 'pol006',
-    provider: 'mno insurance',
-    insurance_plan: 'bronze plan',
-    co_pay: '25',
-    coverage: 'limited coverage',
-    maternity: 'n',
-    dental: 'y',
-    optical: 'n'
+    birthday: date('to_date(1989-12-18')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'james',
+    patient_lname: 'lopez',
+    blood_type: 'b-',
+    phone: '456-789-0123',
+    email: 'james.lopez@example.com',
+    gender: 'male',
     policy_number: 'pol007',
-    provider: 'pqr insurance',
-    insurance_plan: 'platinum plan',
-    co_pay: '60',
-    coverage: 'full coverage',
-    maternity: 'y',
-    dental: 'y',
-    optical: 'y'
+    birthday: date('to_date(1976-06-30')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'olivia',
+    patient_lname: 'lee',
+    blood_type: 'ab+',
+    phone: '901-234-5678',
+    email: 'olivia.lee@example.com',
+    gender: 'female',
     policy_number: 'pol008',
-    provider: 'stu insurance',
-    insurance_plan: 'family plan',
-    co_pay: '45',
-    coverage: 'partial coverage',
-    maternity: 'y',
-    dental: 'y',
-    optical: 'n'
+    birthday: date('to_date(1987-02-12')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'benjamin',
+    patient_lname: 'gonzalez',
+    blood_type: 'o-',
+    phone: '678-901-2345',
+    email: 'benjamin.gonzalez@example.com',
+    gender: 'male',
     policy_number: 'pol009',
-    provider: 'vwx insurance',
-    insurance_plan: 'corporate plan',
-    co_pay: '55',
-    coverage: 'full coverage',
-    maternity: 'n',
-    dental: 'n',
-    optical: 'y'
+    birthday: date('to_date(1980-08-08')
 });
                 
-CREATE (:Insurance {
+CREATE (:Patient {
+    patient_fname: 'emma',
+    patient_lname: 'perez',
+    blood_type: 'a+',
+    phone: '345-678-9012',
+    email: 'emma.perez@example.com',
+    gender: 'female',
     policy_number: 'pol010',
-    provider: 'yza insurance',
-    insurance_plan: 'student plan',
-    co_pay: '15',
-    coverage: 'limited coverage',
-    maternity: 'n',
-    dental: 'n',
-    optical: 'n'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '1',
-    record_date: 'paracetamol',
-    relation: '50'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '2',
-    record_date: 'ibuprofen',
-    relation: '30'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '3',
-    record_date: 'amoxicillin',
-    relation: '20'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '4',
-    record_date: 'ciprofloxacin',
-    relation: '25'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '5',
-    record_date: 'lisinopril',
-    relation: '40'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '6',
-    record_date: 'atorvastatin',
-    relation: '35'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '7',
-    record_date: 'metformin',
-    relation: '45'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '8',
-    record_date: 'levothyroxine',
-    relation: '40'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '9',
-    record_date: 'simvastatin',
-    relation: '30'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '10',
-    record_date: 'amlodipine',
-    relation: '35'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '11',
-    record_date: 'hydrochlorothiazide',
-    relation: '25'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '12',
-    record_date: 'losartan',
-    relation: '30'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '13',
-    record_date: 'azithromycin',
-    relation: '20'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '14',
-    record_date: 'omeprazole',
-    relation: '40'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '15',
-    record_date: 'prednisone',
-    relation: '35'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '16',
-    record_date: 'metoprolol',
-    relation: '30'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '17',
-    record_date: 'warfarin',
-    relation: '25'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '18',
-    record_date: 'fluoxetine',
-    relation: '20'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '19',
-    record_date: 'alprazolam',
-    relation: '25'
-});
-                
-CREATE (:Emergency_contact {
-    condition: '20',
-    record_date: 'hydrocodone',
-    relation: '30'
-});
-                
-CREATE (:Room {
-    room_type: 'single',
-    room_cost: '100'
-});
-                
-CREATE (:Room {
-    room_type: 'double',
-    room_cost: '150'
-});
-                
-CREATE (:Room {
-    room_type: 'suite',
-    room_cost: '250'
-});
-                
-CREATE (:Room {
-    room_type: 'standard',
-    room_cost: '80'
-});
-                
-CREATE (:Room {
-    room_type: 'deluxe',
-    room_cost: '200'
-});
-                
-CREATE (:Room {
-    room_type: 'vip',
-    room_cost: '300'
-});
-                
-CREATE (:Room {
-    room_type: 'economy',
-    room_cost: '70'
-});
-                
-CREATE (:Room {
-    room_type: 'family',
-    room_cost: '180'
-});
-                
-CREATE (:Room {
-    room_type: 'penthouse',
-    room_cost: '500'
-});
-                
-CREATE (:Room {
-    room_type: 'executive',
-    room_cost: '400'
-});
-                
-CREATE (:Room {
-    room_type: 'single',
-    room_cost: '120'
-});
-                
-CREATE (:Room {
-    room_type: 'double',
-    room_cost: '180'
-});
-                
-CREATE (:Room {
-    room_type: 'suite',
-    room_cost: '280'
-});
-                
-CREATE (:Room {
-    room_type: 'standard',
-    room_cost: '90'
-});
-                
-CREATE (:Room {
-    room_type: 'deluxe',
-    room_cost: '220'
-});
-                
-CREATE (:Room {
-    room_type: 'vip',
-    room_cost: '320'
-});
-                
-CREATE (:Room {
-    room_type: 'economy',
-    room_cost: '80'
-});
-                
-CREATE (:Room {
-    room_type: 'family',
-    room_cost: '200'
-});
-                
-CREATE (:Room {
-    room_type: 'penthouse',
-    room_cost: '550'
-});
-                
-CREATE (:Room {
-    room_type: 'executive',
-    room_cost: '420'
-});
-                
-CREATE (:Room {
-    room_type: 'single',
-    room_cost: '100'
-});
-                
-CREATE (:Room {
-    room_type: 'double',
-    room_cost: '150'
-});
-                
-CREATE (:Room {
-    room_type: 'suite',
-    room_cost: '250'
-});
-                
-CREATE (:Room {
-    room_type: 'standard',
-    room_cost: '80'
-});
-                
-CREATE (:Room {
-    room_type: 'deluxe',
-    room_cost: '200'
-});
-                
-CREATE (:Room {
-    room_type: 'vip',
-    room_cost: '300'
-});
-                
-CREATE (:Room {
-    room_type: 'economy',
-    room_cost: '70'
-});
-                
-CREATE (:Room {
-    room_type: 'family',
-    room_cost: '180'
-});
-                
-CREATE (:Room {
-    room_type: 'penthouse',
-    room_cost: '500'
-});
-                
-CREATE (:Room {
-    room_type: 'executive',
-    room_cost: '400'
-});
-                
-CREATE (:Room {
-    room_type: 'single',
-    room_cost: '120'
-});
-                
-CREATE (:Room {
-    room_type: 'double',
-    room_cost: '180'
-});
-                
-CREATE (:Room {
-    room_type: 'suite',
-    room_cost: '280'
-});
-                
-CREATE (:Room {
-    room_type: 'standard',
-    room_cost: '90'
-});
-                
-CREATE (:Room {
-    room_type: 'deluxe',
-    room_cost: '220'
-});
-                
-CREATE (:Room {
-    room_type: 'vip',
-    room_cost: '320'
-});
-                
-CREATE (:Room {
-    room_type: 'economy',
-    room_cost: '80'
-});
-                
-CREATE (:Room {
-    room_type: 'family',
-    room_cost: '200'
-});
-                
-CREATE (:Room {
-    room_type: 'penthouse',
-    room_cost: '550'
-});
-                
-CREATE (:Room {
-    room_type: 'executive',
-    room_cost: '420'
-});
-                
-CREATE (:Room {
-    room_type: 'single',
-    room_cost: '100'
-});
-                
-CREATE (:Room {
-    room_type: 'double',
-    room_cost: '150'
-});
-                
-CREATE (:Room {
-    room_type: 'suite',
-    room_cost: '250'
-});
-                
-CREATE (:Room {
-    room_type: 'standard',
-    room_cost: '80'
-});
-                
-CREATE (:Room {
-    room_type: 'deluxe',
-    room_cost: '200'
-});
-                
-CREATE (:Room {
-    room_type: 'vip',
-    room_cost: '300'
-});
-                
-CREATE (:Room {
-    room_type: 'economy',
-    room_cost: '70'
-});
-                
-CREATE (:Room {
-    room_type: 'family',
-    room_cost: '180'
-});
-                
-CREATE (:Room {
-    room_type: 'penthouse',
-    room_cost: '500'
-});
-                
-CREATE (:Room {
-    room_type: 'executive',
-    room_cost: '400'
-});
-                
-CREATE (:Room {
-    room_type: 'single',
-    room_cost: '120'
-});
-                
-CREATE (:Room {
-    room_type: 'double',
-    room_cost: '180'
-});
-                
-CREATE (:Room {
-    room_type: 'suite',
-    room_cost: '280'
-});
-                
-CREATE (:Room {
-    room_type: 'standard',
-    room_cost: '90'
-});
-                
-CREATE (:Room {
-    room_type: 'deluxe',
-    room_cost: '220'
-});
-                
-CREATE (:Room {
-    room_type: 'vip',
-    room_cost: '320'
-});
-                
-CREATE (:Room {
-    room_type: 'economy',
-    room_cost: '80'
-});
-                
-CREATE (:Room {
-    room_type: 'family',
-    room_cost: '200'
-});
-                
-CREATE (:Room {
-    room_type: 'penthouse',
-    room_cost: '550'
-});
-                
-CREATE (:Room {
-    room_type: 'executive',
-    room_cost: '420'
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'john doe',
+    birthday: date('to_date(1992-01-05')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'jacob',
+    patient_lname: 'rodriguez',
+    blood_type: 'b+',
+    phone: '123-123-1234',
+    email: 'jacob.rodriguez@example.com',
+    gender: 'male',
+    policy_number: 'pol001',
+    birthday: date('to_date(1983-10-22')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'isabella',
+    patient_lname: 'hernandez',
+    blood_type: 'ab-',
+    phone: '456-456-4567',
+    email: 'isabella.hernandez@example.com',
+    gender: 'female',
+    policy_number: 'pol002',
+    birthday: date('to_date(1986-05-17')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ethan',
+    patient_lname: 'lopez',
+    blood_type: 'a-',
+    phone: '789-789-7890',
+    email: 'ethan.lopez@example.com',
+    gender: 'male',
+    policy_number: 'pol003',
+    birthday: date('to_date(1984-08-29')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'mia',
+    patient_lname: 'gomez',
+    blood_type: 'o+',
     phone: '111-222-3333',
-    relation: 'father',
-    idpatient: '1',
+    email: 'mia.gomez@example.com',
+    gender: 'female',
+    policy_number: 'pol004',
+    birthday: date('to_date(1998-03-14')
 });
                 
-CREATE (:Emergency_contact {
-    contact_name: 'jane smith',
-    phone: '222-333-4444',
-    relation: 'mother',
-    idpatient: '2',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'alice johnson',
-    phone: '333-444-5555',
-    relation: 'sister',
-    idpatient: '3',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'bob brown',
+CREATE (:Patient {
+    patient_fname: 'alexander',
+    patient_lname: 'diaz',
+    blood_type: 'b-',
     phone: '444-555-6666',
-    relation: 'brother',
-    idpatient: '4',
+    email: 'alexander.diaz@example.com',
+    gender: 'male',
+    policy_number: 'pol005',
+    birthday: date('to_date(1992-05-18')
 });
                 
-CREATE (:Emergency_contact {
-    contact_name: 'sarah wilson',
-    phone: '555-666-7777',
-    relation: 'spouse',
-    idpatient: '5',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'michael clark',
-    phone: '666-777-8888',
-    relation: 'friend',
-    idpatient: '6',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'emily white',
+CREATE (:Patient {
+    patient_fname: 'ava',
+    patient_lname: 'rivera',
+    blood_type: 'ab+',
     phone: '777-888-9999',
-    relation: 'relative',
-    idpatient: '7',
+    email: 'ava.rivera@example.com',
+    gender: 'female',
+    policy_number: 'pol006',
+    birthday: date('to_date(1987-09-21')
 });
                 
-CREATE (:Emergency_contact {
-    contact_name: 'david lee',
-    phone: '888-999-0000',
-    relation: 'parent',
-    idpatient: '8',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'jennifer martinez',
-    phone: '999-000-1111',
-    relation: 'sibling',
-    idpatient: '9',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'daniel harris',
-    phone: '000-111-2222',
-    relation: 'friend',
-    idpatient: '10',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'emma thompson',
-    phone: '111-222-3323',
-    relation: 'sibling',
-    idpatient: '1',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'matthew evans',
-    phone: '222-333-4444',
-    relation: 'spouse',
-    idpatient: '7',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'olivia rodriguez',
+CREATE (:Patient {
+    patient_fname: 'william',
+    patient_lname: 'smith',
+    blood_type: 'o-',
     phone: '333-444-5555',
-    relation: 'parent',
-    idpatient: '4',
+    email: 'william.smith@example.com',
+    gender: 'male',
+    policy_number: 'pol007',
+    birthday: date('to_date(1980-03-12')
 });
                 
-CREATE (:Emergency_contact {
-    contact_name: 'james wilson',
-    phone: '444-555-6666',
-    relation: 'sibling',
-    idpatient: '6',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'ava anderson',
-    phone: '555-666-7777',
-    relation: 'friend',
-    idpatient: '7',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'logan taylor',
+CREATE (:Patient {
+    patient_fname: 'sophia',
+    patient_lname: 'gonzalez',
+    blood_type: 'a+',
     phone: '666-777-8888',
-    relation: 'spouse',
-    idpatient: '77',
+    email: 'sophia.gonzalez@example.com',
+    gender: 'female',
+    policy_number: 'pol008',
+    birthday: date('to_date(1988-11-25')
 });
                 
-CREATE (:Emergency_contact {
-    contact_name: 'sophia scott',
-    phone: '777-888-9999',
-    relation: 'relative',
-    idpatient: '66',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'ethan lewis',
-    phone: '888-999-0000',
-    relation: 'sibling',
-    idpatient: '55',
-});
-                
-CREATE (:Emergency_contact {
-    contact_name: 'mia martinez',
+CREATE (:Patient {
+    patient_fname: 'michael',
+    patient_lname: 'martinez',
+    blood_type: 'b+',
     phone: '999-000-1111',
-    relation: 'parent',
-    idpatient: '44',
+    email: 'michael.martinez@example.com',
+    gender: 'male',
+    policy_number: 'pol009',
+    birthday: date('to_date(1975-08-03')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'olivia',
+    patient_lname: 'perez',
+    blood_type: 'ab-',
+    phone: '222-333-4444',
+    email: 'olivia.perez@example.com',
+    gender: 'female',
+    policy_number: 'pol002',
+    birthday: date('to_date(1996-02-14')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'liam',
+    patient_lname: 'torres',
+    blood_type: 'a-',
+    phone: '123-456-7890',
+    email: 'liam.torres@example.com',
+    gender: 'male',
+    policy_number: 'pol001',
+    birthday: date('to_date(1991-07-08')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'emma',
+    patient_lname: 'flores',
+    blood_type: 'o+',
+    phone: '234-567-8901',
+    email: 'emma.flores@example.com',
+    gender: 'female',
+    policy_number: 'pol002',
+    birthday: date('to_date(1983-11-30')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'noah',
+    patient_lname: 'ramirez',
+    blood_type: 'b+',
+    phone: '345-678-9012',
+    email: 'noah.ramirez@example.com',
+    gender: 'male',
+    policy_number: 'pol003',
+    birthday: date('to_date(1979-09-05')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'olivia',
+    patient_lname: 'gutierrez',
+    blood_type: 'ab-',
+    phone: '456-789-0123',
+    email: 'olivia.gutierrez@example.com',
+    gender: 'female',
+    policy_number: 'pol004',
+    birthday: date('to_date(1986-04-18')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'william',
+    patient_lname: 'nguyen',
+    blood_type: 'a+',
+    phone: '567-890-1234',
+    email: 'william.nguyen@example.com',
+    gender: 'male',
+    policy_number: 'pol005',
+    birthday: date('to_date(1990-12-02')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ava',
+    patient_lname: 'tran',
+    blood_type: 'b-',
+    phone: '678-901-2345',
+    email: 'ava.tran@example.com',
+    gender: 'female',
+    policy_number: 'pol006',
+    birthday: date('to_date(1984-05-15')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'james',
+    patient_lname: 'kim',
+    blood_type: 'ab+',
+    phone: '789-012-3456',
+    email: 'james.kim@example.com',
+    gender: 'male',
+    policy_number: 'pol007',
+    birthday: date('to_date(1981-10-20')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'sophia',
+    patient_lname: 'le',
+    blood_type: 'o-',
+    phone: '890-123-4567',
+    email: 'sophia.le@example.com',
+    gender: 'female',
+    policy_number: 'pol008',
+    birthday: date('to_date(1977-06-25')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'logan',
+    patient_lname: 'do',
+    blood_type: 'a-',
+    phone: '901-234-5678',
+    email: 'logan.do@example.com',
+    gender: 'male',
+    policy_number: 'pol009',
+    birthday: date('to_date(1993-08-08')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'amelia',
+    patient_lname: 'huynh',
+    blood_type: 'b+',
+    phone: '012-345-6789',
+    email: 'amelia.huynh@example.com',
+    gender: 'female',
+    policy_number: 'pol002',
+    birthday: date('to_date(1989-01-18')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ethan',
+    patient_lname: 'vo',
+    blood_type: 'o-',
+    phone: '123-456-7890',
+    email: 'ethan.vo@example.com',
+    gender: 'male',
+    policy_number: 'pol001',
+    birthday: date('to_date(1978-04-22')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'isabella',
+    patient_lname: 'phan',
+    blood_type: 'a+',
+    phone: '234-567-8901',
+    email: 'isabella.phan@example.com',
+    gender: 'female',
+    policy_number: 'pol002',
+    birthday: date('to_date(1995-09-13')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'mason',
+    patient_lname: 'duong',
+    blood_type: 'b-',
+    phone: '345-678-9012',
+    email: 'mason.duong@example.com',
+    gender: 'male',
+    policy_number: 'pol003',
+    birthday: date('to_date(1982-11-28')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'oliver',
+    patient_lname: 'truong',
+    blood_type: 'ab+',
+    phone: '456-789-0123',
+    email: 'oliver.truong@example.com',
+    gender: 'male',
+    policy_number: 'pol004',
+    birthday: date('to_date(1974-10-07')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'charlotte',
+    patient_lname: 'ngo',
+    blood_type: 'o+',
+    phone: '567-890-1234',
+    email: 'charlotte.ngo@example.com',
+    gender: 'female',
+    policy_number: 'pol005',
+    birthday: date('to_date(1983-05-21')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'lucas',
+    patient_lname: 'vuong',
+    blood_type: 'b+',
+    phone: '678-901-2345',
+    email: 'lucas.vuong@example.com',
+    gender: 'male',
+    policy_number: 'pol006',
+    birthday: date('to_date(1980-12-15')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'amelia',
+    patient_lname: 'pham',
+    blood_type: 'a-',
+    phone: '789-012-3456',
+    email: 'amelia.pham@example.com',
+    gender: 'female',
+    policy_number: 'pol007',
+    birthday: date('to_date(1977-09-28')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'benjamin',
+    patient_lname: 'le',
+    blood_type: 'ab-',
+    phone: '890-123-4567',
+    email: 'benjamin.le@example.com',
+    gender: 'male',
+    policy_number: 'pol008',
+    birthday: date('to_date(1975-04-14')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'evelyn',
+    patient_lname: 'bui',
+    blood_type: 'b-',
+    phone: '901-234-5678',
+    email: 'evelyn.bui@example.com',
+    gender: 'female',
+    policy_number: 'pol009',
+    birthday: date('to_date(1990-11-30')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'alexander',
+    patient_lname: 'ho',
+    blood_type: 'a+',
+    phone: '012-345-6789',
+    email: 'alexander.ho@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('to_date(1988-08-25')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'sophia',
+    patient_lname: 'nguyen',
+    blood_type: 'o+',
+    phone: '123-456-7890',
+    email: 'sophia.nguyen@example.com',
+    gender: 'female',
+    policy_number: 'pol001',
+    birthday: date('to_date(1982-03-17')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'jackson',
+    patient_lname: 'tran',
+    blood_type: 'a-',
+    phone: '234-567-8901',
+    email: 'jackson.tran@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('to_date(1989-10-10')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'madison',
+    patient_lname: 'dinh',
+    blood_type: 'ab+',
+    phone: '345-678-9012',
+    email: 'madison.dinh@example.com',
+    gender: 'female',
+    policy_number: 'pol003',
+    birthday: date('to_date(1985-07-05')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'aiden',
+    patient_lname: 'vo',
+    blood_type: 'b+',
+    phone: '456-789-0123',
+    email: 'aiden.vo@example.com',
+    gender: 'male',
+    policy_number: 'pol004',
+    birthday: date('to_date(1979-02-18')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'scarlett',
+    patient_lname: 'huynh',
+    blood_type: 'o-',
+    phone: '567-890-1234',
+    email: 'scarlett.huynh@example.com',
+    gender: 'female',
+    policy_number: 'pol005',
+    birthday: date('to_date(1986-11-27')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'daniel',
+    patient_lname: 'do',
+    blood_type: 'a+',
+    phone: '678-901-2345',
+    email: 'daniel.do@example.com',
+    gender: 'male',
+    policy_number: 'pol006',
+    birthday: date('to_date(1983-08-07')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'victoria',
+    patient_lname: 'lam',
+    blood_type: 'b-',
+    phone: '789-012-3456',
+    email: 'victoria.lam@example.com',
+    gender: 'female',
+    policy_number: 'pol007',
+    birthday: date('1983-09-20')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'joseph',
+    patient_lname: 'mai',
+    blood_type: 'ab-',
+    phone: '890-123-4567',
+    email: 'joseph.mai@example.com',
+    gender: 'male',
+    policy_number: 'pol008',
+    birthday: date('1977-08-15')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'natalie',
+    patient_lname: 'trinh',
+    blood_type: 'o+',
+    phone: '901-234-5678',
+    email: 'natalie.trinh@example.com',
+    gender: 'female',
+    policy_number: 'pol009',
+    birthday: date('1990-05-08')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'samuel',
+    patient_lname: 'vo',
+    blood_type: 'a-',
+    phone: '012-345-6789',
+    email: 'samuel.vo@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1985-11-25')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'olivia',
+    patient_lname: 'nguyen',
+    blood_type: 'ab+',
+    phone: '123-450-9876',
+    email: 'olivia.nguyen@example.com',
+    gender: 'female',
+    policy_number: 'pol001',
+    birthday: date('1987-04-12')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ethan',
+    patient_lname: 'tran',
+    blood_type: 'b+',
+    phone: '234-509-8765',
+    email: 'ethan.tran@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1992-02-03')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'emma',
+    patient_lname: 'dinh',
+    blood_type: 'o-',
+    phone: '345-098-7654',
+    email: 'emma.dinh@example.com',
+    gender: 'female',
+    policy_number: 'pol003',
+    birthday: date('1988-07-17')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'noah',
+    patient_lname: 'vo',
+    blood_type: 'a+',
+    phone: '450-987-6543',
+    email: 'noah.vo@example.com',
+    gender: 'male',
+    policy_number: 'pol004',
+    birthday: date('1983-12-05')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'isabella',
+    patient_lname: 'huynh',
+    blood_type: 'ab-',
+    phone: '509-876-5432',
+    email: 'isabella.huynh@example.com',
+    gender: 'female',
+    policy_number: 'pol005',
+    birthday: date('1984-10-30')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'william',
+    patient_lname: 'do',
+    blood_type: 'b-',
+    phone: '098-765-4321',
+    email: 'william.do@example.com',
+    gender: 'male',
+    policy_number: 'pol006',
+    birthday: date('1990-01-14')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'sophia',
+    patient_lname: 'lam',
+    blood_type: 'o+',
+    phone: '987-654-3210',
+    email: 'sophia.lam@example.com',
+    gender: 'female',
+    policy_number: 'pol007',
+    birthday: date('1986-06-28')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'james',
+    patient_lname: 'mai',
+    blood_type: 'a-',
+    phone: '876-543-2109',
+    email: 'james.mai@example.com',
+    gender: 'male',
+    policy_number: 'pol008',
+    birthday: date('1982-09-03')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'charlotte',
+    patient_lname: 'trinh',
+    blood_type: 'ab+',
+    phone: '765-432-1098',
+    email: 'charlotte.trinh@example.com',
+    gender: 'female',
+    policy_number: 'pol009',
+    birthday: date('1995-03-22')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'logan',
+    patient_lname: 'vo',
+    blood_type: 'b+',
+    phone: '654-321-0987',
+    email: 'logan.vo@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1993-08-18')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ava',
+    patient_lname: 'nguyen',
+    blood_type: 'o+',
+    phone: '543-210-9876',
+    email: 'ava.nguyen@example.com',
+    gender: 'female',
+    policy_number: 'pol001',
+    birthday: date('1989-05-27')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'mason',
+    patient_lname: 'pham',
+    blood_type: 'a-',
+    phone: '432-109-8765',
+    email: 'mason.pham@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1981-11-11')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'harper',
+    patient_lname: 'ho',
+    blood_type: 'b+',
+    phone: '321-098-7654',
+    email: 'harper.ho@example.com',
+    gender: 'female',
+    policy_number: 'pol003',
+    birthday: date('1987-07-07')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'elijah',
+    patient_lname: 'truong',
+    blood_type: 'ab-',
+    phone: '210-987-6543',
+    email: 'elijah.truong@example.com',
+    gender: 'male',
+    policy_number: 'pol004',
+    birthday: date('1980-01-30')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'amelia',
+    patient_lname: 'le',
+    blood_type: 'o-',
+    phone: '109-876-5432',
+    email: 'amelia.le@example.com',
+    gender: 'female',
+    policy_number: 'pol005',
+    birthday: date('1988-04-15')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'benjamin',
+    patient_lname: 'ngo',
+    blood_type: 'b-',
+    phone: '098-765-4321',
+    email: 'benjamin.ngo@example.com',
+    gender: 'male',
+    policy_number: 'pol006',
+    birthday: date('1994-10-12')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'evelyn',
+    patient_lname: 'ly',
+    blood_type: 'ab+',
+    phone: '987-654-3210',
+    email: 'evelyn.ly@example.com',
+    gender: 'female',
+    policy_number: 'pol007',
+    birthday: date('1993-07-08')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'alexander',
+    patient_lname: 'dang',
+    blood_type: 'a+',
+    phone: '876-543-2109',
+    email: 'alexander.dang@example.com',
+    gender: 'male',
+    policy_number: 'pol008',
+    birthday: date('1988-12-25')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'abigail',
+    patient_lname: 'vuong',
+    blood_type: 'o+',
+    phone: '765-432-1098',
+    email: 'abigail.vuong@example.com',
+    gender: 'female',
+    policy_number: 'pol009',
+    birthday: date('1986-09-10')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'michael',
+    patient_lname: 'duong',
+    blood_type: 'b+',
+    phone: '654-321-0987',
+    email: 'michael.duong@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1991-04-28')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'olivia',
+    patient_lname: 'tran',
+    blood_type: 'o-',
+    phone: '987-654-3210',
+    email: 'olivia.tran@example.com',
+    gender: 'female',
+    policy_number: 'pol001',
+    birthday: date('1985-08-14')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'james',
+    patient_lname: 'vo',
+    blood_type: 'a-',
+    phone: '876-543-2109',
+    email: 'james.vo@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1983-01-18')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'emma',
+    patient_lname: 'luu',
+    blood_type: 'b+',
+    phone: '765-432-1098',
+    email: 'emma.luu@example.com',
+    gender: 'female',
+    policy_number: 'pol003',
+    birthday: date('1982-06-07')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'lucas',
+    patient_lname: 'ha',
+    blood_type: 'ab+',
+    phone: '654-321-0987',
+    email: 'lucas.ha@example.com',
+    gender: 'male',
+    policy_number: 'pol004',
+    birthday: date('1992-11-20')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'avery',
+    patient_lname: 'hoang',
+    blood_type: 'o+',
+    phone: '543-210-9876',
+    email: 'avery.hoang@example.com',
+    gender: 'female',
+    policy_number: 'pol005',
+    birthday: date('1989-03-02')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'william',
+    patient_lname: 'bui',
+    blood_type: 'a+',
+    phone: '432-109-8765',
+    email: 'william.bui@example.com',
+    gender: 'male',
+    policy_number: 'pol006',
+    birthday: date('1994-07-15')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'sophia',
+    patient_lname: 'phan',
+    blood_type: 'b-',
+    phone: '321-098-7654',
+    email: 'sophia.phan@example.com',
+    gender: 'female',
+    policy_number: 'pol007',
+    birthday: date('1987-10-29')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'logan',
+    patient_lname: 'trinh',
+    blood_type: 'ab-',
+    phone: '210-987-6543',
+    email: 'logan.trinh@example.com',
+    gender: 'male',
+    policy_number: 'pol008',
+    birthday: date('1980-05-06')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'mia',
+    patient_lname: 'nguyen',
+    blood_type: 'o-',
+    phone: '109-876-5432',
+    email: 'mia.nguyen@example.com',
+    gender: 'female',
+    policy_number: 'pol009',
+    birthday: date('1983-12-25')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'benjamin',
+    patient_lname: 'vu',
+    blood_type: 'a-',
+    phone: '098-765-4321',
+    email: 'benjamin.vu@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1992-09-08')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ella',
+    patient_lname: 'le',
+    blood_type: 'o+',
+    phone: '987-654-3210',
+    email: 'ella.le@example.com',
+    gender: 'female',
+    policy_number: 'pol001',
+    birthday: date('1991-06-17')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'alexander',
+    patient_lname: 'ho',
+    blood_type: 'b+',
+    phone: '876-543-2109',
+    email: 'alexander.ho@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1986-02-04')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'sofia',
+    patient_lname: 'pham',
+    blood_type: 'a-',
+    phone: '765-432-1098',
+    email: 'sofia.pham@example.com',
+    gender: 'female',
+    policy_number: 'pol003',
+    birthday: date('1988-09-23')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'henry',
+    patient_lname: 'tran',
+    blood_type: 'ab-',
+    phone: '654-321-0987',
+    email: 'henry.tran@example.com',
+    gender: 'male',
+    policy_number: 'pol004',
+    birthday: date('1985-04-18')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'scarlett',
+    patient_lname: 'dang',
+    blood_type: 'o-',
+    phone: '543-210-9876',
+    email: 'scarlett.dang@example.com',
+    gender: 'female',
+    policy_number: 'pol005',
+    birthday: date('1982-10-31')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'ethan',
+    patient_lname: 'duong',
+    blood_type: 'b+',
+    phone: '432-109-8765',
+    email: 'ethan.duong@example.com',
+    gender: 'male',
+    policy_number: 'pol006',
+    birthday: date('1990-08-15')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'madison',
+    patient_lname: 'nguyen',
+    blood_type: 'a+',
+    phone: '321-098-7654',
+    email: 'madison.nguyen@example.com',
+    gender: 'female',
+    policy_number: 'pol007',
+    birthday: date('1984-12-20')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'jacob',
+    patient_lname: 'lam',
+    blood_type: 'ab+',
+    phone: '210-987-6543',
+    email: 'jacob.lam@example.com',
+    gender: 'male',
+    policy_number: 'pol008',
+    birthday: date('1983-11-17')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'amelia',
+    patient_lname: 'tran',
+    blood_type: 'o+',
+    phone: '109-876-5432',
+    email: 'amelia.tran@example.com',
+    gender: 'female',
+    policy_number: 'pol009',
+    birthday: date('1988-08-29')
+});
+                
+CREATE (:Patient {
+    patient_fname: 'michael',
+    patient_lname: 'do',
+    blood_type: 'a-',
+    phone: '098-765-4321',
+    email: 'michael.do@example.com',
+    gender: 'male',
+    policy_number: 'pol002',
+    birthday: date('1995-01-12')
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''1'',
+    m_name: ''paracetamol'',
+    m_quantity: ''50'',
+    m_cost: ''50''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''2'',
+    m_name: ''ibuprofen'',
+    m_quantity: ''30'',
+    m_cost: ''30''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''3'',
+    m_name: ''amoxicillin'',
+    m_quantity: ''20'',
+    m_cost: ''20''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''4'',
+    m_name: ''ciprofloxacin'',
+    m_quantity: ''25'',
+    m_cost: ''25''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''5'',
+    m_name: ''lisinopril'',
+    m_quantity: ''40'',
+    m_cost: ''40''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''6'',
+    m_name: ''atorvastatin'',
+    m_quantity: ''35'',
+    m_cost: ''35''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''7'',
+    m_name: ''metformin'',
+    m_quantity: ''45'',
+    m_cost: ''45''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''8'',
+    m_name: ''levothyroxine'',
+    m_quantity: ''40'',
+    m_cost: ''40''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''9'',
+    m_name: ''simvastatin'',
+    m_quantity: ''30'',
+    m_cost: ''30''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''10'',
+    m_name: ''amlodipine'',
+    m_quantity: ''35'',
+    m_cost: ''35''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''11'',
+    m_name: ''hydrochlorothiazide'',
+    m_quantity: ''25'',
+    m_cost: ''25''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''12'',
+    m_name: ''losartan'',
+    m_quantity: ''30'',
+    m_cost: ''30''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''13'',
+    m_name: ''azithromycin'',
+    m_quantity: ''20'',
+    m_cost: ''20''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''14'',
+    m_name: ''omeprazole'',
+    m_quantity: ''40'',
+    m_cost: ''40''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''15'',
+    m_name: ''prednisone'',
+    m_quantity: ''35'',
+    m_cost: ''35''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''16'',
+    m_name: ''metoprolol'',
+    m_quantity: ''30'',
+    m_cost: ''30''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''17'',
+    m_name: ''warfarin'',
+    m_quantity: ''25'',
+    m_cost: ''25''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''18'',
+    m_name: ''fluoxetine'',
+    m_quantity: ''20'',
+    m_cost: ''20''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''19'',
+    m_name: ''alprazolam'',
+    m_quantity: ''25'',
+    m_cost: ''25''
+});
+                
+CREATE (:Medicine {
+    idmedicine: ''20'',
+    m_name: ''hydrocodone'',
+    m_quantity: ''30'',
+    m_cost: ''30''
+});
+                
+CREATE (:Room {
+    room_type: ''single'',
+    room_cost: ''100''
+});
+                
+CREATE (:Room {
+    room_type: ''double'',
+    room_cost: ''150''
+});
+                
+CREATE (:Room {
+    room_type: ''suite'',
+    room_cost: ''250''
+});
+                
+CREATE (:Room {
+    room_type: ''standard'',
+    room_cost: ''80''
+});
+                
+CREATE (:Room {
+    room_type: ''deluxe'',
+    room_cost: ''200''
+});
+                
+CREATE (:Room {
+    room_type: ''vip'',
+    room_cost: ''300''
+});
+                
+CREATE (:Room {
+    room_type: ''economy'',
+    room_cost: ''70''
+});
+                
+CREATE (:Room {
+    room_type: ''family'',
+    room_cost: ''180''
+});
+                
+CREATE (:Room {
+    room_type: ''penthouse'',
+    room_cost: ''500''
+});
+                
+CREATE (:Room {
+    room_type: ''executive'',
+    room_cost: ''400''
+});
+                
+CREATE (:Room {
+    room_type: ''single'',
+    room_cost: ''120''
+});
+                
+CREATE (:Room {
+    room_type: ''double'',
+    room_cost: ''180''
+});
+                
+CREATE (:Room {
+    room_type: ''suite'',
+    room_cost: ''280''
+});
+                
+CREATE (:Room {
+    room_type: ''standard'',
+    room_cost: ''90''
+});
+                
+CREATE (:Room {
+    room_type: ''deluxe'',
+    room_cost: ''220''
+});
+                
+CREATE (:Room {
+    room_type: ''vip'',
+    room_cost: ''320''
+});
+                
+CREATE (:Room {
+    room_type: ''economy'',
+    room_cost: ''80''
+});
+                
+CREATE (:Room {
+    room_type: ''family'',
+    room_cost: ''200''
+});
+                
+CREATE (:Room {
+    room_type: ''penthouse'',
+    room_cost: ''550''
+});
+                
+CREATE (:Room {
+    room_type: ''executive'',
+    room_cost: ''420''
+});
+                
+CREATE (:Room {
+    room_type: ''single'',
+    room_cost: ''100''
+});
+                
+CREATE (:Room {
+    room_type: ''double'',
+    room_cost: ''150''
+});
+                
+CREATE (:Room {
+    room_type: ''suite'',
+    room_cost: ''250''
+});
+                
+CREATE (:Room {
+    room_type: ''standard'',
+    room_cost: ''80''
+});
+                
+CREATE (:Room {
+    room_type: ''deluxe'',
+    room_cost: ''200''
+});
+                
+CREATE (:Room {
+    room_type: ''vip'',
+    room_cost: ''300''
+});
+                
+CREATE (:Room {
+    room_type: ''economy'',
+    room_cost: ''70''
+});
+                
+CREATE (:Room {
+    room_type: ''family'',
+    room_cost: ''180''
+});
+                
+CREATE (:Room {
+    room_type: ''penthouse'',
+    room_cost: ''500''
+});
+                
+CREATE (:Room {
+    room_type: ''executive'',
+    room_cost: ''400''
+});
+                
+CREATE (:Room {
+    room_type: ''single'',
+    room_cost: ''120''
+});
+                
+CREATE (:Room {
+    room_type: ''double'',
+    room_cost: ''180''
+});
+                
+CREATE (:Room {
+    room_type: ''suite'',
+    room_cost: ''280''
+});
+                
+CREATE (:Room {
+    room_type: ''standard'',
+    room_cost: ''90''
+});
+                
+CREATE (:Room {
+    room_type: ''deluxe'',
+    room_cost: ''220''
+});
+                
+CREATE (:Room {
+    room_type: ''vip'',
+    room_cost: ''320''
+});
+                
+CREATE (:Room {
+    room_type: ''economy'',
+    room_cost: ''80''
+});
+                
+CREATE (:Room {
+    room_type: ''family'',
+    room_cost: ''200''
+});
+                
+CREATE (:Room {
+    room_type: ''penthouse'',
+    room_cost: ''550''
+});
+                
+CREATE (:Room {
+    room_type: ''executive'',
+    room_cost: ''420''
+});
+                
+CREATE (:Room {
+    room_type: ''single'',
+    room_cost: ''100''
+});
+                
+CREATE (:Room {
+    room_type: ''double'',
+    room_cost: ''150''
+});
+                
+CREATE (:Room {
+    room_type: ''suite'',
+    room_cost: ''250''
+});
+                
+CREATE (:Room {
+    room_type: ''standard'',
+    room_cost: ''80''
+});
+                
+CREATE (:Room {
+    room_type: ''deluxe'',
+    room_cost: ''200''
+});
+                
+CREATE (:Room {
+    room_type: ''vip'',
+    room_cost: ''300''
+});
+                
+CREATE (:Room {
+    room_type: ''economy'',
+    room_cost: ''70''
+});
+                
+CREATE (:Room {
+    room_type: ''family'',
+    room_cost: ''180''
+});
+                
+CREATE (:Room {
+    room_type: ''penthouse'',
+    room_cost: ''500''
+});
+                
+CREATE (:Room {
+    room_type: ''executive'',
+    room_cost: ''400''
+});
+                
+CREATE (:Room {
+    room_type: ''single'',
+    room_cost: ''120''
+});
+                
+CREATE (:Room {
+    room_type: ''double'',
+    room_cost: ''180''
+});
+                
+CREATE (:Room {
+    room_type: ''suite'',
+    room_cost: ''280''
+});
+                
+CREATE (:Room {
+    room_type: ''standard'',
+    room_cost: ''90''
+});
+                
+CREATE (:Room {
+    room_type: ''deluxe'',
+    room_cost: ''220''
+});
+                
+CREATE (:Room {
+    room_type: ''vip'',
+    room_cost: ''320''
+});
+                
+CREATE (:Room {
+    room_type: ''economy'',
+    room_cost: ''80''
+});
+                
+CREATE (:Room {
+    room_type: ''family'',
+    room_cost: ''200''
+});
+                
+CREATE (:Room {
+    room_type: ''penthouse'',
+    room_cost: ''550''
+});
+                
+CREATE (:Room {
+    room_type: ''executive'',
+    room_cost: ''420''
 });
                 
 CREATE (:Emergency_contact {
-    contact_name: 'noah harris',
-    phone: '000-111-2222',
-    relation: 'friend',
-    idpatient: '22',
+    contact_name: ''john doe'',
+    phone: ''111-222-3333'',
+    relation: ''father'',
+    idpatient: ''1'',
 });
                 
 CREATE (:Emergency_contact {
-    condition: 'flu',
-    record_date: ' '2023-01-15',
-    relation: 'yyyy-mm-dd')'
+    contact_name: ''jane smith'',
+    phone: ''222-333-4444'',
+    relation: ''mother'',
+    idpatient: ''2'',
 });
                 
 CREATE (:Emergency_contact {
-    condition: 'allergy',
-    record_date: ' '2023-03-05',
+    contact_name: ''alice johnson'',
+    phone: ''333-444-5555'',
+    relation: ''sister'',
+    idpatient: ''3'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''bob brown'',
+    phone: ''444-555-6666'',
+    relation: ''brother'',
+    idpatient: ''4'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''sarah wilson'',
+    phone: ''555-666-7777'',
+    relation: ''spouse'',
+    idpatient: ''5'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''michael clark'',
+    phone: ''666-777-8888'',
+    relation: ''friend'',
+    idpatient: ''6'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''emily white'',
+    phone: ''777-888-9999'',
+    relation: ''relative'',
+    idpatient: ''7'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''david lee'',
+    phone: ''888-999-0000'',
+    relation: ''parent'',
+    idpatient: ''8'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''jennifer martinez'',
+    phone: ''999-000-1111'',
+    relation: ''sibling'',
+    idpatient: ''9'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''daniel harris'',
+    phone: ''000-111-2222'',
+    relation: ''friend'',
+    idpatient: ''10'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''emma thompson'',
+    phone: ''111-222-3323'',
+    relation: ''sibling'',
+    idpatient: ''1'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''matthew evans'',
+    phone: ''222-333-4444'',
+    relation: ''spouse'',
+    idpatient: ''7'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''olivia rodriguez'',
+    phone: ''333-444-5555'',
+    relation: ''parent'',
+    idpatient: ''4'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''james wilson'',
+    phone: ''444-555-6666'',
+    relation: ''sibling'',
+    idpatient: ''6'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''ava anderson'',
+    phone: ''555-666-7777'',
+    relation: ''friend'',
+    idpatient: ''7'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''logan taylor'',
+    phone: ''666-777-8888'',
+    relation: ''spouse'',
+    idpatient: ''77'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''sophia scott'',
+    phone: ''777-888-9999'',
+    relation: ''relative'',
+    idpatient: ''66'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''ethan lewis'',
+    phone: ''888-999-0000'',
+    relation: ''sibling'',
+    idpatient: ''55'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''mia martinez'',
+    phone: ''999-000-1111'',
+    relation: ''parent'',
+    idpatient: ''44'',
+});
+                
+CREATE (:Emergency_contact {
+    contact_name: ''noah harris'',
+    phone: ''000-111-2222'',
+    relation: ''friend'',
+    idpatient: ''22'',
+});
+                
+CREATE (:Medical_history {
+    condition: ''flu'',
+    record_date: ' to_date('2023-01-15'',
+    relation: ''yyyy-mm-dd')'
+});
+                
+CREATE (:Medical_history {
+    condition: ''allergy'',
+    record_date: ' to_date('2023-03-05'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'broken arm',
-    record_date: ' '2023-04-20',
+CREATE (:Medical_history {
+    condition: ''broken arm'',
+    record_date: ' to_date('2023-04-20'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'pneumonia',
-    record_date: ' '2023-07-10',
+CREATE (:Medical_history {
+    condition: ''pneumonia'',
+    record_date: ' to_date('2023-07-10'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'headache',
-    record_date: ' '2023-09-08',
+CREATE (:Medical_history {
+    condition: ''headache'',
+    record_date: ' to_date('2023-09-08'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'asthma',
-    record_date: ' '2023-10-15',
+CREATE (:Medical_history {
+    condition: ''asthma'',
+    record_date: ' to_date('2023-10-15'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'diabetes',
-    record_date: ' '2023-12-25',
+CREATE (:Medical_history {
+    condition: ''diabetes'',
+    record_date: ' to_date('2023-12-25'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'hypertension',
-    record_date: ' '2024-02-14',
+CREATE (:Medical_history {
+    condition: ''hypertension'',
+    record_date: ' to_date('2024-02-14'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'arthritis',
-    record_date: ' '2024-04-01',
+CREATE (:Medical_history {
+    condition: ''arthritis'',
+    record_date: ' to_date('2024-04-01'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'migraine',
-    record_date: ' '2024-06-18',
+CREATE (:Medical_history {
+    condition: ''migraine'',
+    record_date: ' to_date('2024-06-18'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'common cold',
-    record_date: ' '2023-02-10',
+CREATE (:Medical_history {
+    condition: ''common cold'',
+    record_date: ' to_date('2023-02-10'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'anxiety',
-    record_date: ' '2023-05-05',
+CREATE (:Medical_history {
+    condition: ''anxiety'',
+    record_date: ' to_date('2023-05-05'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'stomach ulcer',
-    record_date: ' '2023-08-22',
+CREATE (:Medical_history {
+    condition: ''stomach ulcer'',
+    record_date: ' to_date('2023-08-22'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'bronchitis',
-    record_date: ' '2023-10-30',
+CREATE (:Medical_history {
+    condition: ''bronchitis'',
+    record_date: ' to_date('2023-10-30'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'rheumatoid arthritis',
-    record_date: ' '2023-12-10',
+CREATE (:Medical_history {
+    condition: ''rheumatoid arthritis'',
+    record_date: ' to_date('2023-12-10'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'insomnia',
-    record_date: ' '2024-01-18',
+CREATE (:Medical_history {
+    condition: ''insomnia'',
+    record_date: ' to_date('2024-01-18'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'high cholesterol',
-    record_date: ' '2024-03-03',
+CREATE (:Medical_history {
+    condition: ''high cholesterol'',
+    record_date: ' to_date('2024-03-03'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'concussion',
-    record_date: ' '2024-05-20',
+CREATE (:Medical_history {
+    condition: ''concussion'',
+    record_date: ' to_date('2024-05-20'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'gastritis',
-    record_date: ' '2024-07-15',
+CREATE (:Medical_history {
+    condition: ''gastritis'',
+    record_date: ' to_date('2024-07-15'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'osteoporosis',
-    record_date: ' '2024-09-05',
+CREATE (:Medical_history {
+    condition: ''osteoporosis'',
+    record_date: ' to_date('2024-09-05'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'gastritis',
-    record_date: ' '2024-07-15',
+CREATE (:Medical_history {
+    condition: ''gastritis'',
+    record_date: ' to_date('2024-07-15'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'common cold',
-    record_date: ' '2023-02-10',
+CREATE (:Medical_history {
+    condition: ''common cold'',
+    record_date: ' to_date('2023-02-10'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'anxiety',
-    record_date: ' '2023-05-05',
+CREATE (:Medical_history {
+    condition: ''anxiety'',
+    record_date: ' to_date('2023-05-05'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'stomach ulcer',
-    record_date: ' '2023-08-22',
+CREATE (:Medical_history {
+    condition: ''stomach ulcer'',
+    record_date: ' to_date('2023-08-22'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'bronchitis',
-    record_date: ' '2023-10-30',
+CREATE (:Medical_history {
+    condition: ''bronchitis'',
+    record_date: ' to_date('2023-10-30'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
-CREATE (:Emergency_contact {
-    condition: 'rheumatoid arthritis',
-    record_date: ' '2023-12-10',
+CREATE (:Medical_history {
+    condition: ''rheumatoid arthritis'',
+    record_date: ' to_date('2023-12-10'',
     relation: ' 'yyyy-mm-dd')'
 });
                 
+CREATE (:Staff {
+    emp_fname: ''jillian'',
+    emp_lname: ''gordon'',
+    date_joining: '2018-08-25',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''juan14@example.net'',
+    iddepartment: '2018-08-25',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''james'',
+    emp_lname: ''williams'',
+    date_joining: '2018-04-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('23.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2018-04-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''joshua'',
+    emp_lname: ''carter'',
+    date_joining: '2018-03-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''michael82@example.org'',
+    iddepartment: '2018-03-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''joe'',
+    emp_lname: ''ferguson'',
+    date_joining: '2018-08-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''vsullivan@example.org'',
+    iddepartment: '2018-08-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''travis'',
+    emp_lname: ''ramos'',
+    date_joining: '2019-10-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''leah21@example.org'',
+    iddepartment: '2019-10-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''lisa'',
+    emp_lname: ''hayes'',
+    date_joining: '2023-05-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''mprice@example.com'',
+    iddepartment: '2023-05-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''dawn'',
+    emp_lname: ''hopkins'',
+    date_joining: '2019-11-28',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-11-28',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''dawn'',
+    emp_lname: ''roberts'',
+    date_joining: '2019-12-01',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''laurie35@example.net'',
+    iddepartment: '2019-12-01',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jessica'',
+    emp_lname: ''jones'',
+    date_joining: '2019-01-05',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''larrykrause@example.net'',
+    iddepartment: '2019-01-05',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''rachel'',
+    emp_lname: ''wilson'',
+    date_joining: '2019-07-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-07-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''kimberly'',
+    emp_lname: ''blankenship'',
+    date_joining: '2019-01-05',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''melissa35@example.org'',
+    iddepartment: '2019-01-05',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''keith'',
+    emp_lname: ''simmons'',
+    date_joining: '2018-12-01',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''tylerthompson@example.org'',
+    iddepartment: '2018-12-01',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''william'',
+    emp_lname: ''grant'',
+    date_joining: '2019-07-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-07-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''andrew'',
+    emp_lname: ''deleon'',
+    date_joining: '2018-09-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''dominiquemcdaniel@example.com'',
+    iddepartment: '2018-09-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''emily'',
+    emp_lname: ''rowe'',
+    date_joining: '2018-04-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('23.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2018-04-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''kenneth'',
+    emp_lname: ''ayers'',
+    date_joining: '2018-08-25',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''emily66@example.net'',
+    iddepartment: '2018-08-25',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''daniel'',
+    emp_lname: ''mills'',
+    date_joining: '2018-08-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''lthompson@example.org'',
+    iddepartment: '2018-08-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''tina'',
+    emp_lname: ''gilbert'',
+    date_joining: '2019-10-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''danjones@example.net'',
+    iddepartment: '2019-10-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''scott'',
+    emp_lname: ''holmes'',
+    date_joining: '2023-05-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''tammy41@example.net'',
+    iddepartment: '2023-05-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jennifer'',
+    emp_lname: ''ball'',
+    date_joining: '2019-11-28',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-11-28',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''stacy'',
+    emp_lname: ''logan'',
+    date_joining: '2019-12-01',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''uturner@example.net'',
+    iddepartment: '2019-12-01',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jeffrey'',
+    emp_lname: ''jones'',
+    date_joining: '2019-01-05',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''uscott@example.com'',
+    iddepartment: '2019-01-05',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''cheryl'',
+    emp_lname: ''christensen'',
+    date_joining: '2018-12-01',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''morganstephen@example.com'',
+    iddepartment: '2018-12-01',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''james'',
+    emp_lname: ''carpenter'',
+    date_joining: '2019-07-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-07-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''matthew'',
+    emp_lname: ''espinoza'',
+    date_joining: '2018-09-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''roger32@example.net'',
+    iddepartment: '2018-09-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''vickie'',
+    emp_lname: ''gonzalez'',
+    date_joining: '2018-04-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('23.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2018-04-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''denise'',
+    emp_lname: ''acosta'',
+    date_joining: '2018-08-25',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''emilylee@example.org'',
+    iddepartment: '2018-08-25',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''emily'',
+    emp_lname: ''frederick'',
+    date_joining: '2018-08-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''caseyjoseph@example.com'',
+    iddepartment: '2018-08-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''anthony'',
+    emp_lname: ''larson'',
+    date_joining: '2019-10-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''richardsoncheryl@example.org'',
+    iddepartment: '2019-10-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''noah'',
+    emp_lname: ''terry'',
+    date_joining: '2023-05-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''amandabooth@example.net'',
+    iddepartment: '2023-05-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''richard'',
+    emp_lname: ''tran'',
+    date_joining: '2019-11-28',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-11-28',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''nicole'',
+    emp_lname: ''elliott'',
+    date_joining: '2019-12-01',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''miguelrogers@example.org'',
+    iddepartment: '2019-12-01',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''david'',
+    emp_lname: ''barber'',
+    date_joining: '2019-01-05',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''christinawalker@example.net'',
+    iddepartment: '2019-01-05',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''dillon'',
+    emp_lname: ''jones'',
+    date_joining: '2018-12-01',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''joshuajohnson@example.net'',
+    iddepartment: '2018-12-01',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''diamond'',
+    emp_lname: ''gonzalez'',
+    date_joining: '2019-07-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('22.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2019-07-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''deanna'',
+    emp_lname: ''baker'',
+    date_joining: '2018-09-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''mcbridebriana@example.com'',
+    iddepartment: '2018-09-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''teresa'',
+    emp_lname: ''harris'',
+    date_joining: '2018-04-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('23.01.05'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2018-04-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''patrick'',
+    emp_lname: ''sparks'',
+    date_joining: '2018-08-25',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''nelsonmark@example.org'',
+    iddepartment: '2018-08-25',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''lance'',
+    emp_lname: ''scott'',
+    date_joining: '2018-08-10',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''peterdavis@example.com'',
+    iddepartment: '2018-08-10',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''chelsea'',
+    emp_lname: ''dodson'',
+    date_joining: '2019-10-15',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''daviscody@example.net'',
+    iddepartment: '2019-10-15',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''juan'',
+    emp_lname: ''harris'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''fryrenee@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''donna'',
+    emp_lname: ''adams'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''christopher30@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''emily'',
+    emp_lname: ''ryan'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''mccormickbriana@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jacob'',
+    emp_lname: ''henry'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''vanessabailey@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''joseph'',
+    emp_lname: ''jones'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''cshepard@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''allison'',
+    emp_lname: ''miller'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''zrichardson@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jason'',
+    emp_lname: ''costa'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''edwardmorrow@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jennifer'',
+    emp_lname: ''haynes'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''joshua90@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''ashley'',
+    emp_lname: ''stein'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''krystal59@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''holly'',
+    emp_lname: ''palmer'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''marygriffin@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''martha'',
+    emp_lname: ''smith'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''rebecca99@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''christian'',
+    emp_lname: ''robertson'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''bushjoshua@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''lisa'',
+    emp_lname: ''dudley'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''kperkins@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jennifer'',
+    emp_lname: ''meyers'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''johnsonluis@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''mr.'',
+    emp_lname: ''matthew'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''lblanchard@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''aaron'',
+    emp_lname: ''turner'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''rodriguezmonica@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''ellen'',
+    emp_lname: ''wright'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''michaellee@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jane'',
+    emp_lname: ''stafford'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''michaelrowe@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''nichole'',
+    emp_lname: ''mckinney'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''phillipswilliam@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''patricia'',
+    emp_lname: ''carrillo'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''nealbrandi@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''edward'',
+    emp_lname: ''allen'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''xadams@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''kendra'',
+    emp_lname: ''russell'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''gregoryjohnson@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''destiny'',
+    emp_lname: ''nicholson'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''dana26@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''alexander'',
+    emp_lname: ''matthews'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''jvelazquez@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jeffrey'',
+    emp_lname: ''vega'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''jayers@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''christina'',
+    emp_lname: ''dalton'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''josebriggs@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''lauren'',
+    emp_lname: ''campbell'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''david'',
+    emp_lname: ''mason'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''maria'',
+    emp_lname: ''gentry'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''deborah'',
+    emp_lname: ''collins'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''michael'',
+    emp_lname: ''peterson'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''william'',
+    emp_lname: ''caldwell'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''linda'',
+    emp_lname: ''white'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''michelle'',
+    emp_lname: ''miller'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'to_date('18.10.02'',
+    ssn: ''rr.mm.dd')',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''sherri'',
+    emp_lname: ''owens'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''austin03@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''robert'',
+    emp_lname: ''day'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''perkinsmaria@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''andrea'',
+    emp_lname: ''levine'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''ianbrown@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''james'',
+    emp_lname: ''harris'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''ofrazier@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''april'',
+    emp_lname: ''gonzalez'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''ymiller@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''chase'',
+    emp_lname: ''west'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''hmassey@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''richard'',
+    emp_lname: ''mendez'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''william33@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''christopher'',
+    emp_lname: ''martinez'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''hberg@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''lee'',
+    emp_lname: ''collins'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''turnerjon@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''jose'',
+    emp_lname: ''romero'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''mwhite@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''ashley'',
+    emp_lname: ''lucas'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''sandovalapril@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''duane'',
+    emp_lname: ''duncan'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''robin66@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''elizabeth'',
+    emp_lname: ''scott'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''nicholasmeyers@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''matthew'',
+    emp_lname: ''luna'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''jeremyvasquez@example.com'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''rebecca'',
+    emp_lname: ''reyes'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''plewis@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''sarah'',
+    emp_lname: ''powell'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''calhounkelly@example.org'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''antonio'',
+    emp_lname: ''mccall'',
+    date_joining: '2014-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''juliakelly@example.net'',
+    iddepartment: '2014-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''sarah'',
+    emp_lname: ''boyd'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''dwatts@example.org'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''david'',
+    emp_lname: ''hawkins'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''michaelwarner@example.com'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''david'',
+    emp_lname: ''chapman'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''garyriley@example.com'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''kimberly'',
+    emp_lname: ''hernandez'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''kingjacob@example.com'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''robert'',
+    emp_lname: ''perez'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''wagnersarah@example.net'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''james'',
+    emp_lname: ''palmer'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''kjackson@example.org'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''joshua'',
+    emp_lname: ''clark'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''samueljones@example.com'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''brittany'',
+    emp_lname: ''collins'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''jennifer69@example.net'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Staff {
+    emp_fname: ''angela'',
+    emp_lname: ''park'',
+    date_joining: '2013-10-02',
+    date_separation: ''rr.mm.dd')',
+    email: 'null',
+    ssn: ''williamsjames@example.net'',
+    iddepartment: '2013-10-02',
+    is_active_status: ''rr.mm.dd')'
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''4''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''5''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''7''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''10''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''12''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''16''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''18''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''20''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''21''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''22''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''23''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''25''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''26''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''27''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''28''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''29''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''31''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''32''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''33''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''35''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''36''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''37''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''38''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''39''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''40''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''41''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''42''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''44''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''45''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''47''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''48''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''50''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''51''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''52''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''53''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''54''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''55''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''58''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''59''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''60''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''61''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''64''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''65''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''67''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''68''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''69''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''72''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''74''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''75''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''77''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''78''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''79''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''80''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''81''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''84''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''86''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''87''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''88''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''90''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''91''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''93''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''94''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''95''
+});
+                
+CREATE (:Nurse {
+    staff_emp_id: ''98''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''43''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''46''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''49''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''70''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''73''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''76''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''97''
+});
+                
+CREATE (:Technician {
+    staff_emp_id: ''100''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''83'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''63'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''6'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''99'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''17'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''24'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''13'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''2'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''85'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''1'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''89'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''57'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''8'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''82'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''66'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''9'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''15'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''34'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''11'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''56'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''96'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''62'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''30'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''14'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''92'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''3'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''19'',
+    qualifications: ''md''
+});
+                
+CREATE (:Doctor {
+    emp_id: ''71'',
+    qualifications: ''phd''
+});
+                
+CREATE (:Episode {
+    patient_idpatient: ''1''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''2''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''3''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''4''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''5''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''6''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''7''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''8''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''9''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''10''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''11''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''12''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''13''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''14''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''15''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''16''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''17''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''18''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''19''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''20''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''21''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''22''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''23''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''24''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''25''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''26''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''27''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''28''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''29''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''31''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''32''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''33''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''34''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''35''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''36''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''37''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''38''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''39''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''40''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''41''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''42''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''43''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''44''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''45''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''46''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''47''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''48''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''49''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''50''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''51''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''52''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''53''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''54''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''55''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''56''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''57''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''58''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''59''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''60''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''61''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''62''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''63''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''64''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''65''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''66''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''67''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''68''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''69''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''70''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''71''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''72''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''73''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''74''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''75''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''76''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''77''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''78''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''79''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''80''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''81''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''82''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''83''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''84''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''85''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''86''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''87''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''88''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''89''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''90''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''85''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''86''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''87''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''88''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''89''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''90''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''50''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''51''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''52''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''53''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''54''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''55''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''56''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''57''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''58''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''59''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''60''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''61''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''62''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''63''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''64''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''65''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''66''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''67''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''68''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''69''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''70''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''71''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''72''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''73''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''74''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''75''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''76''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''77''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''78''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''79''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''80''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''81''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''82''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''83''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''84''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''85''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''86''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''87''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''88''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''89''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''90''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''70''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''71''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''72''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''73''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''74''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''75''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''76''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''77''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''78''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''79''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''80''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''81''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''82''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''83''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''84''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''85''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''86''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''87''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''88''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''89''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''90''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''10''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''11''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''12''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''13''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''14''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''15''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''1''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''2''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''3''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''4''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''5''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''6''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''7''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''8''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''9''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''10''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''11''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''12''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''13''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''14''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''15''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''1''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''2''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''3''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''4''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''5''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''6''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''7''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''8''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''9''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''10''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''11''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''12''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''13''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''14''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
+CREATE (:Episode {
+    patient_idpatient: ''30''
+});
+
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 9,
@@ -8603,6 +11941,706 @@ CREATE (:Prescription {
     idepisode: '46'
 });
                 
+CREATE (:Lab_screening {
+    test_cost: '189.58',
+    test_date: '2022-05-24',
+    idtechnician: '43',
+    episode_idepisode: '115'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '16.96',
+    test_date: '2023-07-27',
+    idtechnician: '46',
+    episode_idepisode: '30'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '13.16',
+    test_date: '2023-09-09',
+    idtechnician: '49',
+    episode_idepisode: '132'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '10.28',
+    test_date: '2023-03-20',
+    idtechnician: '70',
+    episode_idepisode: '80'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '96.67',
+    test_date: '2023-06-01',
+    idtechnician: '73',
+    episode_idepisode: '123'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '115.17',
+    test_date: '2023-05-19',
+    idtechnician: '76',
+    episode_idepisode: '176'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '145.46',
+    test_date: '2023-09-23',
+    idtechnician: '97',
+    episode_idepisode: '41'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '145.54',
+    test_date: '2019-02-19',
+    idtechnician: '100',
+    episode_idepisode: '168'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '93.19',
+    test_date: '2020-11-03',
+    idtechnician: '43',
+    episode_idepisode: '175'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '105.02',
+    test_date: '2023-09-23',
+    idtechnician: '46',
+    episode_idepisode: '41'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '82.11',
+    test_date: '2023-09-02',
+    idtechnician: '49',
+    episode_idepisode: '83'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '131.4',
+    test_date: '2018-12-10',
+    idtechnician: '70',
+    episode_idepisode: '86'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '134.49',
+    test_date: '2020-03-13',
+    idtechnician: '73',
+    episode_idepisode: '120'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '138.3',
+    test_date: '2020-06-27',
+    idtechnician: '76',
+    episode_idepisode: '127'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '39.89',
+    test_date: '2021-04-07',
+    idtechnician: '97',
+    episode_idepisode: '129'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '171.11',
+    test_date: '2022-09-29',
+    idtechnician: '100',
+    episode_idepisode: '95'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '137.38',
+    test_date: '2023-04-25',
+    idtechnician: '43',
+    episode_idepisode: '148'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '180.88',
+    test_date: '2019-12-31',
+    idtechnician: '46',
+    episode_idepisode: '105'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '182.17',
+    test_date: '2020-12-15',
+    idtechnician: '49',
+    episode_idepisode: '57'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '90.29',
+    test_date: '2020-12-15',
+    idtechnician: '70',
+    episode_idepisode: '92'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '69.32',
+    test_date: '2023-12-27',
+    idtechnician: '73',
+    episode_idepisode: '53'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '82.47',
+    test_date: '2023-08-25',
+    idtechnician: '76',
+    episode_idepisode: '162'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '98.45',
+    test_date: '2022-10-21',
+    idtechnician: '97',
+    episode_idepisode: '97'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '17.09',
+    test_date: '2023-08-02',
+    idtechnician: '100',
+    episode_idepisode: '141'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '43.03',
+    test_date: '2023-10-09',
+    idtechnician: '43',
+    episode_idepisode: '81'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '90.97',
+    test_date: '2022-06-18',
+    idtechnician: '46',
+    episode_idepisode: '122'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '27.76',
+    test_date: '2022-01-31',
+    idtechnician: '49',
+    episode_idepisode: '93'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '121.51',
+    test_date: '2022-01-31',
+    idtechnician: '70',
+    episode_idepisode: '93'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '110.89',
+    test_date: '2023-11-13',
+    idtechnician: '73',
+    episode_idepisode: '158'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '43.35',
+    test_date: '2020-05-31',
+    idtechnician: '76',
+    episode_idepisode: '102'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '92.26',
+    test_date: '2023-02-04',
+    idtechnician: '43',
+    episode_idepisode: '108'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '107.98',
+    test_date: '2018-08-13',
+    idtechnician: '46',
+    episode_idepisode: '65'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '110.42',
+    test_date: '2022-11-18',
+    idtechnician: '49',
+    episode_idepisode: '72'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '145.61',
+    test_date: '2019-08-23',
+    idtechnician: '70',
+    episode_idepisode: '100'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '109.61',
+    test_date: '2023-03-20',
+    idtechnician: '73',
+    episode_idepisode: '80'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '121.75',
+    test_date: '2020-12-15',
+    idtechnician: '76',
+    episode_idepisode: '92'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '32.55',
+    test_date: '2018-12-15',
+    idtechnician: '97',
+    episode_idepisode: '37'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '28.27',
+    test_date: '2023-12-22',
+    idtechnician: '100',
+    episode_idepisode: '159'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '67.61',
+    test_date: '2020-09-17',
+    idtechnician: '100',
+    episode_idepisode: '191'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '114.62',
+    test_date: '2019-08-05',
+    idtechnician: '43',
+    episode_idepisode: '152'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '101.3',
+    test_date: '2019-09-19',
+    idtechnician: '46',
+    episode_idepisode: '184'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '186.85',
+    test_date: '2023-08-02',
+    idtechnician: '49',
+    episode_idepisode: '141'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '143.88',
+    test_date: '2023-09-09',
+    idtechnician: '70',
+    episode_idepisode: '132'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '100.64',
+    test_date: '2019-05-06',
+    idtechnician: '73',
+    episode_idepisode: '165'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '64.6',
+    test_date: '2021-05-04',
+    idtechnician: '76',
+    episode_idepisode: '42'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '175.2',
+    test_date: '2020-10-20',
+    idtechnician: '97',
+    episode_idepisode: '52'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '27.29',
+    test_date: '2019-08-23',
+    idtechnician: '100',
+    episode_idepisode: '100'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '29.89',
+    test_date: '2023-01-16',
+    idtechnician: '43',
+    episode_idepisode: '134'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '143.79',
+    test_date: '2023-08-02',
+    idtechnician: '46',
+    episode_idepisode: '141'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '88.82',
+    test_date: '2023-06-01',
+    idtechnician: '49',
+    episode_idepisode: '123'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '195.1',
+    test_date: '2022-10-21',
+    idtechnician: '70',
+    episode_idepisode: '97'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '40.38',
+    test_date: '2019-09-19',
+    idtechnician: '73',
+    episode_idepisode: '184'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '128.04',
+    test_date: '2023-12-01',
+    idtechnician: '76',
+    episode_idepisode: '64'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '193.01',
+    test_date: '2019-10-13',
+    idtechnician: '97',
+    episode_idepisode: '75'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '121.05',
+    test_date: '2021-08-11',
+    idtechnician: '100',
+    episode_idepisode: '36'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '32.61',
+    test_date: '2023-12-27',
+    idtechnician: '43',
+    episode_idepisode: '53'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '97.93',
+    test_date: '2020-03-03',
+    idtechnician: '46',
+    episode_idepisode: '104'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '30.91',
+    test_date: '2019-01-25',
+    idtechnician: '49',
+    episode_idepisode: '143'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '121.78',
+    test_date: '2023-09-09',
+    idtechnician: '70',
+    episode_idepisode: '132'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '197.57',
+    test_date: '2023-08-12',
+    idtechnician: '73',
+    episode_idepisode: '82'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '148.52',
+    test_date: '2023-10-03',
+    idtechnician: '76',
+    episode_idepisode: '91'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '37.73',
+    test_date: '2023-01-16',
+    idtechnician: '97',
+    episode_idepisode: '134'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '53.52',
+    test_date: '2019-08-23',
+    idtechnician: '100',
+    episode_idepisode: '100'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '193.6',
+    test_date: '2019-10-31',
+    idtechnician: '100',
+    episode_idepisode: '178'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '50.63',
+    test_date: '2022-12-12',
+    idtechnician: '43',
+    episode_idepisode: '60'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '181.72',
+    test_date: '2019-11-14',
+    idtechnician: '46',
+    episode_idepisode: '69'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '53.16',
+    test_date: '2021-07-14',
+    idtechnician: '49',
+    episode_idepisode: '48'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '157.04',
+    test_date: '2023-09-21',
+    idtechnician: '70',
+    episode_idepisode: '13'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '156.56',
+    test_date: '2023-07-27',
+    idtechnician: '43',
+    episode_idepisode: '30'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '97.5',
+    test_date: '2021-06-09',
+    idtechnician: '46',
+    episode_idepisode: '33'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '85.73',
+    test_date: '2023-08-16',
+    idtechnician: '49',
+    episode_idepisode: '103'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '38.68',
+    test_date: '2023-02-05',
+    idtechnician: '70',
+    episode_idepisode: '124'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '167.73',
+    test_date: '2019-04-10',
+    idtechnician: '73',
+    episode_idepisode: '29'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '126.05',
+    test_date: '2018-09-11',
+    idtechnician: '43',
+    episode_idepisode: '32'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '180.93',
+    test_date: '2023-12-22',
+    idtechnician: '46',
+    episode_idepisode: '159'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '123.91',
+    test_date: '2023-04-19',
+    idtechnician: '49',
+    episode_idepisode: '188'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '57.68',
+    test_date: '2023-04-19',
+    idtechnician: '70',
+    episode_idepisode: '188'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '115.74',
+    test_date: '2023-05-11',
+    idtechnician: '73',
+    episode_idepisode: '174'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '36.98',
+    test_date: '2019-09-19',
+    idtechnician: '76',
+    episode_idepisode: '184'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '176.82',
+    test_date: '2023-11-11',
+    idtechnician: '97',
+    episode_idepisode: '88'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '169.79',
+    test_date: '2022-10-21',
+    idtechnician: '100',
+    episode_idepisode: '97'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '22.85',
+    test_date: '2020-10-10',
+    idtechnician: '49',
+    episode_idepisode: '58'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '151.88',
+    test_date: '2015-12-05',
+    idtechnician: '70',
+    episode_idepisode: '71'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '38.93',
+    test_date: '2023-12-20',
+    idtechnician: '73',
+    episode_idepisode: '46'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '36.36',
+    test_date: '2023-06-15',
+    idtechnician: '76',
+    episode_idepisode: '28'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '13.32',
+    test_date: '2023-01-28',
+    idtechnician: '43',
+    episode_idepisode: '146'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '130.59',
+    test_date: '2021-03-09',
+    idtechnician: '46',
+    episode_idepisode: '198'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '198.34',
+    test_date: '2019-04-18',
+    idtechnician: '49',
+    episode_idepisode: '2'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '166.52',
+    test_date: '2020-09-16',
+    idtechnician: '70',
+    episode_idepisode: '187'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '31.39',
+    test_date: '2021-01-28',
+    idtechnician: '73',
+    episode_idepisode: '192'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '119.32',
+    test_date: '2020-03-08',
+    idtechnician: '76',
+    episode_idepisode: '166'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '171.07',
+    test_date: '2021-06-09',
+    idtechnician: '97',
+    episode_idepisode: '33'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '55.99',
+    test_date: '2023-09-02',
+    idtechnician: '100',
+    episode_idepisode: '83'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '111.13',
+    test_date: '2023-02-05',
+    idtechnician: '70',
+    episode_idepisode: '124'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '108.23',
+    test_date: '2023-09-23',
+    idtechnician: '73',
+    episode_idepisode: '41'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '141.92',
+    test_date: '2017-12-17',
+    idtechnician: '43',
+    episode_idepisode: '50'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '168.57',
+    test_date: '2021-10-23',
+    idtechnician: '46',
+    episode_idepisode: '20'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '187.03',
+    test_date: '2023-11-13',
+    idtechnician: '49',
+    episode_idepisode: '158'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '57.68',
+    test_date: '2013-12-21',
+    idtechnician: '70',
+    episode_idepisode: '1'
+});
+                
+CREATE (:Lab_screening {
+    test_cost: '21.16',
+    test_date: '2019-09-19',
+    idtechnician: '73',
+    episode_idepisode: '184'
+});
+                
 CREATE (:Appointment {
     scheduled_on: date("2013-11-20"),
     appointment_date: date("2013-12-21"),
@@ -9394,4 +13432,1244 @@ CREATE (:Appointment {
     iddoctor: 9,
     idepisode: 43
 })
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-04-17),
+    discharge_date: date(19.04.18),
+    room_idroom: 1,
+    idepisode: 2,
+    responsible_nurse: 4
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-08-26),
+    discharge_date: date(20.09.15),
+    room_idroom: 2,
+    idepisode: 3,
+    responsible_nurse: 5
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-01-18),
+    discharge_date: date(22.01.23),
+    room_idroom: 3,
+    idepisode: 5,
+    responsible_nurse: 7
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-10-16),
+    discharge_date: date(21.10.29),
+    room_idroom: 4,
+    idepisode: 6,
+    responsible_nurse: 10
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-03-09),
+    discharge_date: date(23.03.18),
+    room_idroom: 5,
+    idepisode: 9,
+    responsible_nurse: 12
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-04-11),
+    discharge_date: date(20.04.23),
+    room_idroom: 6,
+    idepisode: 11,
+    responsible_nurse: 16
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-04-14),
+    discharge_date: date(20.04.21),
+    room_idroom: 7,
+    idepisode: 14,
+    responsible_nurse: 18
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-04-10),
+    discharge_date: date(21.04.18),
+    room_idroom: 8,
+    idepisode: 25,
+    responsible_nurse: 20
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-08-19),
+    discharge_date: date(20.09.06),
+    room_idroom: 9,
+    idepisode: 27,
+    responsible_nurse: 21
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-06-04),
+    discharge_date: date(23.06.18),
+    room_idroom: 10,
+    idepisode: 28,
+    responsible_nurse: 22
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-04-09),
+    discharge_date: date(19.04.10),
+    room_idroom: 11,
+    idepisode: 29,
+    responsible_nurse: 23
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-06-01),
+    discharge_date: date(19.06.08),
+    room_idroom: 12,
+    idepisode: 31,
+    responsible_nurse: 25
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-06-08),
+    discharge_date: date(21.06.19),
+    room_idroom: 13,
+    idepisode: 33,
+    responsible_nurse: 26
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-05-02),
+    discharge_date: date(21.05.11),
+    room_idroom: 14,
+    idepisode: 42,
+    responsible_nurse: 27
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-12-20),
+    discharge_date: date(null),
+    room_idroom: 15,
+    idepisode: 46,
+    responsible_nurse: 28
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-01-05),
+    discharge_date: date(20.01.30),
+    room_idroom: 16,
+    idepisode: 54,
+    responsible_nurse: 29
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-03-12),
+    discharge_date: date(23.03.25),
+    room_idroom: 17,
+    idepisode: 55,
+    responsible_nurse: 31
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-04-20),
+    discharge_date: date(23.04.22),
+    room_idroom: 18,
+    idepisode: 56,
+    responsible_nurse: 32
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-12-02),
+    discharge_date: date(20.12.17),
+    room_idroom: 19,
+    idepisode: 57,
+    responsible_nurse: 33
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-09-14),
+    discharge_date: date(21.09.29),
+    room_idroom: 20,
+    idepisode: 63,
+    responsible_nurse: 35
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-06-21),
+    discharge_date: date(21.07.17),
+    room_idroom: 21,
+    idepisode: 66,
+    responsible_nurse: 36
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-11-07),
+    discharge_date: date(22.11.24),
+    room_idroom: 22,
+    idepisode: 72,
+    responsible_nurse: 37
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-01-22),
+    discharge_date: date(21.02.02),
+    room_idroom: 23,
+    idepisode: 73,
+    responsible_nurse: 38
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-10-06),
+    discharge_date: date(19.10.18),
+    room_idroom: 24,
+    idepisode: 75,
+    responsible_nurse: 39
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-03-09),
+    discharge_date: date(20.04.03),
+    room_idroom: 25,
+    idepisode: 76,
+    responsible_nurse: 40
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-03-26),
+    discharge_date: date(23.03.31),
+    room_idroom: 26,
+    idepisode: 78,
+    responsible_nurse: 41
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-08-12),
+    discharge_date: date(23.08.20),
+    room_idroom: 27,
+    idepisode: 82,
+    responsible_nurse: 42
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-02-02),
+    discharge_date: date(22.03.01),
+    room_idroom: 28,
+    idepisode: 84,
+    responsible_nurse: 44
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-07-12),
+    discharge_date: date(21.07.31),
+    room_idroom: 29,
+    idepisode: 85,
+    responsible_nurse: 45
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-10-11),
+    discharge_date: date(null),
+    room_idroom: 30,
+    idepisode: 89,
+    responsible_nurse: 47
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-01-28),
+    discharge_date: date(22.02.20),
+    room_idroom: 31,
+    idepisode: 93,
+    responsible_nurse: 48
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-09-22),
+    discharge_date: date(22.09.30),
+    room_idroom: 32,
+    idepisode: 95,
+    responsible_nurse: 50
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-05-27),
+    discharge_date: date(23.06.11),
+    room_idroom: 33,
+    idepisode: 96,
+    responsible_nurse: 51
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-07-16),
+    discharge_date: date(23.08.08),
+    room_idroom: 34,
+    idepisode: 99,
+    responsible_nurse: 52
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-09-09),
+    discharge_date: date(22.09.11),
+    room_idroom: 35,
+    idepisode: 101,
+    responsible_nurse: 53
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-05-23),
+    discharge_date: date(20.06.20),
+    room_idroom: 36,
+    idepisode: 102,
+    responsible_nurse: 54
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-02-28),
+    discharge_date: date(20.03.06),
+    room_idroom: 37,
+    idepisode: 104,
+    responsible_nurse: 55
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-12-27),
+    discharge_date: date(20.01.01),
+    room_idroom: 38,
+    idepisode: 105,
+    responsible_nurse: 58
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-04-21),
+    discharge_date: date(19.05.05),
+    room_idroom: 39,
+    idepisode: 107,
+    responsible_nurse: 59
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-05-09),
+    discharge_date: date(21.05.17),
+    room_idroom: 40,
+    idepisode: 109,
+    responsible_nurse: 60
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-06-21),
+    discharge_date: date(21.07.19),
+    room_idroom: 41,
+    idepisode: 111,
+    responsible_nurse: 61
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-08-11),
+    discharge_date: date(22.08.19),
+    room_idroom: 42,
+    idepisode: 112,
+    responsible_nurse: 64
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-03-06),
+    discharge_date: date(21.03.18),
+    room_idroom: 43,
+    idepisode: 113,
+    responsible_nurse: 65
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-05-17),
+    discharge_date: date(22.06.11),
+    room_idroom: 44,
+    idepisode: 115,
+    responsible_nurse: 67
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-02-26),
+    discharge_date: date(22.03.02),
+    room_idroom: 45,
+    idepisode: 116,
+    responsible_nurse: 68
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-10-09),
+    discharge_date: date(21.11.07),
+    room_idroom: 46,
+    idepisode: 117,
+    responsible_nurse: 69
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-06-09),
+    discharge_date: date(21.06.19),
+    room_idroom: 47,
+    idepisode: 119,
+    responsible_nurse: 72
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-03-09),
+    discharge_date: date(20.03.19),
+    room_idroom: 48,
+    idepisode: 120,
+    responsible_nurse: 74
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-06-15),
+    discharge_date: date(22.06.20),
+    room_idroom: 49,
+    idepisode: 122,
+    responsible_nurse: 75
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-01-24),
+    discharge_date: date(19.02.15),
+    room_idroom: 50,
+    idepisode: 125,
+    responsible_nurse: 77
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-07-16),
+    discharge_date: date(21.08.07),
+    room_idroom: 44,
+    idepisode: 126,
+    responsible_nurse: 78
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-06-24),
+    discharge_date: date(20.07.21),
+    room_idroom: 45,
+    idepisode: 127,
+    responsible_nurse: 79
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-04-04),
+    discharge_date: date(21.04.11),
+    room_idroom: 46,
+    idepisode: 129,
+    responsible_nurse: 80
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-07-11),
+    discharge_date: date(23.07.31),
+    room_idroom: 47,
+    idepisode: 131,
+    responsible_nurse: 81
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-09-13),
+    discharge_date: date(21.10.01),
+    room_idroom: 48,
+    idepisode: 133,
+    responsible_nurse: 84
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-07-10),
+    discharge_date: date(22.08.05),
+    room_idroom: 49,
+    idepisode: 135,
+    responsible_nurse: 86
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-12-22),
+    discharge_date: date(23.01.15),
+    room_idroom: 50,
+    idepisode: 136,
+    responsible_nurse: 87
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-12-14),
+    discharge_date: date(22.12.27),
+    room_idroom: 35,
+    idepisode: 137,
+    responsible_nurse: 88
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-08-17),
+    discharge_date: date(20.08.27),
+    room_idroom: 36,
+    idepisode: 138,
+    responsible_nurse: 90
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-05-24),
+    discharge_date: date(21.06.20),
+    room_idroom: 37,
+    idepisode: 139,
+    responsible_nurse: 91
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-10-04),
+    discharge_date: date(20.10.22),
+    room_idroom: 38,
+    idepisode: 140,
+    responsible_nurse: 93
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-10-15),
+    discharge_date: date(20.11.13),
+    room_idroom: 39,
+    idepisode: 142,
+    responsible_nurse: 94
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-01-17),
+    discharge_date: date(19.02.02),
+    room_idroom: 40,
+    idepisode: 143,
+    responsible_nurse: 95
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-04-22),
+    discharge_date: date(20.04.26),
+    room_idroom: 37,
+    idepisode: 145,
+    responsible_nurse: 98
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-01-23),
+    discharge_date: date(23.01.31),
+    room_idroom: 38,
+    idepisode: 146,
+    responsible_nurse: 75
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-05-12),
+    discharge_date: date(20.05.15),
+    room_idroom: 39,
+    idepisode: 147,
+    responsible_nurse: 77
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-01-08),
+    discharge_date: date(21.01.13),
+    room_idroom: 40,
+    idepisode: 150,
+    responsible_nurse: 78
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-07-23),
+    discharge_date: date(19.08.10),
+    room_idroom: 41,
+    idepisode: 152,
+    responsible_nurse: 79
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-07-22),
+    discharge_date: date(21.08.04),
+    room_idroom: 42,
+    idepisode: 153,
+    responsible_nurse: 80
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-12-17),
+    discharge_date: date(23.01.07),
+    room_idroom: 37,
+    idepisode: 156,
+    responsible_nurse: 93
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-11-20),
+    discharge_date: date(22.11.23),
+    room_idroom: 38,
+    idepisode: 161,
+    responsible_nurse: 94
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-06-19),
+    discharge_date: date(19.06.30),
+    room_idroom: 39,
+    idepisode: 164,
+    responsible_nurse: 95
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-05-04),
+    discharge_date: date(19.05.13),
+    room_idroom: 40,
+    idepisode: 165,
+    responsible_nurse: 95
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-02-14),
+    discharge_date: date(20.03.11),
+    room_idroom: 41,
+    idepisode: 166,
+    responsible_nurse: 20
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-04-16),
+    discharge_date: date(20.04.26),
+    room_idroom: 42,
+    idepisode: 167,
+    responsible_nurse: 21
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-02-04),
+    discharge_date: date(19.03.05),
+    room_idroom: 8,
+    idepisode: 168,
+    responsible_nurse: 22
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-02-04),
+    discharge_date: date(19.02.21),
+    room_idroom: 9,
+    idepisode: 169,
+    responsible_nurse: 23
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-06-22),
+    discharge_date: date(19.07.13),
+    room_idroom: 10,
+    idepisode: 170,
+    responsible_nurse: 25
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-11-18),
+    discharge_date: date(21.12.10),
+    room_idroom: 37,
+    idepisode: 171,
+    responsible_nurse: 26
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-01-05),
+    discharge_date: date(20.01.06),
+    room_idroom: 38,
+    idepisode: 172,
+    responsible_nurse: 18
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-09-25),
+    discharge_date: date(21.10.22),
+    room_idroom: 39,
+    idepisode: 173,
+    responsible_nurse: 20
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-11-03),
+    discharge_date: date(20.11.04),
+    room_idroom: 40,
+    idepisode: 175,
+    responsible_nurse: 21
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-04-01),
+    discharge_date: date(19.04.25),
+    room_idroom: 41,
+    idepisode: 177,
+    responsible_nurse: 22
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-10-21),
+    discharge_date: date(19.11.16),
+    room_idroom: 42,
+    idepisode: 178,
+    responsible_nurse: 23
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2022-02-01),
+    discharge_date: date(22.02.27),
+    room_idroom: 6,
+    idepisode: 179,
+    responsible_nurse: 25
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-05-04),
+    discharge_date: date(20.05.15),
+    room_idroom: 6,
+    idepisode: 181,
+    responsible_nurse: 26
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-01-06),
+    discharge_date: date(19.01.11),
+    room_idroom: 7,
+    idepisode: 182,
+    responsible_nurse: 48
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-01-03),
+    discharge_date: date(19.01.13),
+    room_idroom: 8,
+    idepisode: 183,
+    responsible_nurse: 50
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-09-18),
+    discharge_date: date(19.09.25),
+    room_idroom: 9,
+    idepisode: 184,
+    responsible_nurse: 51
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-10-28),
+    discharge_date: date(20.11.09),
+    room_idroom: 10,
+    idepisode: 185,
+    responsible_nurse: 52
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-05-27),
+    discharge_date: date(21.06.22),
+    room_idroom: 37,
+    idepisode: 186,
+    responsible_nurse: 53
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-09-03),
+    discharge_date: date(20.09.27),
+    room_idroom: 38,
+    idepisode: 187,
+    responsible_nurse: 5
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-05-01),
+    discharge_date: date(20.05.05),
+    room_idroom: 39,
+    idepisode: 189,
+    responsible_nurse: 7
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-09-13),
+    discharge_date: date(20.10.12),
+    room_idroom: 40,
+    idepisode: 191,
+    responsible_nurse: 10
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-01-26),
+    discharge_date: date(21.02.06),
+    room_idroom: 41,
+    idepisode: 192,
+    responsible_nurse: 12
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2019-10-24),
+    discharge_date: date(19.10.31),
+    room_idroom: 42,
+    idepisode: 193,
+    responsible_nurse: 16
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-10-11),
+    discharge_date: date(21.10.22),
+    room_idroom: 37,
+    idepisode: 194,
+    responsible_nurse: 18
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2020-01-22),
+    discharge_date: date(20.02.07),
+    room_idroom: 38,
+    idepisode: 195,
+    responsible_nurse: 20
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2023-11-28),
+    discharge_date: date(23.12.11),
+    room_idroom: 39,
+    idepisode: 197,
+    responsible_nurse: 20
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-03-07),
+    discharge_date: date(21.03.23),
+    room_idroom: 40,
+    idepisode: 198,
+    responsible_nurse: 20
+});
+                
+CREATE (:Hospitalization {
+    admission_date: date(2021-03-07),
+    discharge_date: date(21.03.28),
+    room_idroom: 41,
+    idepisode: 199,
+    responsible_nurse: 20
+});
+                
+CREATE (:Bill {
+    room_cost: ''150'',
+    test_cost: ''0'',
+    other_charges: ''3505'',
+    total: ''3655'',
+    idepisode: ''3'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''250'',
+    test_cost: ''0'',
+    other_charges: ''7100'',
+    total: ''7350'',
+    idepisode: ''5'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''80'',
+    test_cost: ''0'',
+    other_charges: ''4490'',
+    total: ''4570'',
+    idepisode: ''6'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''200'',
+    test_cost: ''0'',
+    other_charges: ''7645'',
+    total: ''7845'',
+    idepisode: ''9'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''300'',
+    test_cost: ''0'',
+    other_charges: ''6030'',
+    total: ''6330'',
+    idepisode: ''11'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''70'',
+    test_cost: ''0'',
+    other_charges: ''1910'',
+    total: ''1980'',
+    idepisode: ''14'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''180'',
+    test_cost: ''0'',
+    other_charges: ''370'',
+    total: ''550'',
+    idepisode: ''25'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''500'',
+    test_cost: ''0'',
+    other_charges: ''7870'',
+    total: ''8370'',
+    idepisode: ''27'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''400'',
+    test_cost: ''36.36'',
+    other_charges: ''13060'',
+    total: ''13496.36'',
+    idepisode: ''28'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''120'',
+    test_cost: ''167.73'',
+    other_charges: ''9805'',
+    total: ''10092.73'',
+    idepisode: ''29'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''180'',
+    test_cost: ''0'',
+    other_charges: ''160'',
+    total: ''340'',
+    idepisode: ''31'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''280'',
+    test_cost: ''268.57'',
+    other_charges: ''10795'',
+    total: ''11343.57'',
+    idepisode: ''33'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''90'',
+    test_cost: ''64.6'',
+    other_charges: ''7450'',
+    total: ''7604.6'',
+    idepisode: ''42'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''320'',
+    test_cost: ''0'',
+    other_charges: ''2880'',
+    total: ''3200'',
+    idepisode: ''54'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''80'',
+    test_cost: ''0'',
+    other_charges: ''7500'',
+    total: ''7580'',
+    idepisode: ''55'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''200'',
+    test_cost: ''0'',
+    other_charges: ''1780'',
+    total: ''1980'',
+    idepisode: ''56'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''550'',
+    test_cost: ''182.17'',
+    other_charges: ''7670'',
+    total: ''8402.17'',
+    idepisode: ''57'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''420'',
+    test_cost: ''0'',
+    other_charges: ''1300'',
+    total: ''1720'',
+    idepisode: ''63'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''100'',
+    test_cost: ''0'',
+    other_charges: ''160'',
+    total: ''260'',
+    idepisode: ''66'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''150'',
+    test_cost: ''110.42'',
+    other_charges: ''1460'',
+    total: ''1720.42'',
+    idepisode: ''72'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''250'',
+    test_cost: ''0'',
+    other_charges: ''840'',
+    total: ''1090'',
+    idepisode: ''73'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''80'',
+    test_cost: ''193.01'',
+    other_charges: ''10585'',
+    total: ''10858.01'',
+    idepisode: ''75'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''200'',
+    test_cost: ''0'',
+    other_charges: ''8465'',
+    total: ''8665'',
+    idepisode: ''76'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''300'',
+    test_cost: ''0'',
+    other_charges: ''770'',
+    total: ''1070'',
+    idepisode: ''78'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''70'',
+    test_cost: ''197.57'',
+    other_charges: ''7155'',
+    total: ''7422.57'',
+    idepisode: ''82'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''180'',
+    test_cost: ''0'',
+    other_charges: ''510'',
+    total: ''690'',
+    idepisode: ''84'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''500'',
+    test_cost: ''0'',
+    other_charges: ''590'',
+    total: ''1090'',
+    idepisode: ''85'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''120'',
+    test_cost: ''149.27'',
+    other_charges: ''8860'',
+    total: ''9129.27'',
+    idepisode: ''93'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''180'',
+    test_cost: ''171.11'',
+    other_charges: ''5535'',
+    total: ''5886.11'',
+    idepisode: ''95'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''280'',
+    test_cost: ''0'',
+    other_charges: ''2970'',
+    total: ''3250'',
+    idepisode: ''96'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''90'',
+    test_cost: ''0'',
+    other_charges: ''1545'',
+    total: ''1635'',
+    idepisode: ''99'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''220'',
+    test_cost: ''0'',
+    other_charges: ''8600'',
+    total: ''8820'',
+    idepisode: ''101'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''320'',
+    test_cost: ''43.35'',
+    other_charges: ''6870'',
+    total: ''7233.35'',
+    idepisode: ''102'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''80'',
+    test_cost: ''97.93'',
+    other_charges: ''2550'',
+    total: ''2727.93'',
+    idepisode: ''104'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''200'',
+    test_cost: ''180.88'',
+    other_charges: ''8275'',
+    total: ''8655.88'',
+    idepisode: ''105'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''550'',
+    test_cost: ''0'',
+    other_charges: ''60'',
+    total: ''610'',
+    idepisode: ''107'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''420'',
+    test_cost: ''0'',
+    other_charges: ''6005'',
+    total: ''6425'',
+    idepisode: ''109'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''100'',
+    test_cost: ''0'',
+    other_charges: ''4600'',
+    total: ''4700'',
+    idepisode: ''111'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''150'',
+    test_cost: ''0'',
+    other_charges: ''2200'',
+    total: ''2350'',
+    idepisode: ''112'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''250'',
+    test_cost: ''0'',
+    other_charges: ''3110'',
+    total: ''3360'',
+    idepisode: ''113'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''80'',
+    test_cost: ''189.58'',
+    other_charges: ''11090'',
+    total: ''11359.58'',
+    idepisode: ''115'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''200'',
+    test_cost: ''0'',
+    other_charges: ''1225'',
+    total: ''1425'',
+    idepisode: ''116'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''300'',
+    test_cost: ''0'',
+    other_charges: ''8975'',
+    total: ''9275'',
+    idepisode: ''117'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''70'',
+    test_cost: ''0'',
+    other_charges: ''510'',
+    total: ''580'',
+    idepisode: ''119'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''180'',
+    test_cost: ''134.49'',
+    other_charges: ''4210'',
+    total: ''4524.49'',
+    idepisode: ''120'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''500'',
+    test_cost: ''90.97'',
+    other_charges: ''3530'',
+    total: ''4120.97'',
+    idepisode: ''122'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''400'',
+    test_cost: ''0'',
+    other_charges: ''2730'',
+    total: ''3130'',
+    idepisode: ''125'',
+    payment_status: ''pending''
+});
+                
+CREATE (:Bill {
+    room_cost: ''100'',
+    test_cost: ''198.34'',
+    other_charges: ''9905'',
+    total: ''10203.34'',
+    idepisode: ''2'',
+    payment_status: ''pending''
+});
                 

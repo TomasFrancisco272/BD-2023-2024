@@ -7,40 +7,28 @@ def create_analysisfile(content_list):
         file.write("\n")
 
 
-def process(stringg):
-    parts = stringg.replace("to_date(", "").replace(",'rr.mm.dd')", "")[1:-1]
-    parts.split(",")
-    data_list = [part.strip("'") for part in parts.split(",")]
-    return data_list
-
-def process_command(query):
-    parts = re.split(r'\s+(?=(?:[^\'"]*[\'"][^\'"]*[\'"])*[^\'"]*$)', query.strip())
-    table_name = parts[2]
-    column_values_part = re.search(r'\((.*)\) values', query).group(1).strip()
-    column_names = [col.strip() for col in re.split(r',(?![^()]*\))', column_values_part)]
-    final_list = parts[:2] + [table_name, f"({', '.join(column_names)})", "values"] + [query.split("values")[1].strip()]
-
-    return final_list
-
-def process_string(query):
-    query = re.sub(r'\s+', ' ', query.strip().lower())
-    parts = re.split(r'\s+(?=(?:[^\'"]*[\'"][^\'"]*[\'"])*[^\'"]*$)', query)
-    print(f"parts ->   {parts}")
-    table_name = parts[2]
-    column_values_part = re.search(r'\((.*)\) values', query).group(1).strip()
-    column_names = [col.strip() for col in re.split(r',(?![^()]*\))', column_values_part)]
-    final_list = parts[:2] + [table_name, f"({', '.join(column_names)})", "values"] + [query.split("values")[1].strip()]
-
-    
-    return final_list
+def split_sql(sql_string):
+    #pattern = r'(insert) (into) ([a-zA-Z_]*) (\(.*\)) (values) (\(.*\))'
+    pattern = r'(insert) (into) ([a-zA-Z_]*) \((.*)\) (values) \((.*)\)'
+    regex_flags = re.IGNORECASE | re.MULTILINE
+    regex = re.compile(pattern, flags=regex_flags)
+    a = re.split(pattern, sql_string)
+    a = a[1:-1]
+    return a
 
 
-def format_dates(old_format):
-    if int(old_format[0:2]) < 24:
-        new_format = "20"+ old_format.replace(".", "-")
+
+
+def format_dates_yy(old_format):
+    if old_format != "null":
+        if int(old_format[0:2]) < 24:
+            new_format = "20"+ old_format.replace(".", "-")
+        else:
+            new_format = "19"+ old_format.replace(".", "-")
+        return new_format
     else:
-        new_format = "19"+ old_format.replace(".", "-")
-    return new_format
+        print("Yo.")
+        return ""
 
 def write_cypherFile(to_path, lst_commands):
     with open(to_path, 'w') as file:
@@ -62,17 +50,22 @@ def sql_command_controller(command):
                 lst_tables.append(cleaned_command[2])
 
             if cleaned_command[2] == "appointment":
-                #format = processed_command[3].split(",")
-                #format[0], format[-1] = format[0].replace("(", ""), format[-1].replace(")", "")
+                #Insert into APPOINTMENT
+                #(SCHEDULED_ON,APPOINTMENT_DATE,APPOINTMENT_TIME,IDDOCTOR,IDEPISODE)
+                #values
+                #(to_date('13.11.20','RR.MM.DD'),to_date('13.12.21','RR.MM.DD'),'13:13','99','1');
 
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                data_list.pop(1)
+                data_list.pop(2)
 
-                for i, date in enumerate(data_list[0:2]):
-                    data_list[i] = format_dates(date)
+                for i, elem in enumerate(data_list):
+                    data_list[i]= data_list[i].replace("to_date(", "").replace("'", "").replace("(", "")
+                
+                data_list[0] = format_dates_yy(data_list[0])
+                data_list[1] = format_dates_yy(data_list[1])
 
-                #Insert into APPOINTMENT (SCHEDULED_ON,APPOINTMENT_DATE,APPOINTMENT_TIME,IDDOCTOR,IDEPISODE)
-                #values (to_date('21.09.22','RR.MM.DD'),to_date('21.10.23','RR.MM.DD'),'16:18','13','20'); 
                 new_command = f"""
 CREATE (:Appointment {{
     scheduled_on: date("{data_list[0]}"),
@@ -82,16 +75,18 @@ CREATE (:Appointment {{
     idepisode: {data_list[4]}
 }})
                 """
-
             elif cleaned_command[2] == "prescription":
                 #Insert into PRESCRIPTION (PRESCRIPTION_DATE,DOSAGE,IDMEDICINE,IDEPISODE)
                 #values (to_date('23.01.10','RR.MM.DD'),'3','5','136');
-
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
-
-                data_list[0] = format_dates(data_list[0])
-
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                data_list.pop(1)
+                for i, elem in enumerate(data_list):
+                    data_list[i]= data_list[i].replace("to_date(", "").replace("'", "").replace("(", "")
+                
+                #print(data_list[0])
+                data_list[0] = format_dates_yy(data_list[0])
+                #print(data_list)
 
                 new_command = f"""
 CREATE (:Prescription {{
@@ -101,28 +96,79 @@ CREATE (:Prescription {{
     idepisode: '{data_list[3]}'
 }});
                 """
-
             elif cleaned_command[2] == "bill":
-                pass
+                # Insert into BILL (ROOM_COST,TEST_COST,OTHER_CHARGES,TOTAL,IDEPISODE,PAYMENT_STATUS) values ('150','0','3505','3655','3','PENDING');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+
+                new_command = f"""
+CREATE (:Bill {{
+    room_cost: '{data_list[0]}',
+    test_cost: '{data_list[1]}',
+    other_charges: '{data_list[2]}',
+    total: '{data_list[3]}',
+    idepisode: '{data_list[4]}',
+    payment_status: '{data_list[5]}'
+}});
+                """
             elif cleaned_command[2] == "hospitalization":
-                pass
+                # Insert into HOSPITALIZATION (ADMISSION_DATE,DISCHARGE_DATE,ROOM_IDROOM,IDEPISODE,RESPONSIBLE_NURSE) values (to_date('19.04.17','RR.MM.DD'),to_date('19.04.18','RR.MM.DD'),'1','2','4');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+
+                if data_list[1] == "'rr.mm.dd')":
+                    data_list.pop(1)
+                if data_list[2] == "'rr.mm.dd')":
+                    data_list.pop(2)
+
+                for i, elem in enumerate(data_list):
+                    data_list[i]= data_list[i].replace("to_date(", "").replace("'", "").replace("(", "")
+                
+                data_list[0] = format_dates_yy(data_list[0])
+
+                new_command = f"""
+CREATE (:Hospitalization {{
+    admission_date: date({data_list[0]}),
+    discharge_date: date({data_list[1]}),
+    room_idroom: {data_list[2]},
+    idepisode: {data_list[3]},
+    responsible_nurse: {data_list[4]}
+}});
+                """
             elif cleaned_command[2] == "lab_screening":
-                pass
+                # Insert into LAB_SCREENING (TEST_COST,TEST_DATE,IDTECHNICIAN,EPISODE_IDEPISODE) values ('189.58',to_date('22.05.24','RR.MM.DD'),'43','115');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                
+                data_list.pop(2)
+                for i, elem in enumerate(data_list):
+                    data_list[i]= data_list[i].replace("to_date(", "").replace("'", "").replace("(", "")
+                
+                data_list[1] = format_dates_yy(data_list[1])
+                new_command = f"""
+CREATE (:Lab_screening {{
+    test_cost: '{data_list[0]}',
+    test_date: '{data_list[1]}',
+    idtechnician: '{data_list[2]}',
+    episode_idepisode: '{data_list[3]}'
+}});
+                """
             elif cleaned_command[2] == "room":
                 #Insert into ROOM (ROOM_TYPE,ROOM_COST) values ('Double','180');
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+
                 new_command = f"""
 CREATE (:Room {{
     room_type: '{data_list[0]}',
     room_cost: '{data_list[1]}'
 }});
                 """
-                pass
-            elif cleaned_command[2] == "emergency_contact":
-                #Insert into EMERGENCY_CONTACT (CONTACT_NAME,PHONE,RELATION,IDPATIENT) values ('John Doe','111-222-3333','Father','1');
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
+                
+            elif cleaned_command[2] == "emergency_contact":                
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                
                 new_command = f"""
 CREATE (:Emergency_contact {{
     contact_name: '{data_list[0]}',
@@ -132,44 +178,112 @@ CREATE (:Emergency_contact {{
 }});
                 """
                 pass
+            
             elif cleaned_command[2] == "medical_history":
-                #INSERT INTO MEDICAL_HISTORY (condition, record_date, idpatient) VALUES ('Rheumatoid Arthritis', to_date('2023-12-10', 'YYYY-MM-DD'), 15);
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
                 new_command = f"""
-CREATE (:Emergency_contact {{
+CREATE (:Medical_history {{
     condition: '{data_list[0]}',
     record_date: '{data_list[1]}',
     relation: '{data_list[2]}'
 }});
                 """
-                pass
             elif cleaned_command[2] == "staff":
-                pass
-            elif cleaned_command[2] == "nurse":
-                pass
-            elif cleaned_command[2] == "doctor":
-                pass
-            elif cleaned_command[2] == "episode":
-                pass
-            elif cleaned_command[2] == "medicine":
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                data_list[2]= data_list[2].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
+                data_list[2] = format_dates_yy(data_list[2])
+
                 new_command = f"""
-CREATE (:Emergency_contact {{
-    condition: '{data_list[0]}',
-    record_date: '{data_list[1]}',
-    relation: '{data_list[2]}'
+CREATE (:Staff {{
+    emp_fname: '{data_list[0]}',
+    emp_lname: '{data_list[1]}',
+    date_joining: '{data_list[2]}',
+    date_separation: '{data_list[3]}',
+    email: '{data_list[4]}',
+    ssn: '{data_list[5]}',
+    iddepartment: '{data_list[2]}',
+    is_active_status: '{data_list[3]}'
+}});
+                """
+                pass
+
+
+            elif cleaned_command[2] == "nurse":
+                #Insert into nurse (STAFF_EMP_ID) values ('4');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                new_command = f"""
+CREATE (:Nurse {{
+    staff_emp_id: '{data_list[0]}'
+}});
+                """
+
+            elif cleaned_command[2] == "doctor":
+                #Insert into doctor (EMP_ID,QUALIFICATIONS) values ('83','PhD');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                new_command = f"""
+CREATE (:Doctor {{
+    emp_id: '{data_list[0]}',
+    qualifications: '{data_list[1]}'
+}});
+                """
+            elif cleaned_command[2] == "episode":
+                # Insert into EPISODE (PATIENT_IDPATIENTR) values('1');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                new_command = f"""
+CREATE (:Episode {{
+    patient_idpatient: '{data_list[0]}'
+}});
+"""
+                
+            elif cleaned_command[2] == "medicine":
+                #Insert into MEDICINE (IDMEDICINE,M_NAME,M_QUANTITY,M_COST)
+                #values ('3','Amoxicillin','20','20');
+
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+
+                new_command = f"""
+CREATE (:Medicine {{
+    idmedicine: '{data_list[0]}',
+    m_name: '{data_list[1]}',
+    m_quantity: '{data_list[2]}',
+    m_cost: '{data_list[2]}'
 }});
                 """
                 pass
             elif cleaned_command[2] == "patient":
-                processed_command = process_string(command)
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")[:-1]
+                data_list[0] = data_list[0].replace("('", "")
+                data_list[-1] = data_list[-1].replace(" to_date('", "")
+
+                for i, elem in enumerate(data_list):
+                    data_list[i] = data_list[i].replace("'", "")
+
+
+                new_command = f"""
+CREATE (:Patient {{
+    patient_fname: '{data_list[0]}',
+    patient_lname: '{data_list[1]}',
+    blood_type: '{data_list[2]}',
+    phone: '{data_list[3]}',
+    email: '{data_list[4]}',
+    gender: '{data_list[5]}',
+    policy_number: '{data_list[6]}',
+    birthday: date('{data_list[7]}')
+}});
+                """
+
+
                 pass
             elif cleaned_command[2] == "insurance":
-                #Insert into INSURANCE (POLICY_NUMBER,PROVIDER,INSURANCE_PLAN,CO_PAY,COVERAGE,MATERNITY,DENTAL,OPTICAL) values ('POL001','ABC Insurance','Standard Plan','50','Full Coverage','Y','N','Y');
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
                 new_command = f"""
 CREATE (:Insurance {{
     policy_number: '{data_list[0]}',
@@ -183,12 +297,8 @@ CREATE (:Insurance {{
 }});
                 """
             elif cleaned_command[2] == "department":
-                #Insert into DEPARTMENT (DEPT_HEAD,DEPT_NAME,EMP_COUNT)
-                #values ('John Smith','Cardiology_1','2');
-
-                processed_command = process_string(command)
-                data_list = process(processed_command[5])
-
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
                 new_command = f"""
 CREATE (:Department {{
     dept_head: {data_list[0]},
@@ -196,9 +306,16 @@ CREATE (:Department {{
     emp_count: '{data_list[2]}'
 }});
                """
-
+                
             elif cleaned_command[2] == "technician":
-                pass
+                #Insert into technician (STAFF_EMP_ID) values ('70');
+                splitted = split_sql(command)
+                data_list = splitted[-1].split(",")
+                new_command = f"""
+CREATE (:Technician {{
+    staff_emp_id: '{data_list[0]}'
+}});
+                """
             else:
                 print(f"\n {cleaned_command[2]}")
 

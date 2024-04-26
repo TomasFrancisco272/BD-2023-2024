@@ -1,0 +1,11 @@
+
+#def process_string(query):
+#    query = re.sub(r'\s+', ' ', query.strip().lower())
+#    parts = re.split(r'\s+(?=(?:[^\'"]*[\'"][^\'"]*[\'"])*[^\'"]*$)', query)
+#    print(f"parts ->   {parts}")
+#    table_name = parts[2]
+#    column_values_part = re.search(r'\((.*)\) values', query).group(1).strip()
+#    column_names = [col.strip() for col in re.split(r',(?![^()]*\))', column_values_part)]
+#    final_list = parts[:2] + [table_name, f"({', '.join(column_names)})", "values"] + [query.split("values")[1].strip()]
+#
+#    return final_list
