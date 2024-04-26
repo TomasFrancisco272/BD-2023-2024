@@ -1,745 +1,3 @@
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
 
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
@@ -748,8 +6,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 57,
@@ -757,8 +14,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 39,
@@ -766,8 +22,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 83,
@@ -775,8 +30,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
     dosage: 80,
@@ -784,8 +38,7 @@ CREATE (:Prescription {
     idepisode: '145'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
     dosage: 86,
@@ -793,8 +46,7 @@ CREATE (:Prescription {
     idepisode: '145'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
     dosage: 11,
@@ -802,8 +54,7 @@ CREATE (:Prescription {
     idepisode: '145'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
     dosage: 19,
@@ -811,8 +62,7 @@ CREATE (:Prescription {
     idepisode: '145'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
     dosage: 75,
@@ -820,8 +70,7 @@ CREATE (:Prescription {
     idepisode: '145'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-24),
     dosage: 50,
@@ -829,8 +78,7 @@ CREATE (:Prescription {
     idepisode: '145'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 30,
@@ -838,8 +86,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 8,
@@ -847,8 +94,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 91,
@@ -856,8 +102,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 9,
@@ -865,8 +110,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 79,
@@ -874,8 +118,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 2,
@@ -883,8 +126,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-28),
     dosage: 34,
@@ -892,8 +134,7 @@ CREATE (:Prescription {
     idepisode: '146'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
     dosage: 28,
@@ -901,8 +142,7 @@ CREATE (:Prescription {
     idepisode: '147'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
     dosage: 9,
@@ -910,8 +150,7 @@ CREATE (:Prescription {
     idepisode: '147'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
     dosage: 18,
@@ -919,8 +158,7 @@ CREATE (:Prescription {
     idepisode: '147'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
     dosage: 88,
@@ -928,8 +166,7 @@ CREATE (:Prescription {
     idepisode: '147'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
     dosage: 72,
@@ -937,8 +174,7 @@ CREATE (:Prescription {
     idepisode: '147'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-13),
     dosage: 75,
@@ -946,8 +182,7 @@ CREATE (:Prescription {
     idepisode: '147'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 60,
@@ -955,8 +190,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 83,
@@ -964,8 +198,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 83,
@@ -973,8 +206,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 73,
@@ -982,8 +214,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 98,
@@ -991,8 +222,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 34,
@@ -1000,8 +230,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 78,
@@ -1009,8 +238,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 1,
@@ -1018,8 +246,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-25),
     dosage: 70,
@@ -1027,8 +254,7 @@ CREATE (:Prescription {
     idepisode: '148'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 46,
@@ -1036,8 +262,7 @@ CREATE (:Prescription {
     idepisode: '149'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 72,
@@ -1045,8 +270,7 @@ CREATE (:Prescription {
     idepisode: '149'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 57,
@@ -1054,8 +278,7 @@ CREATE (:Prescription {
     idepisode: '149'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 85,
@@ -1063,8 +286,7 @@ CREATE (:Prescription {
     idepisode: '149'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 6,
@@ -1072,8 +294,7 @@ CREATE (:Prescription {
     idepisode: '149'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 73,
@@ -1081,8 +302,7 @@ CREATE (:Prescription {
     idepisode: '149'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-10),
     dosage: 49,
@@ -1090,8 +310,7 @@ CREATE (:Prescription {
     idepisode: '150'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 20,
@@ -1099,8 +318,7 @@ CREATE (:Prescription {
     idepisode: '151'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 72,
@@ -1108,8 +326,7 @@ CREATE (:Prescription {
     idepisode: '151'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 86,
@@ -1117,8 +334,7 @@ CREATE (:Prescription {
     idepisode: '151'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 89,
@@ -1126,8 +342,7 @@ CREATE (:Prescription {
     idepisode: '151'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 90,
@@ -1135,8 +350,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 60,
@@ -1144,8 +358,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 26,
@@ -1153,8 +366,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 96,
@@ -1162,8 +374,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 29,
@@ -1171,8 +382,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 15,
@@ -1180,8 +390,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 70,
@@ -1189,8 +398,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 60,
@@ -1198,8 +406,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 39,
@@ -1207,8 +414,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-05),
     dosage: 63,
@@ -1216,8 +422,7 @@ CREATE (:Prescription {
     idepisode: '152'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
     dosage: 9,
@@ -1225,8 +430,7 @@ CREATE (:Prescription {
     idepisode: '153'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
     dosage: 52,
@@ -1234,8 +438,7 @@ CREATE (:Prescription {
     idepisode: '153'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
     dosage: 53,
@@ -1243,8 +446,7 @@ CREATE (:Prescription {
     idepisode: '153'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
     dosage: 51,
@@ -1252,8 +454,7 @@ CREATE (:Prescription {
     idepisode: '153'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
     dosage: 41,
@@ -1261,8 +462,7 @@ CREATE (:Prescription {
     idepisode: '153'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-23),
     dosage: 88,
@@ -1270,8 +470,7 @@ CREATE (:Prescription {
     idepisode: '153'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 63,
@@ -1279,8 +478,7 @@ CREATE (:Prescription {
     idepisode: '154'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 65,
@@ -1288,8 +486,7 @@ CREATE (:Prescription {
     idepisode: '154'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 64,
@@ -1297,8 +494,7 @@ CREATE (:Prescription {
     idepisode: '154'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 7,
@@ -1306,8 +502,7 @@ CREATE (:Prescription {
     idepisode: '154'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 8,
@@ -1315,8 +510,7 @@ CREATE (:Prescription {
     idepisode: '154'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 63,
@@ -1324,8 +518,7 @@ CREATE (:Prescription {
     idepisode: '154'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 42,
@@ -1333,8 +526,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 38,
@@ -1342,8 +534,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 60,
@@ -1351,8 +542,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 58,
@@ -1360,8 +550,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 65,
@@ -1369,8 +558,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 86,
@@ -1378,8 +566,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 49,
@@ -1387,8 +574,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 43,
@@ -1396,8 +582,7 @@ CREATE (:Prescription {
     idepisode: '155'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-29),
     dosage: 69,
@@ -1405,8 +590,7 @@ CREATE (:Prescription {
     idepisode: '156'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-29),
     dosage: 27,
@@ -1414,8 +598,7 @@ CREATE (:Prescription {
     idepisode: '156'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
     dosage: 48,
@@ -1423,8 +606,7 @@ CREATE (:Prescription {
     idepisode: '157'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
     dosage: 61,
@@ -1432,8 +614,7 @@ CREATE (:Prescription {
     idepisode: '157'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
     dosage: 9,
@@ -1441,8 +622,7 @@ CREATE (:Prescription {
     idepisode: '157'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
     dosage: 22,
@@ -1450,8 +630,7 @@ CREATE (:Prescription {
     idepisode: '157'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-24),
     dosage: 5,
@@ -1459,8 +638,7 @@ CREATE (:Prescription {
     idepisode: '157'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 9,
@@ -1468,8 +646,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 56,
@@ -1477,8 +654,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 15,
@@ -1486,8 +662,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 2,
@@ -1495,8 +670,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 84,
@@ -1504,8 +678,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
     dosage: 96,
@@ -1513,8 +686,7 @@ CREATE (:Prescription {
     idepisode: '159'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
     dosage: 65,
@@ -1522,8 +694,7 @@ CREATE (:Prescription {
     idepisode: '159'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-24),
     dosage: 62,
@@ -1531,8 +702,7 @@ CREATE (:Prescription {
     idepisode: '160'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
     dosage: 86,
@@ -1540,8 +710,7 @@ CREATE (:Prescription {
     idepisode: '161'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
     dosage: 78,
@@ -1549,8 +718,7 @@ CREATE (:Prescription {
     idepisode: '161'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
     dosage: 56,
@@ -1558,8 +726,7 @@ CREATE (:Prescription {
     idepisode: '161'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
     dosage: 10,
@@ -1567,8 +734,7 @@ CREATE (:Prescription {
     idepisode: '161'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
     dosage: 82,
@@ -1576,8 +742,7 @@ CREATE (:Prescription {
     idepisode: '161'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-21),
     dosage: 71,
@@ -1585,8 +750,7 @@ CREATE (:Prescription {
     idepisode: '161'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-25),
     dosage: 35,
@@ -1594,8 +758,7 @@ CREATE (:Prescription {
     idepisode: '162'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-25),
     dosage: 98,
@@ -1603,8 +766,7 @@ CREATE (:Prescription {
     idepisode: '162'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-25),
     dosage: 1,
@@ -1612,8 +774,7 @@ CREATE (:Prescription {
     idepisode: '162'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-09),
     dosage: 49,
@@ -1621,8 +782,7 @@ CREATE (:Prescription {
     idepisode: '163'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-09),
     dosage: 10,
@@ -1630,8 +790,7 @@ CREATE (:Prescription {
     idepisode: '163'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
     dosage: 43,
@@ -1639,8 +798,7 @@ CREATE (:Prescription {
     idepisode: '164'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
     dosage: 73,
@@ -1648,8 +806,7 @@ CREATE (:Prescription {
     idepisode: '164'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
     dosage: 3,
@@ -1657,8 +814,7 @@ CREATE (:Prescription {
     idepisode: '164'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
     dosage: 61,
@@ -1666,8 +822,7 @@ CREATE (:Prescription {
     idepisode: '164'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
     dosage: 21,
@@ -1675,8 +830,7 @@ CREATE (:Prescription {
     idepisode: '164'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-26),
     dosage: 53,
@@ -1684,8 +838,7 @@ CREATE (:Prescription {
     idepisode: '164'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 39,
@@ -1693,8 +846,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 22,
@@ -1702,8 +854,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 95,
@@ -1711,8 +862,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 50,
@@ -1720,8 +870,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 61,
@@ -1729,8 +878,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 49,
@@ -1738,8 +886,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 15,
@@ -1747,8 +894,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-05-06),
     dosage: 45,
@@ -1756,8 +902,7 @@ CREATE (:Prescription {
     idepisode: '165'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 25,
@@ -1765,8 +910,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 13,
@@ -1774,8 +918,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 26,
@@ -1783,8 +926,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 4,
@@ -1792,8 +934,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 70,
@@ -1801,8 +942,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 90,
@@ -1810,8 +950,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-08),
     dosage: 91,
@@ -1819,8 +958,7 @@ CREATE (:Prescription {
     idepisode: '166'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
     dosage: 14,
@@ -1828,8 +966,7 @@ CREATE (:Prescription {
     idepisode: '167'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
     dosage: 8,
@@ -1837,8 +974,7 @@ CREATE (:Prescription {
     idepisode: '167'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
     dosage: 38,
@@ -1846,8 +982,7 @@ CREATE (:Prescription {
     idepisode: '167'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-20),
     dosage: 66,
@@ -1855,8 +990,7 @@ CREATE (:Prescription {
     idepisode: '167'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 99,
@@ -1864,8 +998,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 58,
@@ -1873,8 +1006,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 40,
@@ -1882,8 +1014,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 58,
@@ -1891,8 +1022,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 38,
@@ -1900,8 +1030,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 53,
@@ -1909,8 +1038,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-19),
     dosage: 17,
@@ -1918,8 +1046,7 @@ CREATE (:Prescription {
     idepisode: '168'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-16),
     dosage: 42,
@@ -1927,8 +1054,7 @@ CREATE (:Prescription {
     idepisode: '169'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-02-16),
     dosage: 41,
@@ -1936,8 +1062,7 @@ CREATE (:Prescription {
     idepisode: '169'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 51,
@@ -1945,8 +1070,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 36,
@@ -1954,8 +1078,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 39,
@@ -1963,8 +1086,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 5,
@@ -1972,8 +1094,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 23,
@@ -1981,8 +1102,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 27,
@@ -1990,8 +1110,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 41,
@@ -1999,8 +1118,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-07-10),
     dosage: 52,
@@ -2008,8 +1126,7 @@ CREATE (:Prescription {
     idepisode: '170'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
     dosage: 24,
@@ -2017,8 +1134,7 @@ CREATE (:Prescription {
     idepisode: '171'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
     dosage: 4,
@@ -2026,8 +1142,7 @@ CREATE (:Prescription {
     idepisode: '171'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
     dosage: 80,
@@ -2035,8 +1150,7 @@ CREATE (:Prescription {
     idepisode: '171'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
     dosage: 39,
@@ -2044,8 +1158,7 @@ CREATE (:Prescription {
     idepisode: '171'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-12-08),
     dosage: 1,
@@ -2053,8 +1166,7 @@ CREATE (:Prescription {
     idepisode: '171'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 56,
@@ -2062,8 +1174,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 80,
@@ -2071,8 +1182,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 40,
@@ -2080,8 +1190,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 27,
@@ -2089,8 +1198,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 83,
@@ -2098,8 +1206,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 52,
@@ -2107,8 +1214,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 35,
@@ -2116,8 +1222,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 78,
@@ -2125,8 +1230,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-05),
     dosage: 79,
@@ -2134,8 +1238,7 @@ CREATE (:Prescription {
     idepisode: '172'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
     dosage: 3,
@@ -2143,8 +1246,7 @@ CREATE (:Prescription {
     idepisode: '173'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
     dosage: 77,
@@ -2152,8 +1254,7 @@ CREATE (:Prescription {
     idepisode: '173'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
     dosage: 63,
@@ -2161,8 +1262,7 @@ CREATE (:Prescription {
     idepisode: '173'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-11),
     dosage: 55,
@@ -2170,8 +1270,7 @@ CREATE (:Prescription {
     idepisode: '173'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 54,
@@ -2179,8 +1278,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 75,
@@ -2188,8 +1286,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 48,
@@ -2197,8 +1294,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 64,
@@ -2206,8 +1302,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 8,
@@ -2215,8 +1310,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 92,
@@ -2224,8 +1318,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 16,
@@ -2233,8 +1326,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 32,
@@ -2242,8 +1334,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-11),
     dosage: 82,
@@ -2251,8 +1342,7 @@ CREATE (:Prescription {
     idepisode: '174'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
     dosage: 31,
@@ -2260,8 +1350,7 @@ CREATE (:Prescription {
     idepisode: '175'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
     dosage: 42,
@@ -2269,8 +1358,7 @@ CREATE (:Prescription {
     idepisode: '175'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
     dosage: 46,
@@ -2278,8 +1366,7 @@ CREATE (:Prescription {
     idepisode: '175'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
     dosage: 2,
@@ -2287,8 +1374,7 @@ CREATE (:Prescription {
     idepisode: '175'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
     dosage: 99,
@@ -2296,8 +1382,7 @@ CREATE (:Prescription {
     idepisode: '175'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-03),
     dosage: 45,
@@ -2305,8 +1390,7 @@ CREATE (:Prescription {
     idepisode: '175'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 38,
@@ -2314,8 +1398,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 78,
@@ -2323,8 +1406,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 79,
@@ -2332,8 +1414,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 99,
@@ -2341,8 +1422,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 66,
@@ -2350,8 +1430,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 75,
@@ -2359,8 +1438,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 19,
@@ -2368,8 +1446,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 62,
@@ -2377,8 +1454,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 84,
@@ -2386,8 +1462,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-19),
     dosage: 37,
@@ -2395,8 +1470,7 @@ CREATE (:Prescription {
     idepisode: '176'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 67,
@@ -2404,8 +1478,7 @@ CREATE (:Prescription {
     idepisode: '177'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-31),
     dosage: 93,
@@ -2413,8 +1486,7 @@ CREATE (:Prescription {
     idepisode: '178'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 87,
@@ -2422,8 +1494,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 72,
@@ -2431,8 +1502,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 54,
@@ -2440,8 +1510,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 69,
@@ -2449,8 +1518,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 11,
@@ -2458,8 +1526,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 83,
@@ -2467,8 +1534,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 50,
@@ -2476,8 +1542,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 79,
@@ -2485,8 +1550,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 72,
@@ -2494,8 +1558,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 16,
@@ -2503,8 +1566,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 11,
@@ -2512,8 +1574,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-08),
     dosage: 81,
@@ -2521,8 +1582,7 @@ CREATE (:Prescription {
     idepisode: '180'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 30,
@@ -2530,8 +1590,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 4,
@@ -2539,8 +1598,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 16,
@@ -2548,8 +1606,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 84,
@@ -2557,8 +1614,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 74,
@@ -2566,8 +1622,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 26,
@@ -2575,8 +1630,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 9,
@@ -2584,8 +1638,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 18,
@@ -2593,8 +1646,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 18,
@@ -2602,8 +1654,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
     dosage: 14,
@@ -2611,8 +1662,7 @@ CREATE (:Prescription {
     idepisode: '183'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
     dosage: 48,
@@ -2620,8 +1670,7 @@ CREATE (:Prescription {
     idepisode: '183'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
     dosage: 58,
@@ -2629,8 +1678,7 @@ CREATE (:Prescription {
     idepisode: '183'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 17,
@@ -2638,8 +1686,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 90,
@@ -2647,8 +1694,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 94,
@@ -2656,8 +1702,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 18,
@@ -2665,8 +1710,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 96,
@@ -2674,8 +1718,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-09),
     dosage: 9,
@@ -2683,8 +1726,7 @@ CREATE (:Prescription {
     idepisode: '185'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 67,
@@ -2692,8 +1734,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 41,
@@ -2701,8 +1742,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 80,
@@ -2710,8 +1750,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 77,
@@ -2719,8 +1758,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 28,
@@ -2728,8 +1766,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
     dosage: 80,
@@ -2737,8 +1774,7 @@ CREATE (:Prescription {
     idepisode: '187'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 63,
@@ -2746,8 +1782,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 69,
@@ -2755,8 +1790,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 32,
@@ -2764,8 +1798,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 59,
@@ -2773,8 +1806,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 45,
@@ -2782,8 +1814,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 84,
@@ -2791,8 +1822,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 92,
@@ -2800,8 +1830,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-19),
     dosage: 92,
@@ -2809,8 +1838,7 @@ CREATE (:Prescription {
     idepisode: '188'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
     dosage: 3,
@@ -2818,8 +1846,7 @@ CREATE (:Prescription {
     idepisode: '189'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
     dosage: 70,
@@ -2827,8 +1854,7 @@ CREATE (:Prescription {
     idepisode: '189'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
     dosage: 40,
@@ -2836,8 +1862,7 @@ CREATE (:Prescription {
     idepisode: '189'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 33,
@@ -2845,8 +1870,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 84,
@@ -2854,8 +1878,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 36,
@@ -2863,8 +1886,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 58,
@@ -2872,8 +1894,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 34,
@@ -2881,8 +1902,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 87,
@@ -2890,8 +1910,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 89,
@@ -2899,8 +1918,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 79,
@@ -2908,8 +1926,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-04),
     dosage: 75,
@@ -2917,8 +1934,7 @@ CREATE (:Prescription {
     idepisode: '190'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 41,
@@ -2926,8 +1942,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 96,
@@ -2935,8 +1950,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 45,
@@ -2944,8 +1958,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 41,
@@ -2953,8 +1966,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 49,
@@ -2962,8 +1974,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
     dosage: 91,
@@ -2971,8 +1982,7 @@ CREATE (:Prescription {
     idepisode: '192'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
     dosage: 7,
@@ -2980,8 +1990,7 @@ CREATE (:Prescription {
     idepisode: '192'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
     dosage: 80,
@@ -2989,8 +1998,7 @@ CREATE (:Prescription {
     idepisode: '192'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
     dosage: 20,
@@ -2998,8 +2006,7 @@ CREATE (:Prescription {
     idepisode: '193'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 68,
@@ -3007,8 +2014,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 81,
@@ -3016,8 +2022,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
     dosage: 38,
@@ -3025,8 +2030,7 @@ CREATE (:Prescription {
     idepisode: '195'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
     dosage: 41,
@@ -3034,8 +2038,7 @@ CREATE (:Prescription {
     idepisode: '195'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 33,
@@ -3043,8 +2046,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 17,
@@ -3052,8 +2054,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 51,
@@ -3061,8 +2062,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 22,
@@ -3070,8 +2070,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 12,
@@ -3079,8 +2078,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 68,
@@ -3088,8 +2086,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-16),
     dosage: 45,
@@ -3097,8 +2094,7 @@ CREATE (:Prescription {
     idepisode: '196'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
     dosage: 13,
@@ -3106,8 +2102,7 @@ CREATE (:Prescription {
     idepisode: '197'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
     dosage: 90,
@@ -3115,8 +2110,7 @@ CREATE (:Prescription {
     idepisode: '197'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 53,
@@ -3124,8 +2118,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 59,
@@ -3133,8 +2126,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 85,
@@ -3142,8 +2134,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 26,
@@ -3151,8 +2142,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 21,
@@ -3160,8 +2150,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 30,
@@ -3169,8 +2158,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 70,
@@ -3178,8 +2166,7 @@ CREATE (:Prescription {
     idepisode: '200'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 33,
@@ -3187,8 +2174,7 @@ CREATE (:Prescription {
     idepisode: '200'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 55,
@@ -3196,8 +2182,7 @@ CREATE (:Prescription {
     idepisode: '200'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 25,
@@ -3205,8 +2190,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 67,
@@ -3214,8 +2198,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 33,
@@ -3223,8 +2206,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 32,
@@ -3232,8 +2214,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
     dosage: 56,
@@ -3241,8 +2222,7 @@ CREATE (:Prescription {
     idepisode: '38'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
     dosage: 46,
@@ -3250,8 +2230,7 @@ CREATE (:Prescription {
     idepisode: '38'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-15),
     dosage: 13,
@@ -3259,8 +2238,7 @@ CREATE (:Prescription {
     idepisode: '39'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-10-02),
     dosage: 69,
@@ -3268,8 +2246,7 @@ CREATE (:Prescription {
     idepisode: '40'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 99,
@@ -3277,8 +2254,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 27,
@@ -3286,8 +2262,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 90,
@@ -3295,8 +2270,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 18,
@@ -3304,8 +2278,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
     dosage: 23,
@@ -3313,8 +2286,7 @@ CREATE (:Prescription {
     idepisode: '43'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
     dosage: 12,
@@ -3322,8 +2294,7 @@ CREATE (:Prescription {
     idepisode: '43'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-04),
     dosage: 21,
@@ -3331,8 +2302,7 @@ CREATE (:Prescription {
     idepisode: '44'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
     dosage: 79,
@@ -3340,8 +2310,7 @@ CREATE (:Prescription {
     idepisode: '45'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
     dosage: 23,
@@ -3349,8 +2318,7 @@ CREATE (:Prescription {
     idepisode: '45'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
     dosage: 84,
@@ -3358,8 +2326,7 @@ CREATE (:Prescription {
     idepisode: '45'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 74,
@@ -3367,8 +2334,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 11,
@@ -3376,8 +2342,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 45,
@@ -3385,8 +2350,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
     dosage: 14,
@@ -3394,8 +2358,7 @@ CREATE (:Prescription {
     idepisode: '48'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
     dosage: 3,
@@ -3403,8 +2366,7 @@ CREATE (:Prescription {
     idepisode: '48'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-15),
     dosage: 24,
@@ -3412,8 +2374,7 @@ CREATE (:Prescription {
     idepisode: '49'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-12-17),
     dosage: 90,
@@ -3421,8 +2382,7 @@ CREATE (:Prescription {
     idepisode: '50'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
     dosage: 33,
@@ -3430,8 +2390,7 @@ CREATE (:Prescription {
     idepisode: '51'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
     dosage: 81,
@@ -3439,8 +2398,7 @@ CREATE (:Prescription {
     idepisode: '51'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 69,
@@ -3448,8 +2406,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 38,
@@ -3457,8 +2414,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 54,
@@ -3466,8 +2422,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 95,
@@ -3475,8 +2430,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
     dosage: 68,
@@ -3484,8 +2438,7 @@ CREATE (:Prescription {
     idepisode: '53'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
     dosage: 91,
@@ -3493,8 +2446,7 @@ CREATE (:Prescription {
     idepisode: '58'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
     dosage: 20,
@@ -3502,8 +2454,7 @@ CREATE (:Prescription {
     idepisode: '58'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
     dosage: 70,
@@ -3511,8 +2462,7 @@ CREATE (:Prescription {
     idepisode: '58'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 4,
@@ -3520,8 +2470,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 60,
@@ -3529,8 +2478,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 70,
@@ -3538,8 +2486,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 27,
@@ -3547,8 +2494,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
     dosage: 89,
@@ -3556,8 +2502,7 @@ CREATE (:Prescription {
     idepisode: '60'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
     dosage: 34,
@@ -3565,8 +2510,7 @@ CREATE (:Prescription {
     idepisode: '60'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 61,
@@ -3574,8 +2518,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 11,
@@ -3583,8 +2526,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 30,
@@ -3592,8 +2534,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 5,
@@ -3601,8 +2542,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 60,
@@ -3610,8 +2550,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 1,
@@ -3619,8 +2558,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 71,
@@ -3628,8 +2566,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 58,
@@ -3637,8 +2574,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 19,
@@ -3646,8 +2582,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 2,
@@ -3655,8 +2590,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 68,
@@ -3664,8 +2598,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 1,
@@ -3673,8 +2606,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
     dosage: 74,
@@ -3682,8 +2614,7 @@ CREATE (:Prescription {
     idepisode: '68'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
     dosage: 81,
@@ -3691,8 +2622,7 @@ CREATE (:Prescription {
     idepisode: '68'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
     dosage: 84,
@@ -3700,8 +2630,7 @@ CREATE (:Prescription {
     idepisode: '69'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
     dosage: 77,
@@ -3709,8 +2638,7 @@ CREATE (:Prescription {
     idepisode: '69'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
     dosage: 93,
@@ -3718,8 +2646,7 @@ CREATE (:Prescription {
     idepisode: '69'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-10),
     dosage: 78,
@@ -3727,8 +2654,7 @@ CREATE (:Prescription {
     idepisode: '70'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
     dosage: 91,
@@ -3736,8 +2662,7 @@ CREATE (:Prescription {
     idepisode: '71'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
     dosage: 79,
@@ -3745,8 +2670,7 @@ CREATE (:Prescription {
     idepisode: '71'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
     dosage: 11,
@@ -3754,8 +2678,7 @@ CREATE (:Prescription {
     idepisode: '71'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-29),
     dosage: 32,
@@ -3763,8 +2686,7 @@ CREATE (:Prescription {
     idepisode: '74'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-09),
     dosage: 36,
@@ -3772,8 +2694,7 @@ CREATE (:Prescription {
     idepisode: '81'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-02),
     dosage: 90,
@@ -3781,8 +2702,7 @@ CREATE (:Prescription {
     idepisode: '83'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 5,
@@ -3790,8 +2710,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 11,
@@ -3799,8 +2718,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 66,
@@ -3808,8 +2726,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 7,
@@ -3817,8 +2734,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 58,
@@ -3826,8 +2742,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 87,
@@ -3835,8 +2750,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 4,
@@ -3844,8 +2758,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 32,
@@ -3853,8 +2766,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 82,
@@ -3862,8 +2774,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 64,
@@ -3871,8 +2782,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 55,
@@ -3880,8 +2790,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 86,
@@ -3889,8 +2798,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 66,
@@ -3898,8 +2806,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 28,
@@ -3907,8 +2814,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 9,
@@ -3916,8 +2822,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 93,
@@ -3925,8 +2830,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 77,
@@ -3934,8 +2838,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 96,
@@ -3943,8 +2846,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 23,
@@ -3952,8 +2854,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 88,
@@ -3961,8 +2862,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 39,
@@ -3970,8 +2870,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 15,
@@ -3979,8 +2878,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 45,
@@ -3988,8 +2886,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 94,
@@ -3997,8 +2894,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 20,
@@ -4006,8 +2902,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 97,
@@ -4015,8 +2910,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 64,
@@ -4024,8 +2918,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 94,
@@ -4033,8 +2926,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 53,
@@ -4042,8 +2934,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
     dosage: 89,
@@ -4051,8 +2942,7 @@ CREATE (:Prescription {
     idepisode: '187'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
     dosage: 91,
@@ -4060,8 +2950,7 @@ CREATE (:Prescription {
     idepisode: '187'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
     dosage: 40,
@@ -4069,8 +2958,7 @@ CREATE (:Prescription {
     idepisode: '192'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
     dosage: 55,
@@ -4078,8 +2966,7 @@ CREATE (:Prescription {
     idepisode: '193'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
     dosage: 90,
@@ -4087,8 +2974,7 @@ CREATE (:Prescription {
     idepisode: '193'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 12,
@@ -4096,8 +2982,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 48,
@@ -4105,8 +2990,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 67,
@@ -4114,8 +2998,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
     dosage: 58,
@@ -4123,8 +3006,7 @@ CREATE (:Prescription {
     idepisode: '195'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
     dosage: 79,
@@ -4132,8 +3014,7 @@ CREATE (:Prescription {
     idepisode: '195'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
     dosage: 29,
@@ -4141,8 +3022,7 @@ CREATE (:Prescription {
     idepisode: '195'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 58,
@@ -4150,8 +3030,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 91,
@@ -4159,8 +3038,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 33,
@@ -4168,8 +3046,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 21,
@@ -4177,8 +3054,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 82,
@@ -4186,8 +3062,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 81,
@@ -4195,8 +3070,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
     dosage: 67,
@@ -4204,8 +3078,7 @@ CREATE (:Prescription {
     idepisode: '3'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
     dosage: 47,
@@ -4213,8 +3086,7 @@ CREATE (:Prescription {
     idepisode: '3'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
     dosage: 46,
@@ -4222,8 +3094,7 @@ CREATE (:Prescription {
     idepisode: '5'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
     dosage: 44,
@@ -4231,8 +3102,7 @@ CREATE (:Prescription {
     idepisode: '5'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
     dosage: 29,
@@ -4240,8 +3110,7 @@ CREATE (:Prescription {
     idepisode: '6'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
     dosage: 47,
@@ -4249,8 +3118,7 @@ CREATE (:Prescription {
     idepisode: '6'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
     dosage: 54,
@@ -4258,8 +3126,7 @@ CREATE (:Prescription {
     idepisode: '6'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 97,
@@ -4267,8 +3134,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 74,
@@ -4276,8 +3142,7 @@ CREATE (:Prescription {
     idepisode: '96'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 65,
@@ -4285,8 +3150,7 @@ CREATE (:Prescription {
     idepisode: '96'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 86,
@@ -4294,8 +3158,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 5,
@@ -4303,8 +3166,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-03-01),
     dosage: 64,
@@ -4312,8 +3174,7 @@ CREATE (:Prescription {
     idepisode: '116'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 17,
@@ -4321,8 +3182,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 31,
@@ -4330,8 +3190,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 61,
@@ -4339,8 +3198,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 44,
@@ -4348,8 +3206,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
     dosage: 68,
@@ -4357,8 +3214,7 @@ CREATE (:Prescription {
     idepisode: '127'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 22,
@@ -4366,8 +3222,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 10,
@@ -4375,8 +3230,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 55,
@@ -4384,8 +3238,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 42,
@@ -4393,8 +3246,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 2,
@@ -4402,8 +3254,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 38,
@@ -4411,8 +3262,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 90,
@@ -4420,8 +3270,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 97,
@@ -4429,8 +3278,7 @@ CREATE (:Prescription {
     idepisode: '158'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
     dosage: 92,
@@ -4438,8 +3286,7 @@ CREATE (:Prescription {
     idepisode: '159'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-22),
     dosage: 63,
@@ -4447,8 +3294,7 @@ CREATE (:Prescription {
     idepisode: '159'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
     dosage: 32,
@@ -4456,8 +3302,7 @@ CREATE (:Prescription {
     idepisode: '69'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-10),
     dosage: 53,
@@ -4465,8 +3310,7 @@ CREATE (:Prescription {
     idepisode: '70'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
     dosage: 71,
@@ -4474,8 +3318,7 @@ CREATE (:Prescription {
     idepisode: '71'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 15,
@@ -4483,8 +3326,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
     dosage: 5,
@@ -4492,8 +3334,7 @@ CREATE (:Prescription {
     idepisode: '98'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 95,
@@ -4501,8 +3342,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 5,
@@ -4510,8 +3350,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 11,
@@ -4519,8 +3358,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 41,
@@ -4528,8 +3366,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 65,
@@ -4537,8 +3374,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 21,
@@ -4546,8 +3382,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 78,
@@ -4555,8 +3390,7 @@ CREATE (:Prescription {
     idepisode: '177'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-31),
     dosage: 27,
@@ -4564,8 +3398,7 @@ CREATE (:Prescription {
     idepisode: '178'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 11,
@@ -4573,8 +3406,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 32,
@@ -4582,8 +3414,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 16,
@@ -4591,8 +3422,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-25),
     dosage: 81,
@@ -4600,8 +3430,7 @@ CREATE (:Prescription {
     idepisode: '179'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 31,
@@ -4609,8 +3438,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 60,
@@ -4618,8 +3446,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-15),
     dosage: 79,
@@ -4627,8 +3454,7 @@ CREATE (:Prescription {
     idepisode: '181'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 27,
@@ -4636,8 +3462,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 54,
@@ -4645,8 +3470,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-07),
     dosage: 52,
@@ -4654,8 +3478,7 @@ CREATE (:Prescription {
     idepisode: '182'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
     dosage: 31,
@@ -4663,8 +3486,7 @@ CREATE (:Prescription {
     idepisode: '183'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
     dosage: 11,
@@ -4672,8 +3494,7 @@ CREATE (:Prescription {
     idepisode: '183'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-05),
     dosage: 51,
@@ -4681,8 +3502,7 @@ CREATE (:Prescription {
     idepisode: '183'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 54,
@@ -4690,8 +3510,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 77,
@@ -4699,8 +3518,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-09-19),
     dosage: 92,
@@ -4708,8 +3526,7 @@ CREATE (:Prescription {
     idepisode: '184'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-11-09),
     dosage: 14,
@@ -4717,8 +3534,7 @@ CREATE (:Prescription {
     idepisode: '185'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 78,
@@ -4726,8 +3542,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 85,
@@ -4735,8 +3550,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 57,
@@ -4744,8 +3558,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-14),
     dosage: 69,
@@ -4753,8 +3566,7 @@ CREATE (:Prescription {
     idepisode: '186'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-16),
     dosage: 38,
@@ -4762,8 +3574,7 @@ CREATE (:Prescription {
     idepisode: '187'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
     dosage: 71,
@@ -4771,8 +3582,7 @@ CREATE (:Prescription {
     idepisode: '189'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
     dosage: 77,
@@ -4780,8 +3590,7 @@ CREATE (:Prescription {
     idepisode: '189'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-02),
     dosage: 34,
@@ -4789,8 +3598,7 @@ CREATE (:Prescription {
     idepisode: '189'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 21,
@@ -4798,8 +3606,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 72,
@@ -4807,8 +3614,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 63,
@@ -4816,8 +3622,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-17),
     dosage: 51,
@@ -4825,8 +3630,7 @@ CREATE (:Prescription {
     idepisode: '191'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-28),
     dosage: 1,
@@ -4834,8 +3638,7 @@ CREATE (:Prescription {
     idepisode: '192'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-29),
     dosage: 18,
@@ -4843,8 +3646,7 @@ CREATE (:Prescription {
     idepisode: '193'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 2,
@@ -4852,8 +3654,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-17),
     dosage: 71,
@@ -4861,8 +3662,7 @@ CREATE (:Prescription {
     idepisode: '194'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-02),
     dosage: 72,
@@ -4870,8 +3670,7 @@ CREATE (:Prescription {
     idepisode: '195'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
     dosage: 33,
@@ -4879,8 +3678,7 @@ CREATE (:Prescription {
     idepisode: '197'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-02),
     dosage: 22,
@@ -4888,8 +3686,7 @@ CREATE (:Prescription {
     idepisode: '197'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 77,
@@ -4897,8 +3694,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 80,
@@ -4906,8 +3702,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-09),
     dosage: 87,
@@ -4915,8 +3710,7 @@ CREATE (:Prescription {
     idepisode: '198'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-17),
     dosage: 78,
@@ -4924,8 +3718,7 @@ CREATE (:Prescription {
     idepisode: '199'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 41,
@@ -4933,8 +3726,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 31,
@@ -4942,8 +3734,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 8,
@@ -4951,8 +3742,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 43,
@@ -4960,8 +3750,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 7,
@@ -4969,8 +3758,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 47,
@@ -4978,8 +3766,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 6,
@@ -4987,8 +3774,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 6,
@@ -4996,8 +3782,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-19),
     dosage: 76,
@@ -5005,8 +3790,7 @@ CREATE (:Prescription {
     idepisode: '14'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 65,
@@ -5014,8 +3798,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 46,
@@ -5023,8 +3806,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 84,
@@ -5032,8 +3814,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 65,
@@ -5041,8 +3822,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 58,
@@ -5050,8 +3830,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 80,
@@ -5059,8 +3838,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 70,
@@ -5068,8 +3846,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 91,
@@ -5077,8 +3854,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 34,
@@ -5086,8 +3862,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 73,
@@ -5095,8 +3870,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 53,
@@ -5104,8 +3878,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 75,
@@ -5113,8 +3886,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-04),
     dosage: 4,
@@ -5122,8 +3894,7 @@ CREATE (:Prescription {
     idepisode: '31'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 93,
@@ -5131,8 +3902,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 29,
@@ -5140,8 +3910,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 57,
@@ -5149,8 +3918,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 76,
@@ -5158,8 +3926,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
     dosage: 89,
@@ -5167,8 +3934,7 @@ CREATE (:Prescription {
     idepisode: '42'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
     dosage: 95,
@@ -5176,8 +3942,7 @@ CREATE (:Prescription {
     idepisode: '42'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
     dosage: 17,
@@ -5185,8 +3950,7 @@ CREATE (:Prescription {
     idepisode: '54'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
     dosage: 63,
@@ -5194,8 +3958,7 @@ CREATE (:Prescription {
     idepisode: '54'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 38,
@@ -5203,8 +3966,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 46,
@@ -5212,8 +3974,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 86,
@@ -5221,8 +3982,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 26,
@@ -5230,8 +3990,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-20),
     dosage: 46,
@@ -5239,8 +3998,7 @@ CREATE (:Prescription {
     idepisode: '56'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 13,
@@ -5248,8 +4006,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 35,
@@ -5257,8 +4014,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 59,
@@ -5266,8 +4022,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-23),
     dosage: 86,
@@ -5275,8 +4030,7 @@ CREATE (:Prescription {
     idepisode: '63'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-23),
     dosage: 16,
@@ -5284,8 +4038,7 @@ CREATE (:Prescription {
     idepisode: '63'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-18),
     dosage: 97,
@@ -5293,8 +4046,7 @@ CREATE (:Prescription {
     idepisode: '72'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-18),
     dosage: 5,
@@ -5302,8 +4054,7 @@ CREATE (:Prescription {
     idepisode: '72'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-24),
     dosage: 6,
@@ -5311,8 +4062,7 @@ CREATE (:Prescription {
     idepisode: '73'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 85,
@@ -5320,8 +4070,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 68,
@@ -5329,8 +4078,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 71,
@@ -5338,8 +4086,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 89,
@@ -5347,8 +4094,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 13,
@@ -5356,8 +4102,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 62,
@@ -5365,8 +4110,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 77,
@@ -5374,8 +4118,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
     dosage: 79,
@@ -5383,8 +4126,7 @@ CREATE (:Prescription {
     idepisode: '109'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
     dosage: 19,
@@ -5392,8 +4134,7 @@ CREATE (:Prescription {
     idepisode: '109'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
     dosage: 74,
@@ -5401,8 +4142,7 @@ CREATE (:Prescription {
     idepisode: '111'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
     dosage: 22,
@@ -5410,8 +4150,7 @@ CREATE (:Prescription {
     idepisode: '111'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
     dosage: 51,
@@ -5419,8 +4158,7 @@ CREATE (:Prescription {
     idepisode: '111'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-08-15),
     dosage: 88,
@@ -5428,8 +4166,7 @@ CREATE (:Prescription {
     idepisode: '112'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
     dosage: 64,
@@ -5437,8 +4174,7 @@ CREATE (:Prescription {
     idepisode: '113'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
     dosage: 24,
@@ -5446,8 +4182,7 @@ CREATE (:Prescription {
     idepisode: '113'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 33,
@@ -5455,8 +4190,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 26,
@@ -5464,8 +4198,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 100,
@@ -5473,8 +4206,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 43,
@@ -5482,8 +4214,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 51,
@@ -5491,8 +4222,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-15),
     dosage: 12,
@@ -5500,8 +4230,7 @@ CREATE (:Prescription {
     idepisode: '119'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
     dosage: 38,
@@ -5509,8 +4238,7 @@ CREATE (:Prescription {
     idepisode: '120'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
     dosage: 66,
@@ -5518,8 +4246,7 @@ CREATE (:Prescription {
     idepisode: '120'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-06-18),
     dosage: 48,
@@ -5527,8 +4254,7 @@ CREATE (:Prescription {
     idepisode: '122'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-06-18),
     dosage: 97,
@@ -5536,8 +4262,7 @@ CREATE (:Prescription {
     idepisode: '122'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-26),
     dosage: 76,
@@ -5545,8 +4270,7 @@ CREATE (:Prescription {
     idepisode: '125'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 50,
@@ -5554,8 +4278,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 37,
@@ -5563,8 +4286,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 35,
@@ -5572,8 +4294,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 51,
@@ -5581,8 +4302,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
     dosage: 6,
@@ -5590,8 +4310,7 @@ CREATE (:Prescription {
     idepisode: '127'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
     dosage: 98,
@@ -5599,8 +4318,7 @@ CREATE (:Prescription {
     idepisode: '127'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
     dosage: 72,
@@ -5608,8 +4326,7 @@ CREATE (:Prescription {
     idepisode: '1'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
     dosage: 47,
@@ -5617,8 +4334,7 @@ CREATE (:Prescription {
     idepisode: '1'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
     dosage: 64,
@@ -5626,8 +4342,7 @@ CREATE (:Prescription {
     idepisode: '1'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
     dosage: 9,
@@ -5635,8 +4350,7 @@ CREATE (:Prescription {
     idepisode: '1'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2013-12-21),
     dosage: 90,
@@ -5644,8 +4358,7 @@ CREATE (:Prescription {
     idepisode: '1'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 38,
@@ -5653,8 +4366,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 35,
@@ -5662,8 +4374,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 91,
@@ -5671,8 +4382,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 72,
@@ -5680,8 +4390,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 44,
@@ -5689,8 +4398,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 16,
@@ -5698,8 +4406,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-18),
     dosage: 49,
@@ -5707,8 +4414,7 @@ CREATE (:Prescription {
     idepisode: '2'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
     dosage: 43,
@@ -5716,8 +4422,7 @@ CREATE (:Prescription {
     idepisode: '3'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-04),
     dosage: 50,
@@ -5725,8 +4430,7 @@ CREATE (:Prescription {
     idepisode: '3'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-29),
     dosage: 41,
@@ -5734,8 +4438,7 @@ CREATE (:Prescription {
     idepisode: '4'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
     dosage: 70,
@@ -5743,8 +4446,7 @@ CREATE (:Prescription {
     idepisode: '5'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
     dosage: 59,
@@ -5752,8 +4454,7 @@ CREATE (:Prescription {
     idepisode: '5'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
     dosage: 66,
@@ -5761,8 +4462,7 @@ CREATE (:Prescription {
     idepisode: '5'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-21),
     dosage: 78,
@@ -5770,8 +4470,7 @@ CREATE (:Prescription {
     idepisode: '5'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
     dosage: 14,
@@ -5779,8 +4478,7 @@ CREATE (:Prescription {
     idepisode: '6'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
     dosage: 50,
@@ -5788,8 +4486,7 @@ CREATE (:Prescription {
     idepisode: '6'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-28),
     dosage: 9,
@@ -5797,8 +4494,7 @@ CREATE (:Prescription {
     idepisode: '6'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 69,
@@ -5806,8 +4502,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 26,
@@ -5815,8 +4510,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 71,
@@ -5824,8 +4518,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 6,
@@ -5833,8 +4526,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 4,
@@ -5842,8 +4534,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 65,
@@ -5851,8 +4542,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-23),
     dosage: 56,
@@ -5860,8 +4550,7 @@ CREATE (:Prescription {
     idepisode: '7'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 31,
@@ -5869,8 +4558,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 49,
@@ -5878,8 +4566,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 66,
@@ -5887,8 +4574,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 80,
@@ -5896,8 +4582,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 69,
@@ -5905,8 +4590,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 84,
@@ -5914,8 +4598,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 60,
@@ -5923,8 +4606,7 @@ CREATE (:Prescription {
     idepisode: '8'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 11,
@@ -5932,8 +4614,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 88,
@@ -5941,8 +4622,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 13,
@@ -5950,8 +4630,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 86,
@@ -5959,8 +4638,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 9,
@@ -5968,8 +4646,7 @@ CREATE (:Prescription {
     idepisode: '9'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
     dosage: 82,
@@ -5977,8 +4654,7 @@ CREATE (:Prescription {
     idepisode: '10'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
     dosage: 40,
@@ -5986,8 +4662,7 @@ CREATE (:Prescription {
     idepisode: '10'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
     dosage: 27,
@@ -5995,8 +4670,7 @@ CREATE (:Prescription {
     idepisode: '10'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
     dosage: 51,
@@ -6004,8 +4678,7 @@ CREATE (:Prescription {
     idepisode: '10'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
     dosage: 87,
@@ -6013,8 +4686,7 @@ CREATE (:Prescription {
     idepisode: '10'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-28),
     dosage: 50,
@@ -6022,8 +4694,7 @@ CREATE (:Prescription {
     idepisode: '10'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 73,
@@ -6031,8 +4702,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 12,
@@ -6040,8 +4710,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 73,
@@ -6049,8 +4718,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-21),
     dosage: 71,
@@ -6058,8 +4726,7 @@ CREATE (:Prescription {
     idepisode: '11'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
     dosage: 26,
@@ -6067,8 +4734,7 @@ CREATE (:Prescription {
     idepisode: '12'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
     dosage: 28,
@@ -6076,8 +4742,7 @@ CREATE (:Prescription {
     idepisode: '12'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
     dosage: 50,
@@ -6085,8 +4750,7 @@ CREATE (:Prescription {
     idepisode: '12'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-27),
     dosage: 4,
@@ -6094,8 +4758,7 @@ CREATE (:Prescription {
     idepisode: '12'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 63,
@@ -6103,8 +4766,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 69,
@@ -6112,8 +4774,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 2,
@@ -6121,8 +4782,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 78,
@@ -6130,8 +4790,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 62,
@@ -6139,8 +4798,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 61,
@@ -6148,8 +4806,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-21),
     dosage: 93,
@@ -6157,8 +4814,7 @@ CREATE (:Prescription {
     idepisode: '13'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-04-19),
     dosage: 77,
@@ -6166,8 +4822,7 @@ CREATE (:Prescription {
     idepisode: '14'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
     dosage: 45,
@@ -6175,8 +4830,7 @@ CREATE (:Prescription {
     idepisode: '15'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
     dosage: 30,
@@ -6184,8 +4838,7 @@ CREATE (:Prescription {
     idepisode: '15'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
     dosage: 16,
@@ -6193,8 +4846,7 @@ CREATE (:Prescription {
     idepisode: '15'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
     dosage: 43,
@@ -6202,8 +4854,7 @@ CREATE (:Prescription {
     idepisode: '15'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
     dosage: 18,
@@ -6211,8 +4862,7 @@ CREATE (:Prescription {
     idepisode: '15'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-24),
     dosage: 4,
@@ -6220,8 +4870,7 @@ CREATE (:Prescription {
     idepisode: '15'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
     dosage: 38,
@@ -6229,8 +4878,7 @@ CREATE (:Prescription {
     idepisode: '16'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
     dosage: 27,
@@ -6238,8 +4886,7 @@ CREATE (:Prescription {
     idepisode: '16'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
     dosage: 79,
@@ -6247,8 +4894,7 @@ CREATE (:Prescription {
     idepisode: '16'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
     dosage: 89,
@@ -6256,8 +4902,7 @@ CREATE (:Prescription {
     idepisode: '16'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
     dosage: 33,
@@ -6265,8 +4910,7 @@ CREATE (:Prescription {
     idepisode: '16'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-14),
     dosage: 56,
@@ -6274,8 +4918,7 @@ CREATE (:Prescription {
     idepisode: '16'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-08),
     dosage: 76,
@@ -6283,8 +4926,7 @@ CREATE (:Prescription {
     idepisode: '17'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-08),
     dosage: 13,
@@ -6292,8 +4934,7 @@ CREATE (:Prescription {
     idepisode: '17'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
     dosage: 62,
@@ -6301,8 +4942,7 @@ CREATE (:Prescription {
     idepisode: '18'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
     dosage: 11,
@@ -6310,8 +4950,7 @@ CREATE (:Prescription {
     idepisode: '18'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
     dosage: 49,
@@ -6319,8 +4958,7 @@ CREATE (:Prescription {
     idepisode: '18'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
     dosage: 6,
@@ -6328,8 +4966,7 @@ CREATE (:Prescription {
     idepisode: '18'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
     dosage: 77,
@@ -6337,8 +4974,7 @@ CREATE (:Prescription {
     idepisode: '18'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-27),
     dosage: 52,
@@ -6346,8 +4982,7 @@ CREATE (:Prescription {
     idepisode: '18'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
     dosage: 2,
@@ -6355,8 +4990,7 @@ CREATE (:Prescription {
     idepisode: '19'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
     dosage: 87,
@@ -6364,8 +4998,7 @@ CREATE (:Prescription {
     idepisode: '19'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
     dosage: 45,
@@ -6373,8 +5006,7 @@ CREATE (:Prescription {
     idepisode: '19'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
     dosage: 2,
@@ -6382,8 +5014,7 @@ CREATE (:Prescription {
     idepisode: '19'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
     dosage: 27,
@@ -6391,8 +5022,7 @@ CREATE (:Prescription {
     idepisode: '19'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-23),
     dosage: 49,
@@ -6400,8 +5030,7 @@ CREATE (:Prescription {
     idepisode: '19'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
     dosage: 18,
@@ -6409,8 +5038,7 @@ CREATE (:Prescription {
     idepisode: '20'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
     dosage: 76,
@@ -6418,8 +5046,7 @@ CREATE (:Prescription {
     idepisode: '20'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
     dosage: 27,
@@ -6427,8 +5054,7 @@ CREATE (:Prescription {
     idepisode: '20'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
     dosage: 48,
@@ -6436,8 +5062,7 @@ CREATE (:Prescription {
     idepisode: '20'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
     dosage: 90,
@@ -6445,8 +5070,7 @@ CREATE (:Prescription {
     idepisode: '20'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-23),
     dosage: 75,
@@ -6454,8 +5078,7 @@ CREATE (:Prescription {
     idepisode: '20'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
     dosage: 73,
@@ -6463,8 +5086,7 @@ CREATE (:Prescription {
     idepisode: '21'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
     dosage: 51,
@@ -6472,8 +5094,7 @@ CREATE (:Prescription {
     idepisode: '21'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
     dosage: 7,
@@ -6481,8 +5102,7 @@ CREATE (:Prescription {
     idepisode: '21'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
     dosage: 39,
@@ -6490,8 +5110,7 @@ CREATE (:Prescription {
     idepisode: '21'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
     dosage: 36,
@@ -6499,8 +5118,7 @@ CREATE (:Prescription {
     idepisode: '21'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-28),
     dosage: 20,
@@ -6508,8 +5126,7 @@ CREATE (:Prescription {
     idepisode: '21'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 45,
@@ -6517,8 +5134,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 14,
@@ -6526,8 +5142,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 36,
@@ -6535,8 +5150,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 24,
@@ -6544,8 +5158,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 71,
@@ -6553,8 +5166,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 42,
@@ -6562,8 +5174,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 20,
@@ -6571,8 +5182,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 54,
@@ -6580,8 +5190,7 @@ CREATE (:Prescription {
     idepisode: '22'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 12,
@@ -6589,8 +5198,7 @@ CREATE (:Prescription {
     idepisode: '23'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 46,
@@ -6598,8 +5206,7 @@ CREATE (:Prescription {
     idepisode: '23'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 17,
@@ -6607,8 +5214,7 @@ CREATE (:Prescription {
     idepisode: '23'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 45,
@@ -6616,8 +5222,7 @@ CREATE (:Prescription {
     idepisode: '24'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 44,
@@ -6625,8 +5230,7 @@ CREATE (:Prescription {
     idepisode: '24'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 53,
@@ -6634,8 +5238,7 @@ CREATE (:Prescription {
     idepisode: '24'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 14,
@@ -6643,8 +5246,7 @@ CREATE (:Prescription {
     idepisode: '24'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 55,
@@ -6652,8 +5254,7 @@ CREATE (:Prescription {
     idepisode: '24'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 2,
@@ -6661,8 +5262,7 @@ CREATE (:Prescription {
     idepisode: '24'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-11),
     dosage: 37,
@@ -6670,8 +5270,7 @@ CREATE (:Prescription {
     idepisode: '25'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 31,
@@ -6679,8 +5278,7 @@ CREATE (:Prescription {
     idepisode: '26'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 76,
@@ -6688,8 +5286,7 @@ CREATE (:Prescription {
     idepisode: '26'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 49,
@@ -6697,8 +5294,7 @@ CREATE (:Prescription {
     idepisode: '26'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 1,
@@ -6706,8 +5302,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 68,
@@ -6715,8 +5310,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-09-05),
     dosage: 22,
@@ -6724,8 +5318,7 @@ CREATE (:Prescription {
     idepisode: '27'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 25,
@@ -6733,8 +5326,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 86,
@@ -6742,8 +5334,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 21,
@@ -6751,8 +5342,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 76,
@@ -6760,8 +5350,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-15),
     dosage: 63,
@@ -6769,8 +5358,7 @@ CREATE (:Prescription {
     idepisode: '28'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 92,
@@ -6778,8 +5366,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 27,
@@ -6787,8 +5374,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 28,
@@ -6796,8 +5382,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 13,
@@ -6805,8 +5390,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-10),
     dosage: 58,
@@ -6814,8 +5398,7 @@ CREATE (:Prescription {
     idepisode: '29'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
     dosage: 54,
@@ -6823,8 +5406,7 @@ CREATE (:Prescription {
     idepisode: '30'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
     dosage: 93,
@@ -6832,8 +5414,7 @@ CREATE (:Prescription {
     idepisode: '30'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
     dosage: 77,
@@ -6841,8 +5422,7 @@ CREATE (:Prescription {
     idepisode: '30'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
     dosage: 100,
@@ -6850,8 +5430,7 @@ CREATE (:Prescription {
     idepisode: '30'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-27),
     dosage: 24,
@@ -6859,8 +5438,7 @@ CREATE (:Prescription {
     idepisode: '30'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-06-04),
     dosage: 10,
@@ -6868,8 +5446,7 @@ CREATE (:Prescription {
     idepisode: '31'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 92,
@@ -6877,8 +5454,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 6,
@@ -6886,8 +5462,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 70,
@@ -6895,8 +5470,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 73,
@@ -6904,8 +5478,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 46,
@@ -6913,8 +5486,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 65,
@@ -6922,8 +5494,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 24,
@@ -6931,8 +5502,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-09-11),
     dosage: 28,
@@ -6940,8 +5510,7 @@ CREATE (:Prescription {
     idepisode: '32'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 18,
@@ -6949,8 +5518,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 91,
@@ -6958,8 +5526,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 55,
@@ -6967,8 +5534,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-09),
     dosage: 49,
@@ -6976,8 +5542,7 @@ CREATE (:Prescription {
     idepisode: '33'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-16),
     dosage: 77,
@@ -6985,8 +5550,7 @@ CREATE (:Prescription {
     idepisode: '34'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-16),
     dosage: 76,
@@ -6994,8 +5558,7 @@ CREATE (:Prescription {
     idepisode: '34'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-16),
     dosage: 18,
@@ -7003,8 +5566,7 @@ CREATE (:Prescription {
     idepisode: '35'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
     dosage: 15,
@@ -7012,8 +5574,7 @@ CREATE (:Prescription {
     idepisode: '36'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
     dosage: 42,
@@ -7021,8 +5582,7 @@ CREATE (:Prescription {
     idepisode: '36'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
     dosage: 94,
@@ -7030,8 +5590,7 @@ CREATE (:Prescription {
     idepisode: '36'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-11),
     dosage: 48,
@@ -7039,8 +5598,7 @@ CREATE (:Prescription {
     idepisode: '36'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 96,
@@ -7048,8 +5606,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 56,
@@ -7057,8 +5614,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 75,
@@ -7066,8 +5622,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-15),
     dosage: 65,
@@ -7075,8 +5630,7 @@ CREATE (:Prescription {
     idepisode: '37'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
     dosage: 57,
@@ -7084,8 +5638,7 @@ CREATE (:Prescription {
     idepisode: '38'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
     dosage: 54,
@@ -7093,8 +5646,7 @@ CREATE (:Prescription {
     idepisode: '38'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
     dosage: 45,
@@ -7102,8 +5654,7 @@ CREATE (:Prescription {
     idepisode: '38'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-27),
     dosage: 4,
@@ -7111,8 +5662,7 @@ CREATE (:Prescription {
     idepisode: '38'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-10-02),
     dosage: 3,
@@ -7120,8 +5670,7 @@ CREATE (:Prescription {
     idepisode: '40'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 76,
@@ -7129,8 +5678,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 19,
@@ -7138,8 +5686,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 42,
@@ -7147,8 +5694,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 34,
@@ -7156,8 +5702,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-23),
     dosage: 99,
@@ -7165,8 +5710,7 @@ CREATE (:Prescription {
     idepisode: '41'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
     dosage: 42,
@@ -7174,8 +5718,7 @@ CREATE (:Prescription {
     idepisode: '42'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
     dosage: 79,
@@ -7183,8 +5726,7 @@ CREATE (:Prescription {
     idepisode: '42'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-04),
     dosage: 58,
@@ -7192,8 +5734,7 @@ CREATE (:Prescription {
     idepisode: '42'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
     dosage: 58,
@@ -7201,8 +5742,7 @@ CREATE (:Prescription {
     idepisode: '43'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
     dosage: 85,
@@ -7210,8 +5750,7 @@ CREATE (:Prescription {
     idepisode: '43'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-01),
     dosage: 12,
@@ -7219,8 +5758,7 @@ CREATE (:Prescription {
     idepisode: '43'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
     dosage: 79,
@@ -7228,8 +5766,7 @@ CREATE (:Prescription {
     idepisode: '45'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
     dosage: 15,
@@ -7237,8 +5774,7 @@ CREATE (:Prescription {
     idepisode: '45'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-23),
     dosage: 40,
@@ -7246,8 +5782,7 @@ CREATE (:Prescription {
     idepisode: '45'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
     dosage: 70,
@@ -7255,8 +5790,7 @@ CREATE (:Prescription {
     idepisode: '46'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
     dosage: 91,
@@ -7264,8 +5798,7 @@ CREATE (:Prescription {
     idepisode: '46'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
     dosage: 22,
@@ -7273,8 +5806,7 @@ CREATE (:Prescription {
     idepisode: '46'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 46,
@@ -7282,8 +5814,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 1,
@@ -7291,8 +5822,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 49,
@@ -7300,8 +5830,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-12),
     dosage: 72,
@@ -7309,8 +5838,7 @@ CREATE (:Prescription {
     idepisode: '47'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
     dosage: 49,
@@ -7318,8 +5846,7 @@ CREATE (:Prescription {
     idepisode: '48'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-14),
     dosage: 93,
@@ -7327,8 +5854,7 @@ CREATE (:Prescription {
     idepisode: '48'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-15),
     dosage: 88,
@@ -7336,8 +5862,7 @@ CREATE (:Prescription {
     idepisode: '49'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-15),
     dosage: 17,
@@ -7345,8 +5870,7 @@ CREATE (:Prescription {
     idepisode: '49'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
     dosage: 56,
@@ -7354,8 +5878,7 @@ CREATE (:Prescription {
     idepisode: '51'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
     dosage: 79,
@@ -7363,8 +5886,7 @@ CREATE (:Prescription {
     idepisode: '51'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
     dosage: 49,
@@ -7372,8 +5894,7 @@ CREATE (:Prescription {
     idepisode: '51'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-06),
     dosage: 74,
@@ -7381,8 +5902,7 @@ CREATE (:Prescription {
     idepisode: '51'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 64,
@@ -7390,8 +5910,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 63,
@@ -7399,8 +5918,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-20),
     dosage: 24,
@@ -7408,8 +5926,7 @@ CREATE (:Prescription {
     idepisode: '52'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
     dosage: 98,
@@ -7417,8 +5934,7 @@ CREATE (:Prescription {
     idepisode: '53'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
     dosage: 94,
@@ -7426,8 +5942,7 @@ CREATE (:Prescription {
     idepisode: '53'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-27),
     dosage: 30,
@@ -7435,8 +5950,7 @@ CREATE (:Prescription {
     idepisode: '53'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
     dosage: 60,
@@ -7444,8 +5958,7 @@ CREATE (:Prescription {
     idepisode: '54'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
     dosage: 15,
@@ -7453,8 +5966,7 @@ CREATE (:Prescription {
     idepisode: '54'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-01-23),
     dosage: 5,
@@ -7462,8 +5974,7 @@ CREATE (:Prescription {
     idepisode: '54'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 40,
@@ -7471,8 +5982,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 74,
@@ -7480,8 +5990,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-21),
     dosage: 26,
@@ -7489,8 +5998,7 @@ CREATE (:Prescription {
     idepisode: '55'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-20),
     dosage: 71,
@@ -7498,8 +6006,7 @@ CREATE (:Prescription {
     idepisode: '56'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-04-20),
     dosage: 19,
@@ -7507,8 +6014,7 @@ CREATE (:Prescription {
     idepisode: '56'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 42,
@@ -7516,8 +6022,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 48,
@@ -7525,8 +6030,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 98,
@@ -7534,8 +6038,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 44,
@@ -7543,8 +6046,7 @@ CREATE (:Prescription {
     idepisode: '57'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
     dosage: 70,
@@ -7552,8 +6054,7 @@ CREATE (:Prescription {
     idepisode: '58'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-10),
     dosage: 19,
@@ -7561,8 +6062,7 @@ CREATE (:Prescription {
     idepisode: '58'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 22,
@@ -7570,8 +6070,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 16,
@@ -7579,8 +6078,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 46,
@@ -7588,8 +6086,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2017-11-08),
     dosage: 88,
@@ -7597,8 +6094,7 @@ CREATE (:Prescription {
     idepisode: '59'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
     dosage: 52,
@@ -7606,8 +6102,7 @@ CREATE (:Prescription {
     idepisode: '60'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
     dosage: 93,
@@ -7615,8 +6110,7 @@ CREATE (:Prescription {
     idepisode: '60'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-12),
     dosage: 61,
@@ -7624,8 +6118,7 @@ CREATE (:Prescription {
     idepisode: '60'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 43,
@@ -7633,8 +6126,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 73,
@@ -7642,8 +6134,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 16,
@@ -7651,8 +6142,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 29,
@@ -7660,8 +6150,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-13),
     dosage: 4,
@@ -7669,8 +6158,7 @@ CREATE (:Prescription {
     idepisode: '61'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2016-12-12),
     dosage: 33,
@@ -7678,8 +6166,7 @@ CREATE (:Prescription {
     idepisode: '62'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-23),
     dosage: 8,
@@ -7687,8 +6174,7 @@ CREATE (:Prescription {
     idepisode: '63'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 77,
@@ -7696,8 +6182,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 85,
@@ -7705,8 +6190,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 94,
@@ -7714,8 +6198,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-01),
     dosage: 72,
@@ -7723,8 +6206,7 @@ CREATE (:Prescription {
     idepisode: '64'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 35,
@@ -7732,8 +6214,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 9,
@@ -7741,8 +6222,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-08-13),
     dosage: 97,
@@ -7750,8 +6230,7 @@ CREATE (:Prescription {
     idepisode: '65'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-09),
     dosage: 16,
@@ -7759,8 +6238,7 @@ CREATE (:Prescription {
     idepisode: '66'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-27),
     dosage: 84,
@@ -7768,8 +6246,7 @@ CREATE (:Prescription {
     idepisode: '67'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
     dosage: 47,
@@ -7777,8 +6254,7 @@ CREATE (:Prescription {
     idepisode: '68'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
     dosage: 79,
@@ -7786,8 +6262,7 @@ CREATE (:Prescription {
     idepisode: '68'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2016-12-26),
     dosage: 9,
@@ -7795,8 +6270,7 @@ CREATE (:Prescription {
     idepisode: '68'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-11-14),
     dosage: 4,
@@ -7804,8 +6278,7 @@ CREATE (:Prescription {
     idepisode: '69'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-02-10),
     dosage: 60,
@@ -7813,8 +6286,7 @@ CREATE (:Prescription {
     idepisode: '70'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
     dosage: 9,
@@ -7822,8 +6294,7 @@ CREATE (:Prescription {
     idepisode: '71'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2015-12-05),
     dosage: 8,
@@ -7831,8 +6302,7 @@ CREATE (:Prescription {
     idepisode: '71'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-11-18),
     dosage: 26,
@@ -7840,8 +6310,7 @@ CREATE (:Prescription {
     idepisode: '72'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-01-24),
     dosage: 75,
@@ -7849,8 +6318,7 @@ CREATE (:Prescription {
     idepisode: '73'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-11-29),
     dosage: 73,
@@ -7858,8 +6326,7 @@ CREATE (:Prescription {
     idepisode: '74'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 94,
@@ -7867,8 +6334,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 49,
@@ -7876,8 +6342,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 48,
@@ -7885,8 +6350,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 3,
@@ -7894,8 +6358,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-10-13),
     dosage: 61,
@@ -7903,8 +6366,7 @@ CREATE (:Prescription {
     idepisode: '75'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 70,
@@ -7912,8 +6374,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 61,
@@ -7921,8 +6382,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 41,
@@ -7930,8 +6390,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 98,
@@ -7939,8 +6398,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 18,
@@ -7948,8 +6406,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 49,
@@ -7957,8 +6414,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 56,
@@ -7966,8 +6422,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 59,
@@ -7975,8 +6430,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 28,
@@ -7984,8 +6438,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 97,
@@ -7993,8 +6446,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-01-31),
     dosage: 32,
@@ -8002,8 +6454,7 @@ CREATE (:Prescription {
     idepisode: '93'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 33,
@@ -8011,8 +6462,7 @@ CREATE (:Prescription {
     idepisode: '94'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 52,
@@ -8020,8 +6470,7 @@ CREATE (:Prescription {
     idepisode: '94'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 3,
@@ -8029,8 +6478,7 @@ CREATE (:Prescription {
     idepisode: '94'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 79,
@@ -8038,8 +6486,7 @@ CREATE (:Prescription {
     idepisode: '94'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-22),
     dosage: 28,
@@ -8047,8 +6494,7 @@ CREATE (:Prescription {
     idepisode: '94'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
     dosage: 40,
@@ -8056,8 +6502,7 @@ CREATE (:Prescription {
     idepisode: '95'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
     dosage: 19,
@@ -8065,8 +6510,7 @@ CREATE (:Prescription {
     idepisode: '95'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
     dosage: 45,
@@ -8074,8 +6518,7 @@ CREATE (:Prescription {
     idepisode: '95'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
     dosage: 98,
@@ -8083,8 +6526,7 @@ CREATE (:Prescription {
     idepisode: '95'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-29),
     dosage: 50,
@@ -8092,8 +6534,7 @@ CREATE (:Prescription {
     idepisode: '95'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 62,
@@ -8101,8 +6542,7 @@ CREATE (:Prescription {
     idepisode: '96'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
     dosage: 9,
@@ -8110,8 +6550,7 @@ CREATE (:Prescription {
     idepisode: '97'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
     dosage: 98,
@@ -8119,8 +6558,7 @@ CREATE (:Prescription {
     idepisode: '97'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
     dosage: 94,
@@ -8128,8 +6566,7 @@ CREATE (:Prescription {
     idepisode: '97'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
     dosage: 28,
@@ -8137,8 +6574,7 @@ CREATE (:Prescription {
     idepisode: '97'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
     dosage: 1,
@@ -8146,8 +6582,7 @@ CREATE (:Prescription {
     idepisode: '97'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-10-21),
     dosage: 91,
@@ -8155,8 +6590,7 @@ CREATE (:Prescription {
     idepisode: '97'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
     dosage: 64,
@@ -8164,8 +6598,7 @@ CREATE (:Prescription {
     idepisode: '98'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
     dosage: 33,
@@ -8173,8 +6606,7 @@ CREATE (:Prescription {
     idepisode: '98'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-07),
     dosage: 33,
@@ -8182,8 +6614,7 @@ CREATE (:Prescription {
     idepisode: '98'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-28),
     dosage: 66,
@@ -8191,8 +6622,7 @@ CREATE (:Prescription {
     idepisode: '99'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-28),
     dosage: 59,
@@ -8200,8 +6630,7 @@ CREATE (:Prescription {
     idepisode: '99'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 41,
@@ -8209,8 +6638,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 93,
@@ -8218,8 +6646,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 97,
@@ -8227,8 +6654,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 43,
@@ -8236,8 +6662,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 83,
@@ -8245,8 +6670,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-08-23),
     dosage: 16,
@@ -8254,8 +6678,7 @@ CREATE (:Prescription {
     idepisode: '100'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 60,
@@ -8263,8 +6686,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 72,
@@ -8272,8 +6694,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 76,
@@ -8281,8 +6702,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 83,
@@ -8290,8 +6710,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 27,
@@ -8299,8 +6718,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 57,
@@ -8308,8 +6726,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-09-11),
     dosage: 55,
@@ -8317,8 +6734,7 @@ CREATE (:Prescription {
     idepisode: '101'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
     dosage: 54,
@@ -8326,8 +6742,7 @@ CREATE (:Prescription {
     idepisode: '102'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
     dosage: 97,
@@ -8335,8 +6750,7 @@ CREATE (:Prescription {
     idepisode: '102'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
     dosage: 88,
@@ -8344,8 +6758,7 @@ CREATE (:Prescription {
     idepisode: '102'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
     dosage: 63,
@@ -8353,8 +6766,7 @@ CREATE (:Prescription {
     idepisode: '102'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
     dosage: 8,
@@ -8362,8 +6774,7 @@ CREATE (:Prescription {
     idepisode: '102'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-05-31),
     dosage: 65,
@@ -8371,8 +6782,7 @@ CREATE (:Prescription {
     idepisode: '102'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 35,
@@ -8380,8 +6790,7 @@ CREATE (:Prescription {
     idepisode: '103'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 85,
@@ -8389,8 +6798,7 @@ CREATE (:Prescription {
     idepisode: '103'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 93,
@@ -8398,8 +6806,7 @@ CREATE (:Prescription {
     idepisode: '103'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 9,
@@ -8407,8 +6814,7 @@ CREATE (:Prescription {
     idepisode: '103'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 35,
@@ -8416,8 +6822,7 @@ CREATE (:Prescription {
     idepisode: '103'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-16),
     dosage: 59,
@@ -8425,8 +6830,7 @@ CREATE (:Prescription {
     idepisode: '103'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
     dosage: 94,
@@ -8434,8 +6838,7 @@ CREATE (:Prescription {
     idepisode: '104'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
     dosage: 47,
@@ -8443,8 +6846,7 @@ CREATE (:Prescription {
     idepisode: '104'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
     dosage: 24,
@@ -8452,8 +6854,7 @@ CREATE (:Prescription {
     idepisode: '104'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-03),
     dosage: 17,
@@ -8461,8 +6862,7 @@ CREATE (:Prescription {
     idepisode: '104'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 48,
@@ -8470,8 +6870,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 2,
@@ -8479,8 +6878,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 24,
@@ -8488,8 +6886,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 70,
@@ -8497,8 +6894,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 55,
@@ -8506,8 +6902,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-12-31),
     dosage: 98,
@@ -8515,8 +6910,7 @@ CREATE (:Prescription {
     idepisode: '105'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 59,
@@ -8524,8 +6918,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 21,
@@ -8533,8 +6926,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 86,
@@ -8542,8 +6934,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 57,
@@ -8551,8 +6942,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 86,
@@ -8560,8 +6950,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 4,
@@ -8569,8 +6958,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 55,
@@ -8578,8 +6966,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-14),
     dosage: 22,
@@ -8587,8 +6974,7 @@ CREATE (:Prescription {
     idepisode: '106'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-04-29),
     dosage: 6,
@@ -8596,8 +6982,7 @@ CREATE (:Prescription {
     idepisode: '107'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 31,
@@ -8605,8 +6990,7 @@ CREATE (:Prescription {
     idepisode: '108'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 82,
@@ -8614,8 +6998,7 @@ CREATE (:Prescription {
     idepisode: '108'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 97,
@@ -8623,8 +7006,7 @@ CREATE (:Prescription {
     idepisode: '108'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 50,
@@ -8632,8 +7014,7 @@ CREATE (:Prescription {
     idepisode: '108'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-04),
     dosage: 45,
@@ -8641,8 +7022,7 @@ CREATE (:Prescription {
     idepisode: '108'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
     dosage: 10,
@@ -8650,8 +7030,7 @@ CREATE (:Prescription {
     idepisode: '109'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
     dosage: 83,
@@ -8659,8 +7038,7 @@ CREATE (:Prescription {
     idepisode: '109'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-05-13),
     dosage: 87,
@@ -8668,8 +7046,7 @@ CREATE (:Prescription {
     idepisode: '109'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
     dosage: 31,
@@ -8677,8 +7054,7 @@ CREATE (:Prescription {
     idepisode: '110'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
     dosage: 28,
@@ -8686,8 +7062,7 @@ CREATE (:Prescription {
     idepisode: '110'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
     dosage: 80,
@@ -8695,8 +7070,7 @@ CREATE (:Prescription {
     idepisode: '110'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
     dosage: 25,
@@ -8704,8 +7078,7 @@ CREATE (:Prescription {
     idepisode: '110'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-15),
     dosage: 8,
@@ -8713,8 +7086,7 @@ CREATE (:Prescription {
     idepisode: '110'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
     dosage: 62,
@@ -8722,8 +7094,7 @@ CREATE (:Prescription {
     idepisode: '111'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
     dosage: 28,
@@ -8731,8 +7102,7 @@ CREATE (:Prescription {
     idepisode: '111'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-11),
     dosage: 13,
@@ -8740,8 +7110,7 @@ CREATE (:Prescription {
     idepisode: '111'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-08-15),
     dosage: 48,
@@ -8749,8 +7118,7 @@ CREATE (:Prescription {
     idepisode: '112'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-08-15),
     dosage: 30,
@@ -8758,8 +7126,7 @@ CREATE (:Prescription {
     idepisode: '112'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
     dosage: 86,
@@ -8767,8 +7134,7 @@ CREATE (:Prescription {
     idepisode: '113'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-03-07),
     dosage: 28,
@@ -8776,8 +7142,7 @@ CREATE (:Prescription {
     idepisode: '113'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-15),
     dosage: 66,
@@ -8785,8 +7150,7 @@ CREATE (:Prescription {
     idepisode: '114'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-15),
     dosage: 18,
@@ -8794,8 +7158,7 @@ CREATE (:Prescription {
     idepisode: '114'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-05-15),
     dosage: 89,
@@ -8803,8 +7166,7 @@ CREATE (:Prescription {
     idepisode: '114'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 88,
@@ -8812,8 +7174,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 38,
@@ -8821,8 +7182,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-05-24),
     dosage: 86,
@@ -8830,8 +7190,7 @@ CREATE (:Prescription {
     idepisode: '115'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-03-01),
     dosage: 39,
@@ -8839,8 +7198,7 @@ CREATE (:Prescription {
     idepisode: '116'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 56,
@@ -8848,8 +7206,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-10-26),
     dosage: 70,
@@ -8857,8 +7214,7 @@ CREATE (:Prescription {
     idepisode: '117'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 83,
@@ -8866,8 +7222,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 6,
@@ -8875,8 +7230,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 65,
@@ -8884,8 +7238,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 33,
@@ -8893,8 +7246,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 46,
@@ -8902,8 +7254,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 5,
@@ -8911,8 +7262,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 53,
@@ -8920,8 +7270,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-13),
     dosage: 66,
@@ -8929,8 +7278,7 @@ CREATE (:Prescription {
     idepisode: '118'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-15),
     dosage: 7,
@@ -8938,8 +7286,7 @@ CREATE (:Prescription {
     idepisode: '119'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-15),
     dosage: 13,
@@ -8947,8 +7294,7 @@ CREATE (:Prescription {
     idepisode: '119'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
     dosage: 98,
@@ -8956,8 +7302,7 @@ CREATE (:Prescription {
     idepisode: '120'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
     dosage: 8,
@@ -8965,8 +7310,7 @@ CREATE (:Prescription {
     idepisode: '120'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-13),
     dosage: 28,
@@ -8974,8 +7318,7 @@ CREATE (:Prescription {
     idepisode: '120'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 76,
@@ -8983,8 +7326,7 @@ CREATE (:Prescription {
     idepisode: '121'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 59,
@@ -8992,8 +7334,7 @@ CREATE (:Prescription {
     idepisode: '121'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 65,
@@ -9001,8 +7342,7 @@ CREATE (:Prescription {
     idepisode: '121'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 63,
@@ -9010,8 +7350,7 @@ CREATE (:Prescription {
     idepisode: '121'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 72,
@@ -9019,8 +7358,7 @@ CREATE (:Prescription {
     idepisode: '121'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-23),
     dosage: 68,
@@ -9028,8 +7366,7 @@ CREATE (:Prescription {
     idepisode: '121'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-06-18),
     dosage: 74,
@@ -9037,8 +7374,7 @@ CREATE (:Prescription {
     idepisode: '122'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 45,
@@ -9046,8 +7382,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 99,
@@ -9055,8 +7390,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 94,
@@ -9064,8 +7398,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 44,
@@ -9073,8 +7406,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 64,
@@ -9082,8 +7414,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 34,
@@ -9091,8 +7422,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-01),
     dosage: 41,
@@ -9100,8 +7430,7 @@ CREATE (:Prescription {
     idepisode: '123'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
     dosage: 90,
@@ -9109,8 +7438,7 @@ CREATE (:Prescription {
     idepisode: '124'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
     dosage: 24,
@@ -9118,8 +7446,7 @@ CREATE (:Prescription {
     idepisode: '124'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
     dosage: 92,
@@ -9127,8 +7454,7 @@ CREATE (:Prescription {
     idepisode: '124'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-05),
     dosage: 12,
@@ -9136,8 +7462,7 @@ CREATE (:Prescription {
     idepisode: '124'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-26),
     dosage: 9,
@@ -9145,8 +7470,7 @@ CREATE (:Prescription {
     idepisode: '125'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-26),
     dosage: 75,
@@ -9154,8 +7478,7 @@ CREATE (:Prescription {
     idepisode: '125'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 57,
@@ -9163,8 +7486,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 17,
@@ -9172,8 +7494,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 10,
@@ -9181,8 +7502,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-08-06),
     dosage: 8,
@@ -9190,8 +7510,7 @@ CREATE (:Prescription {
     idepisode: '126'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
     dosage: 25,
@@ -9199,8 +7518,7 @@ CREATE (:Prescription {
     idepisode: '127'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
     dosage: 12,
@@ -9208,8 +7526,7 @@ CREATE (:Prescription {
     idepisode: '127'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-06-27),
     dosage: 43,
@@ -9217,8 +7534,7 @@ CREATE (:Prescription {
     idepisode: '127'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 14,
@@ -9226,8 +7542,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 50,
@@ -9235,8 +7550,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 76,
@@ -9244,8 +7558,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 46,
@@ -9253,8 +7566,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 85,
@@ -9262,8 +7574,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 77,
@@ -9271,8 +7582,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-06-04),
     dosage: 88,
@@ -9280,8 +7590,7 @@ CREATE (:Prescription {
     idepisode: '128'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 98,
@@ -9289,8 +7598,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 83,
@@ -9298,8 +7606,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 35,
@@ -9307,8 +7614,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 40,
@@ -9316,8 +7622,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 25,
@@ -9325,8 +7630,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
     dosage: 84,
@@ -9334,8 +7638,7 @@ CREATE (:Prescription {
     idepisode: '130'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
     dosage: 82,
@@ -9343,8 +7646,7 @@ CREATE (:Prescription {
     idepisode: '130'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
     dosage: 32,
@@ -9352,8 +7654,7 @@ CREATE (:Prescription {
     idepisode: '130'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-22),
     dosage: 71,
@@ -9361,8 +7662,7 @@ CREATE (:Prescription {
     idepisode: '130'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 19,
@@ -9370,8 +7670,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 70,
@@ -9379,8 +7678,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 77,
@@ -9388,8 +7686,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 37,
@@ -9397,8 +7694,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 67,
@@ -9406,8 +7702,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 93,
@@ -9415,8 +7710,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 53,
@@ -9424,8 +7718,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 63,
@@ -9433,8 +7726,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 70,
@@ -9442,8 +7734,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 48,
@@ -9451,8 +7742,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 95,
@@ -9460,8 +7750,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-09),
     dosage: 99,
@@ -9469,8 +7758,7 @@ CREATE (:Prescription {
     idepisode: '132'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 68,
@@ -9478,8 +7766,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 83,
@@ -9487,8 +7774,7 @@ CREATE (:Prescription {
     idepisode: '77'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-10),
     dosage: 24,
@@ -9496,8 +7782,7 @@ CREATE (:Prescription {
     idepisode: '77'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-29),
     dosage: 46,
@@ -9505,8 +7790,7 @@ CREATE (:Prescription {
     idepisode: '78'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 78,
@@ -9514,8 +7798,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 86,
@@ -9523,8 +7806,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 57,
@@ -9532,8 +7814,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 14,
@@ -9541,8 +7822,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 64,
@@ -9550,8 +7830,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 56,
@@ -9559,8 +7838,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-17),
     dosage: 63,
@@ -9568,8 +7846,7 @@ CREATE (:Prescription {
     idepisode: '79'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
     dosage: 96,
@@ -9577,8 +7854,7 @@ CREATE (:Prescription {
     idepisode: '80'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
     dosage: 42,
@@ -9586,8 +7862,7 @@ CREATE (:Prescription {
     idepisode: '80'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
     dosage: 9,
@@ -9595,8 +7870,7 @@ CREATE (:Prescription {
     idepisode: '80'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
     dosage: 99,
@@ -9604,8 +7878,7 @@ CREATE (:Prescription {
     idepisode: '80'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
     dosage: 46,
@@ -9613,8 +7886,7 @@ CREATE (:Prescription {
     idepisode: '80'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-20),
     dosage: 62,
@@ -9622,8 +7894,7 @@ CREATE (:Prescription {
     idepisode: '80'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-09),
     dosage: 52,
@@ -9631,8 +7902,7 @@ CREATE (:Prescription {
     idepisode: '81'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-09),
     dosage: 97,
@@ -9640,8 +7910,7 @@ CREATE (:Prescription {
     idepisode: '81'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 71,
@@ -9649,8 +7918,7 @@ CREATE (:Prescription {
     idepisode: '82'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 56,
@@ -9658,8 +7926,7 @@ CREATE (:Prescription {
     idepisode: '82'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-09-02),
     dosage: 98,
@@ -9667,8 +7934,7 @@ CREATE (:Prescription {
     idepisode: '83'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-24),
     dosage: 24,
@@ -9676,8 +7942,7 @@ CREATE (:Prescription {
     idepisode: '84'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-02-24),
     dosage: 18,
@@ -9685,8 +7950,7 @@ CREATE (:Prescription {
     idepisode: '84'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 98,
@@ -9694,8 +7958,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 24,
@@ -9703,8 +7966,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 29,
@@ -9712,8 +7974,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-12-10),
     dosage: 57,
@@ -9721,8 +7982,7 @@ CREATE (:Prescription {
     idepisode: '86'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 69,
@@ -9730,8 +7990,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 23,
@@ -9739,8 +7998,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 11,
@@ -9748,8 +8006,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 6,
@@ -9757,8 +8014,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2018-05-20),
     dosage: 43,
@@ -9766,8 +8022,7 @@ CREATE (:Prescription {
     idepisode: '87'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 1,
@@ -9775,8 +8030,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 91,
@@ -9784,8 +8038,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 76,
@@ -9793,8 +8046,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 30,
@@ -9802,8 +8054,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-11-11),
     dosage: 74,
@@ -9811,8 +8062,7 @@ CREATE (:Prescription {
     idepisode: '88'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-11),
     dosage: 76,
@@ -9820,8 +8070,7 @@ CREATE (:Prescription {
     idepisode: '89'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-11),
     dosage: 46,
@@ -9829,8 +8078,7 @@ CREATE (:Prescription {
     idepisode: '89'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-28),
     dosage: 11,
@@ -9838,8 +8086,7 @@ CREATE (:Prescription {
     idepisode: '90'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 53,
@@ -9847,8 +8094,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 42,
@@ -9856,8 +8102,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-10-03),
     dosage: 19,
@@ -9865,8 +8110,7 @@ CREATE (:Prescription {
     idepisode: '91'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 71,
@@ -9874,8 +8118,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-12-15),
     dosage: 18,
@@ -9883,8 +8126,7 @@ CREATE (:Prescription {
     idepisode: '92'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
     dosage: 73,
@@ -9892,8 +8134,7 @@ CREATE (:Prescription {
     idepisode: '133'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
     dosage: 73,
@@ -9901,8 +8142,7 @@ CREATE (:Prescription {
     idepisode: '133'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
     dosage: 61,
@@ -9910,8 +8150,7 @@ CREATE (:Prescription {
     idepisode: '133'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 75,
@@ -9919,8 +8158,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 93,
@@ -9928,8 +8166,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 32,
@@ -9937,8 +8174,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 6,
@@ -9946,8 +8182,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-16),
     dosage: 22,
@@ -9955,8 +8190,7 @@ CREATE (:Prescription {
     idepisode: '134'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-07-21),
     dosage: 26,
@@ -9964,8 +8198,7 @@ CREATE (:Prescription {
     idepisode: '135'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
     dosage: 25,
@@ -9973,8 +8206,7 @@ CREATE (:Prescription {
     idepisode: '136'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
     dosage: 77,
@@ -9982,8 +8214,7 @@ CREATE (:Prescription {
     idepisode: '136'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
     dosage: 3,
@@ -9991,8 +8222,7 @@ CREATE (:Prescription {
     idepisode: '136'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 20,
@@ -10000,8 +8230,7 @@ CREATE (:Prescription {
     idepisode: '137'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
     dosage: 26,
@@ -10009,8 +8238,7 @@ CREATE (:Prescription {
     idepisode: '138'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
     dosage: 6,
@@ -10018,8 +8246,7 @@ CREATE (:Prescription {
     idepisode: '138'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 25,
@@ -10027,8 +8254,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 51,
@@ -10036,8 +8262,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 51,
@@ -10045,8 +8270,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 48,
@@ -10054,8 +8278,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 68,
@@ -10063,8 +8286,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 32,
@@ -10072,8 +8294,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 86,
@@ -10081,8 +8302,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 7,
@@ -10090,8 +8310,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 87,
@@ -10099,8 +8318,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 49,
@@ -10108,8 +8326,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 31,
@@ -10117,8 +8334,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 75,
@@ -10126,8 +8342,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 42,
@@ -10135,8 +8350,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-02),
     dosage: 95,
@@ -10144,8 +8358,7 @@ CREATE (:Prescription {
     idepisode: '141'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 14,
@@ -10153,8 +8366,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 60,
@@ -10162,8 +8374,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 39,
@@ -10171,8 +8382,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 56,
@@ -10180,8 +8390,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 3,
@@ -10189,8 +8398,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 41,
@@ -10198,8 +8406,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
     dosage: 93,
@@ -10207,8 +8414,7 @@ CREATE (:Prescription {
     idepisode: '143'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
     dosage: 56,
@@ -10216,8 +8422,7 @@ CREATE (:Prescription {
     idepisode: '143'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-02-11),
     dosage: 9,
@@ -10225,8 +8430,7 @@ CREATE (:Prescription {
     idepisode: '144'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 39,
@@ -10234,8 +8438,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 84,
@@ -10243,8 +8446,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-04-07),
     dosage: 44,
@@ -10252,8 +8454,7 @@ CREATE (:Prescription {
     idepisode: '129'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 50,
@@ -10261,8 +8462,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 56,
@@ -10270,8 +8470,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-07-16),
     dosage: 37,
@@ -10279,8 +8478,7 @@ CREATE (:Prescription {
     idepisode: '131'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-03-18),
     dosage: 59,
@@ -10288,8 +8486,7 @@ CREATE (:Prescription {
     idepisode: '76'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-03-29),
     dosage: 8,
@@ -10297,8 +8494,7 @@ CREATE (:Prescription {
     idepisode: '78'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 20,
@@ -10306,8 +8502,7 @@ CREATE (:Prescription {
     idepisode: '82'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 85,
@@ -10315,8 +8510,7 @@ CREATE (:Prescription {
     idepisode: '82'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-08-12),
     dosage: 93,
@@ -10324,8 +8518,7 @@ CREATE (:Prescription {
     idepisode: '82'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-07-24),
     dosage: 59,
@@ -10333,8 +8526,7 @@ CREATE (:Prescription {
     idepisode: '85'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
     dosage: 51,
@@ -10342,8 +8534,7 @@ CREATE (:Prescription {
     idepisode: '133'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-09-17),
     dosage: 75,
@@ -10351,8 +8542,7 @@ CREATE (:Prescription {
     idepisode: '133'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-07-21),
     dosage: 43,
@@ -10360,8 +8550,7 @@ CREATE (:Prescription {
     idepisode: '135'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
     dosage: 50,
@@ -10369,8 +8558,7 @@ CREATE (:Prescription {
     idepisode: '136'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-01-10),
     dosage: 87,
@@ -10378,8 +8566,7 @@ CREATE (:Prescription {
     idepisode: '136'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2022-12-20),
     dosage: 70,
@@ -10387,8 +8574,7 @@ CREATE (:Prescription {
     idepisode: '137'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
     dosage: 5,
@@ -10396,8 +8582,7 @@ CREATE (:Prescription {
     idepisode: '138'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-08-22),
     dosage: 22,
@@ -10405,8 +8590,7 @@ CREATE (:Prescription {
     idepisode: '138'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 79,
@@ -10414,8 +8598,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 58,
@@ -10423,8 +8606,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2021-06-16),
     dosage: 30,
@@ -10432,8 +8614,7 @@ CREATE (:Prescription {
     idepisode: '139'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 46,
@@ -10441,8 +8622,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 89,
@@ -10450,8 +8630,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-08),
     dosage: 66,
@@ -10459,8 +8638,7 @@ CREATE (:Prescription {
     idepisode: '140'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 79,
@@ -10468,8 +8646,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 62,
@@ -10477,8 +8654,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 12,
@@ -10486,8 +8662,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2020-10-29),
     dosage: 73,
@@ -10495,8 +8670,7 @@ CREATE (:Prescription {
     idepisode: '142'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
     dosage: 13,
@@ -10504,8 +8678,7 @@ CREATE (:Prescription {
     idepisode: '143'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
     dosage: 85,
@@ -10513,8 +8686,7 @@ CREATE (:Prescription {
     idepisode: '143'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2019-01-25),
     dosage: 39,
@@ -10522,8 +8694,7 @@ CREATE (:Prescription {
     idepisode: '143'
 });
 
-                ;
-
+                
 CREATE (:Prescription {
     prescription_date: date(2023-12-20),
     dosage: 47,
@@ -10531,108 +8702,7 @@ CREATE (:Prescription {
     idepisode: '46'
 });
 
-                ;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2013-11-20"),
     appointment_date: date("2013-12-21"),
@@ -10640,8 +8710,7 @@ CREATE (:Appointment {
     iddoctor: 99,
     idepisode: 1
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2017-10-07"),
     appointment_date: date("2017-11-08"),
@@ -10649,8 +8718,7 @@ CREATE (:Appointment {
     iddoctor: 96,
     idepisode: 59
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-10-26"),
     appointment_date: date("2018-11-27"),
@@ -10658,8 +8726,7 @@ CREATE (:Appointment {
     iddoctor: 92,
     idepisode: 38
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-11-11"),
     appointment_date: date("2022-12-12"),
@@ -10667,8 +8734,7 @@ CREATE (:Appointment {
     iddoctor: 89,
     idepisode: 60
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2017-11-16"),
     appointment_date: date("2017-12-17"),
@@ -10676,8 +8742,7 @@ CREATE (:Appointment {
     iddoctor: 85,
     idepisode: 50
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-11-14"),
     appointment_date: date("2020-12-15"),
@@ -10685,8 +8750,7 @@ CREATE (:Appointment {
     iddoctor: 83,
     idepisode: 92
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-05-19"),
     appointment_date: date("2022-12-20"),
@@ -10694,8 +8758,7 @@ CREATE (:Appointment {
     iddoctor: 82,
     idepisode: 8
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2016-04-11"),
     appointment_date: date("2016-12-12"),
@@ -10703,8 +8766,7 @@ CREATE (:Appointment {
     iddoctor: 71,
     idepisode: 62
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2015-04-04"),
     appointment_date: date("2015-12-05"),
@@ -10712,8 +8774,7 @@ CREATE (:Appointment {
     iddoctor: 66,
     idepisode: 71
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2016-11-25"),
     appointment_date: date("2016-12-26"),
@@ -10721,8 +8782,7 @@ CREATE (:Appointment {
     iddoctor: 63,
     idepisode: 68
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2015-05-01"),
     appointment_date: date("2015-10-02"),
@@ -10730,8 +8790,7 @@ CREATE (:Appointment {
     iddoctor: 62,
     idepisode: 40
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-05-09"),
     appointment_date: date("2020-10-10"),
@@ -10739,8 +8798,7 @@ CREATE (:Appointment {
     iddoctor: 57,
     idepisode: 58
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-05-21"),
     appointment_date: date("2021-10-22"),
@@ -10748,8 +8806,7 @@ CREATE (:Appointment {
     iddoctor: 56,
     idepisode: 94
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-10-09"),
     appointment_date: date("2018-12-10"),
@@ -10757,8 +8814,7 @@ CREATE (:Appointment {
     iddoctor: 34,
     idepisode: 86
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-10-26"),
     appointment_date: date("2023-11-27"),
@@ -10766,8 +8822,7 @@ CREATE (:Appointment {
     iddoctor: 30,
     idepisode: 18
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-01-13"),
     appointment_date: date("2021-07-14"),
@@ -10775,8 +8830,7 @@ CREATE (:Appointment {
     iddoctor: 24,
     idepisode: 48
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-10-28"),
     appointment_date: date("2018-11-29"),
@@ -10784,8 +8838,7 @@ CREATE (:Appointment {
     iddoctor: 17,
     idepisode: 74
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-02-21"),
     appointment_date: date("2021-10-22"),
@@ -10793,8 +8846,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 22
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-05-16"),
     appointment_date: date("2023-11-17"),
@@ -10802,8 +8854,7 @@ CREATE (:Appointment {
     iddoctor: 14,
     idepisode: 79
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-10-13"),
     appointment_date: date("2019-11-14"),
@@ -10811,8 +8862,7 @@ CREATE (:Appointment {
     iddoctor: 13,
     idepisode: 69
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-01-09"),
     appointment_date: date("2020-02-10"),
@@ -10820,8 +8870,7 @@ CREATE (:Appointment {
     iddoctor: 11,
     idepisode: 70
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-08-27"),
     appointment_date: date("2022-10-28"),
@@ -10829,8 +8878,7 @@ CREATE (:Appointment {
     iddoctor: 9,
     idepisode: 21
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-06-01"),
     appointment_date: date("2023-12-01"),
@@ -10838,8 +8886,7 @@ CREATE (:Appointment {
     iddoctor: 8,
     idepisode: 64
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-11-26"),
     appointment_date: date("2023-12-27"),
@@ -10847,8 +8894,7 @@ CREATE (:Appointment {
     iddoctor: 6,
     idepisode: 53
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-02-19"),
     appointment_date: date("2018-05-20"),
@@ -10856,8 +8902,7 @@ CREATE (:Appointment {
     iddoctor: 3,
     idepisode: 87
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-01-10"),
     appointment_date: date("2023-05-14"),
@@ -10865,8 +8910,7 @@ CREATE (:Appointment {
     iddoctor: 2,
     idepisode: 16
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-10-28"),
     appointment_date: date("2023-11-29"),
@@ -10874,8 +8918,7 @@ CREATE (:Appointment {
     iddoctor: 1,
     idepisode: 4
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-09-20"),
     appointment_date: date("2022-10-21"),
@@ -10883,8 +8926,7 @@ CREATE (:Appointment {
     iddoctor: 99,
     idepisode: 97
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-09-03"),
     appointment_date: date("2019-10-04"),
@@ -10892,8 +8934,7 @@ CREATE (:Appointment {
     iddoctor: 96,
     idepisode: 44
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-09-02"),
     appointment_date: date("2023-10-03"),
@@ -10901,8 +8942,7 @@ CREATE (:Appointment {
     iddoctor: 92,
     idepisode: 91
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-08-14"),
     appointment_date: date("2018-12-15"),
@@ -10910,8 +8950,7 @@ CREATE (:Appointment {
     iddoctor: 89,
     idepisode: 37
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-02-14"),
     appointment_date: date("2018-11-15"),
@@ -10919,8 +8958,7 @@ CREATE (:Appointment {
     iddoctor: 85,
     idepisode: 39
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-05-26"),
     appointment_date: date("2023-06-27"),
@@ -10928,8 +8966,7 @@ CREATE (:Appointment {
     iddoctor: 30,
     idepisode: 67
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-11-27"),
     appointment_date: date("2020-12-28"),
@@ -10937,8 +8974,7 @@ CREATE (:Appointment {
     iddoctor: 24,
     idepisode: 10
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-10-10"),
     appointment_date: date("2023-11-11"),
@@ -10946,8 +8982,7 @@ CREATE (:Appointment {
     iddoctor: 19,
     idepisode: 88
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-02-12"),
     appointment_date: date("2018-08-13"),
@@ -10955,8 +8990,7 @@ CREATE (:Appointment {
     iddoctor: 17,
     idepisode: 65
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-02-22"),
     appointment_date: date("2019-08-23"),
@@ -10964,8 +8998,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 100
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-05-22"),
     appointment_date: date("2019-12-23"),
@@ -10973,8 +9006,7 @@ CREATE (:Appointment {
     iddoctor: 14,
     idepisode: 7
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-09-22"),
     appointment_date: date("2021-10-23"),
@@ -10982,8 +9014,7 @@ CREATE (:Appointment {
     iddoctor: 13,
     idepisode: 20
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-03-11"),
     appointment_date: date("2021-05-12"),
@@ -10991,8 +9022,7 @@ CREATE (:Appointment {
     iddoctor: 11,
     idepisode: 47
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-09-15"),
     appointment_date: date("2023-10-16"),
@@ -11000,8 +9030,7 @@ CREATE (:Appointment {
     iddoctor: 30,
     idepisode: 35
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-07-10"),
     appointment_date: date("2021-08-11"),
@@ -11009,8 +9038,7 @@ CREATE (:Appointment {
     iddoctor: 24,
     idepisode: 36
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-09-27"),
     appointment_date: date("2023-10-28"),
@@ -11018,8 +9046,7 @@ CREATE (:Appointment {
     iddoctor: 19,
     idepisode: 90
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-08-10"),
     appointment_date: date("2018-09-11"),
@@ -11027,8 +9054,7 @@ CREATE (:Appointment {
     iddoctor: 17,
     idepisode: 32
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-08-22"),
     appointment_date: date("2023-09-23"),
@@ -11036,8 +9062,7 @@ CREATE (:Appointment {
     iddoctor: 30,
     idepisode: 41
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-04-22"),
     appointment_date: date("2021-05-23"),
@@ -11045,8 +9070,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 45
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-09-21"),
     appointment_date: date("2021-10-22"),
@@ -11054,8 +9078,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 23
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-04-26"),
     appointment_date: date("2020-05-27"),
@@ -11063,8 +9086,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 12
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-09-19"),
     appointment_date: date("2020-10-20"),
@@ -11072,8 +9094,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 52
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-01-10"),
     appointment_date: date("2023-11-13"),
@@ -11081,8 +9102,7 @@ CREATE (:Appointment {
     iddoctor: 99,
     idepisode: 118
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-02-19"),
     appointment_date: date("2023-07-23"),
@@ -11090,8 +9110,7 @@ CREATE (:Appointment {
     iddoctor: 96,
     idepisode: 24
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-11-26"),
     appointment_date: date("2023-10-15"),
@@ -11099,8 +9118,7 @@ CREATE (:Appointment {
     iddoctor: 92,
     idepisode: 49
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-06-01"),
     appointment_date: date("2023-04-25"),
@@ -11108,8 +9126,7 @@ CREATE (:Appointment {
     iddoctor: 89,
     idepisode: 148
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-08-27"),
     appointment_date: date("2023-05-24"),
@@ -11117,8 +9134,7 @@ CREATE (:Appointment {
     iddoctor: 85,
     idepisode: 15
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-01-09"),
     appointment_date: date("2023-03-20"),
@@ -11126,8 +9142,7 @@ CREATE (:Appointment {
     iddoctor: 83,
     idepisode: 80
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-03-11"),
     appointment_date: date("2023-02-23"),
@@ -11135,8 +9150,7 @@ CREATE (:Appointment {
     iddoctor: 82,
     idepisode: 19
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-09-22"),
     appointment_date: date("2023-11-13"),
@@ -11144,8 +9158,7 @@ CREATE (:Appointment {
     iddoctor: 71,
     idepisode: 158
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-10-13"),
     appointment_date: date("2023-11-16"),
@@ -11153,8 +9166,7 @@ CREATE (:Appointment {
     iddoctor: 66,
     idepisode: 196
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-05-16"),
     appointment_date: date("2023-09-24"),
@@ -11162,8 +9174,7 @@ CREATE (:Appointment {
     iddoctor: 99,
     idepisode: 157
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-05-22"),
     appointment_date: date("2023-09-02"),
@@ -11171,8 +9182,7 @@ CREATE (:Appointment {
     iddoctor: 96,
     idepisode: 83
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-04-26"),
     appointment_date: date("2023-08-25"),
@@ -11180,8 +9190,7 @@ CREATE (:Appointment {
     iddoctor: 92,
     idepisode: 162
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-09-19"),
     appointment_date: date("2023-05-15"),
@@ -11189,8 +9198,7 @@ CREATE (:Appointment {
     iddoctor: 89,
     idepisode: 114
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-09-21"),
     appointment_date: date("2023-09-23"),
@@ -11198,8 +9206,7 @@ CREATE (:Appointment {
     iddoctor: 85,
     idepisode: 26
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-04-22"),
     appointment_date: date("2023-02-22"),
@@ -11207,8 +9214,7 @@ CREATE (:Appointment {
     iddoctor: 83,
     idepisode: 130
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-02-22"),
     appointment_date: date("2023-02-07"),
@@ -11216,8 +9222,7 @@ CREATE (:Appointment {
     iddoctor: 82,
     idepisode: 98
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-02-21"),
     appointment_date: date("2023-06-01"),
@@ -11225,8 +9230,7 @@ CREATE (:Appointment {
     iddoctor: 71,
     idepisode: 123
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-02-12"),
     appointment_date: date("2023-07-06"),
@@ -11234,8 +9238,7 @@ CREATE (:Appointment {
     iddoctor: 66,
     idepisode: 51
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-08-10"),
     appointment_date: date("2023-09-09"),
@@ -11243,8 +9246,7 @@ CREATE (:Appointment {
     iddoctor: 99,
     idepisode: 132
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-10-28"),
     appointment_date: date("2023-12-22"),
@@ -11252,8 +9254,7 @@ CREATE (:Appointment {
     iddoctor: 96,
     idepisode: 159
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-10-10"),
     appointment_date: date("2023-06-01"),
@@ -11261,8 +9262,7 @@ CREATE (:Appointment {
     iddoctor: 92,
     idepisode: 151
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-07-26"),
     appointment_date: date("2023-01-16"),
@@ -11270,8 +9270,7 @@ CREATE (:Appointment {
     iddoctor: 89,
     idepisode: 134
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-09-27"),
     appointment_date: date("2023-09-13"),
@@ -11279,8 +9278,7 @@ CREATE (:Appointment {
     iddoctor: 85,
     idepisode: 61
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-01-13"),
     appointment_date: date("2023-09-21"),
@@ -11288,8 +9286,7 @@ CREATE (:Appointment {
     iddoctor: 83,
     idepisode: 13
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-07-10"),
     appointment_date: date("2023-02-04"),
@@ -11297,8 +9294,7 @@ CREATE (:Appointment {
     iddoctor: 82,
     idepisode: 108
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-11-27"),
     appointment_date: date("2023-07-14"),
@@ -11306,8 +9302,7 @@ CREATE (:Appointment {
     iddoctor: 71,
     idepisode: 106
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-05-26"),
     appointment_date: date("2023-10-24"),
@@ -11315,8 +9310,7 @@ CREATE (:Appointment {
     iddoctor: 66,
     idepisode: 154
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-10-26"),
     appointment_date: date("2023-07-27"),
@@ -11324,8 +9318,7 @@ CREATE (:Appointment {
     iddoctor: 99,
     idepisode: 30
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-08-22"),
     appointment_date: date("2023-06-08"),
@@ -11333,8 +9326,7 @@ CREATE (:Appointment {
     iddoctor: 96,
     idepisode: 180
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-09-15"),
     appointment_date: date("2023-04-09"),
@@ -11342,8 +9334,7 @@ CREATE (:Appointment {
     iddoctor: 92,
     idepisode: 163
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-10-09"),
     appointment_date: date("2023-02-16"),
@@ -11351,8 +9342,7 @@ CREATE (:Appointment {
     iddoctor: 89,
     idepisode: 34
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2021-05-21"),
     appointment_date: date("2023-08-02"),
@@ -11360,8 +9350,7 @@ CREATE (:Appointment {
     iddoctor: 85,
     idepisode: 141
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-05-09"),
     appointment_date: date("2023-12-15"),
@@ -11369,8 +9358,7 @@ CREATE (:Appointment {
     iddoctor: 83,
     idepisode: 110
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2015-05-01"),
     appointment_date: date("2023-07-23"),
@@ -11378,8 +9366,7 @@ CREATE (:Appointment {
     iddoctor: 82,
     idepisode: 121
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2016-11-25"),
     appointment_date: date("2023-08-16"),
@@ -11387,8 +9374,7 @@ CREATE (:Appointment {
     iddoctor: 71,
     idepisode: 103
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2015-04-04"),
     appointment_date: date("2023-03-10"),
@@ -11396,8 +9382,7 @@ CREATE (:Appointment {
     iddoctor: 66,
     idepisode: 77
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2016-04-11"),
     appointment_date: date("2023-10-09"),
@@ -11405,8 +9390,7 @@ CREATE (:Appointment {
     iddoctor: 63,
     idepisode: 81
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-05-19"),
     appointment_date: date("2023-08-16"),
@@ -11414,8 +9398,7 @@ CREATE (:Appointment {
     iddoctor: 62,
     idepisode: 200
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2020-11-14"),
     appointment_date: date("2023-05-04"),
@@ -11423,8 +9406,7 @@ CREATE (:Appointment {
     iddoctor: 57,
     idepisode: 190
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-02-14"),
     appointment_date: date("2023-02-04"),
@@ -11432,8 +9414,7 @@ CREATE (:Appointment {
     iddoctor: 56,
     idepisode: 149
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2017-11-16"),
     appointment_date: date("2023-08-12"),
@@ -11441,8 +9422,7 @@ CREATE (:Appointment {
     iddoctor: 34,
     idepisode: 155
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2018-08-14"),
     appointment_date: date("2023-05-19"),
@@ -11450,8 +9430,7 @@ CREATE (:Appointment {
     iddoctor: 30,
     idepisode: 176
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-11-11"),
     appointment_date: date("2023-02-11"),
@@ -11459,8 +9438,7 @@ CREATE (:Appointment {
     iddoctor: 24,
     idepisode: 144
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-05-26"),
     appointment_date: date("2023-06-04"),
@@ -11468,8 +9446,7 @@ CREATE (:Appointment {
     iddoctor: 19,
     idepisode: 128
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2023-09-02"),
     appointment_date: date("2023-04-19"),
@@ -11477,8 +9454,7 @@ CREATE (:Appointment {
     iddoctor: 17,
     idepisode: 188
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2017-10-07"),
     appointment_date: date("2023-10-24"),
@@ -11486,8 +9462,7 @@ CREATE (:Appointment {
     iddoctor: 15,
     idepisode: 160
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2019-09-03"),
     appointment_date: date("2023-05-11"),
@@ -11495,8 +9470,7 @@ CREATE (:Appointment {
     iddoctor: 14,
     idepisode: 174
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2022-09-20"),
     appointment_date: date("2023-02-08"),
@@ -11504,8 +9478,7 @@ CREATE (:Appointment {
     iddoctor: 13,
     idepisode: 17
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2013-11-20"),
     appointment_date: date("2023-02-05"),
@@ -11513,8 +9486,7 @@ CREATE (:Appointment {
     iddoctor: 11,
     idepisode: 124
 })
-                ;
-
+                
 CREATE (:Appointment {
     scheduled_on: date("2013-11-20"),
     appointment_date: date("2023-10-01"),
@@ -11522,154 +9494,4 @@ CREATE (:Appointment {
     iddoctor: 9,
     idepisode: 43
 })
-                ;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
+                

@@ -1,15 +1,5 @@
-import re
 
 
-def extract_date(string):
-    match = re.search(r"to_date\('(\d{2}\.\d{2}\.\d{2})'", string)
-    if match:
-        return match.group(1)
-
-def extract_time(string):
-    match = re.search(r"'(\d{2}:\d{2})'", string)
-    if match:
-        return match.group(1)
 
 def format_dates(old_format):
     if int(old_format[0:2]) < 24:
@@ -21,7 +11,7 @@ def format_dates(old_format):
 def write_cypherFile(to_path, lst_commands):
     with open(to_path, 'w') as file:
         for query_str in lst_commands:
-            file.write(query_str + ";\n")
+            file.write(query_str)
 
 def sql_command_controller(command):
     lst_tables = []
@@ -142,26 +132,6 @@ def parse_sql(sql_file, output_file):
 
     return 0 #tables_info, views_info, procedures_info, triggers_info
 
-def generate_cypher(tables_info, views_info, procedures_info, triggers_info):
-    cypher_queries = []
-
-    # Generate Cypher queries for creating nodes and relationships based on the parsed SQL information
-    # For example:
-    for table_info in tables_info:
-        cypher_queries.append(f'CREATE (:Table {{name: "{table_info.name}"}})')
-        for column_info in table_info.columns:
-            cypher_queries.append(f'CREATE (:Column {{name: "{column_info.name}", type: "{column_info.type}"}})')
-            # Create relationships between table and columns
-
-    # Similarly, generate Cypher queries for views, procedures, triggers, etc.
-
-    return cypher_queries
-
-def write_to_cypher_file(cypher_queries, output_file):
-    # Write Cypher queries to a file
-    with open(output_file, 'w') as file:
-        for query in cypher_queries:
-            file.write(query + '\n')
 
 if __name__ == "__main__":
     sql_file = 'hospitalv4.sql'
