@@ -30,8 +30,135 @@ def format_dates_yy(old_format):
         print("Yo.")
         return ""
 
+def write_header_cypherFile(to_path):
+    str_to_add = """
+CREATE (:Appointment {
+        scheduled_on: date,
+        appointment_date: date,
+        appointment_time: string,
+        idepisode: integer
+    });
+
+CREATE (:Bill {
+    room_cost: float,
+    test_cost: float,
+    other_charges: float,
+    total: float,
+    idepisode: integer,
+    registered_at: timestamp,
+    payment_status: string
+});
+
+CREATE (:Department {
+    dept_head: string,
+    dept_name: string,
+    emp_count: integer
+});
+
+CREATE (:Doctor {
+    qualifications: string
+});
+
+CREATE (:EmergencyContact {
+    contact_name: string,
+    phone: string,
+    relation: string,
+    idpatient: integer
+});
+
+CREATE (:Episode {
+    patient_id: integer
+});
+
+CREATE (:Hospitalization {
+    admission_date: date,
+    discharge_date: date,
+    room_id: integer,
+    idepisode: integer,
+    responsible_nurse: integer
+});
+
+CREATE (:Insurance {
+    policy_number: string,
+    provider: string,
+    insurance_plan: string,
+    co_pay: float,
+    coverage: string,
+    maternity: string,
+    dental: string,
+    optical: string
+});
+
+CREATE (:LabScreening {
+    test_cost: float,
+    test_date: date,
+    episode_idepisode: integer,
+    idtechnician: integer
+});
+
+CREATE (:MedicalHistory {
+    condition: string,
+    record_date: date,
+    idpatient: integer
+});
+
+CREATE (:Medicine {
+    m_name: string,
+    m_quantity: integer,
+    m_cost: float
+});
+
+CREATE (:Nurse {
+});
+
+CREATE (:Patient {
+    patient_fname: string,
+    patient_lname: string,
+    blood_type: string,
+    phone: string,
+    email: string,
+    gender: string,
+    policy_number: string,
+    birthday: date
+});
+
+CREATE (:Prescription {
+    prescription_date: date,
+    dosage: integer,
+    idmedicine: integer,
+    idepisode: integer
+});
+
+CREATE (:Room {
+    room_type: string,
+    room_cost: float
+});
+
+CREATE (:Staff {
+    emp_fname: string,
+    emp_lname: string,
+    date_joining: date,
+    date_separation: date,
+    email: string,
+    address: string,
+    ssn: integer,
+    is_active_status: string
+});
+
+CREATE (:Technician {{
+    staff_emp_id: integer
+}});
+    """
+
+    try:
+        with open(to_path, 'w') as file:
+            print("hello")
+            file.write(str_to_add)
+    except Exception as e:
+        print("An error occurred:", e)
+
 def write_cypherFile(to_path, lst_commands):
-    with open(to_path, 'w') as file:
+    with open(to_path, 'a') as file:
         for query_str in lst_commands:
             file.write(query_str)
 
@@ -327,6 +454,8 @@ CREATE (:Technician {{
 
 
 def parse_sql(sql_file, output_file):
+    write_header_cypherFile(output_file)
+
     # Read the SQL file
     with open(sql_file, 'r') as file:
         sql_script = file.read()
