@@ -365,9 +365,11 @@ CREATE (:Staff {{
     date_joining: {data_list[2]},
     date_separation: {data_list[3]},
     email: '{data_list[4]}',
-    ssn: '{data_list[5]}',
-    iddepartment: '{data_list[6]}',
-    is_active_status: '{data_list[7]}'
+    address: '{data_list[5]}',
+    ssn: '{data_list[6]}',
+    iddepartment: '{data_list[7]}',
+    is_active_status: '{data_list[8]}',
+
 }});
                 """
                 pass
