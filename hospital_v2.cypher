@@ -1705,140 +1705,140 @@ CREATE (:Emergency_contact {
     contact_name: 'john doe',
     phone: '111-222-3333',
     relation: 'father',
-    idpatient: 1,
+    idpatient: 1
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'jane smith',
     phone: '222-333-4444',
     relation: 'mother',
-    idpatient: 2,
+    idpatient: 2
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'alice johnson',
     phone: '333-444-5555',
     relation: 'sister',
-    idpatient: 3,
+    idpatient: 3
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'bob brown',
     phone: '444-555-6666',
     relation: 'brother',
-    idpatient: 4,
+    idpatient: 4
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'sarah wilson',
     phone: '555-666-7777',
     relation: 'spouse',
-    idpatient: 5,
+    idpatient: 5
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'michael clark',
     phone: '666-777-8888',
     relation: 'friend',
-    idpatient: 6,
+    idpatient: 6
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'emily white',
     phone: '777-888-9999',
     relation: 'relative',
-    idpatient: 7,
+    idpatient: 7
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'david lee',
     phone: '888-999-0000',
     relation: 'parent',
-    idpatient: 8,
+    idpatient: 8
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'jennifer martinez',
     phone: '999-000-1111',
     relation: 'sibling',
-    idpatient: 9,
+    idpatient: 9
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'daniel harris',
     phone: '000-111-2222',
     relation: 'friend',
-    idpatient: 10,
+    idpatient: 10
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'emma thompson',
     phone: '111-222-3323',
     relation: 'sibling',
-    idpatient: 1,
+    idpatient: 1
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'matthew evans',
     phone: '222-333-4444',
     relation: 'spouse',
-    idpatient: 7,
+    idpatient: 7
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'olivia rodriguez',
     phone: '333-444-5555',
     relation: 'parent',
-    idpatient: 4,
+    idpatient: 4
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'james wilson',
     phone: '444-555-6666',
     relation: 'sibling',
-    idpatient: 6,
+    idpatient: 6
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'ava anderson',
     phone: '555-666-7777',
     relation: 'friend',
-    idpatient: 7,
+    idpatient: 7
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'logan taylor',
     phone: '666-777-8888',
     relation: 'spouse',
-    idpatient: 77,
+    idpatient: 77
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'sophia scott',
     phone: '777-888-9999',
     relation: 'relative',
-    idpatient: 66,
+    idpatient: 66
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'ethan lewis',
     phone: '888-999-0000',
     relation: 'sibling',
-    idpatient: 55,
+    idpatient: 55
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'mia martinez',
     phone: '999-000-1111',
     relation: 'parent',
-    idpatient: 44,
+    idpatient: 44
 });
                 
 CREATE (:Emergency_contact {
     contact_name: 'noah harris',
     phone: '000-111-2222',
     relation: 'friend',
-    idpatient: 22,
+    idpatient: 22
 });
                 
 CREATE (:Medical_history {
@@ -2000,1300 +2000,1200 @@ CREATE (:Medical_history {
 CREATE (:Staff {
     emp_fname: 'jillian',
     emp_lname: 'gordon',
-    date_joining: date('2018-08-25'),
-    date_separation: null,
+    date_joining: date('2018-08-25'), 
     email: 'juan14@example.net',
     address: '"435 dylan neck suite 993',
     ssn: '329594711',
     iddepartment: '25',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'james',
     emp_lname: 'williams',
-    date_joining: date('2018-04-10'),
-    date_separation: date('to_date('23.01.05'),
+    date_joining: date('2018-04-10'), date_separation: data('to_date('23.01.05'),
     email: 'rr.mm.dd')',
     address: 'henryjennifer@example.net''kleinhaven  ct 37220"',
     ssn: '527613638',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'joshua',
     emp_lname: 'carter',
-    date_joining: date('2018-03-15'),
-    date_separation: null,
+    date_joining: date('2018-03-15'), 
     email: 'michael82@example.org',
     address: '"unit 4429 box 5356',
     ssn: '724148400',
     iddepartment: '27',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'joe',
     emp_lname: 'ferguson',
-    date_joining: date('2018-08-10'),
-    date_separation: null,
+    date_joining: date('2018-08-10'), 
     email: 'vsullivan@example.org',
     address: 'dpo ae 27029"',
     ssn: '531094042',
     iddepartment: '17',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'travis',
     emp_lname: 'ramos',
-    date_joining: date('2019-10-15'),
-    date_separation: null,
+    date_joining: date('2019-10-15'), 
     email: 'leah21@example.org',
     address: '"12795 solis landing apt. 269',
     ssn: '857991076',
     iddepartment: '21',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'lisa',
     emp_lname: 'hayes',
-    date_joining: date('2023-05-10'),
-    date_separation: null,
+    date_joining: date('2023-05-10'), 
     email: 'mprice@example.com',
     address: 'trevorfurt in 02637"',
     ssn: '685569160',
     iddepartment: '1',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'dawn',
     emp_lname: 'hopkins',
-    date_joining: date('2019-11-28'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-11-28'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'jenkinsheather@example.com''"02444 anderson street suite 139',
     ssn: '215259434',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'dawn',
     emp_lname: 'roberts',
-    date_joining: date('2019-12-01'),
-    date_separation: null,
+    date_joining: date('2019-12-01'), 
     email: 'laurie35@example.net',
     address: 'leeville sd 39088"',
     ssn: '391666874',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jessica',
     emp_lname: 'jones',
-    date_joining: date('2019-01-05'),
-    date_separation: null,
+    date_joining: date('2019-01-05'), 
     email: 'larrykrause@example.net',
     address: '"548 bonilla extensions',
     ssn: '410402409',
     iddepartment: '26',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'rachel',
     emp_lname: 'wilson',
-    date_joining: date('2019-07-10'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-07-10'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'jenna85@example.org''west robertshire  mh 77607"',
     ssn: '745100367',
     iddepartment: '20',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'kimberly',
     emp_lname: 'blankenship',
-    date_joining: date('2019-01-05'),
-    date_separation: null,
+    date_joining: date('2019-01-05'), 
     email: 'melissa35@example.org',
     address: '"641 tyler fork suite 201',
     ssn: '281673265',
     iddepartment: '26',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'keith',
     emp_lname: 'simmons',
-    date_joining: date('2018-12-01'),
-    date_separation: null,
+    date_joining: date('2018-12-01'), 
     email: 'tylerthompson@example.org',
     address: 'browntown wy 84829"',
     ssn: '899470207',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'william',
     emp_lname: 'grant',
-    date_joining: date('2019-07-10'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-07-10'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'seanlyons@example.org''"41829 andrew course apt. 567',
     ssn: '804408507',
     iddepartment: '20',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'andrew',
     emp_lname: 'deleon',
-    date_joining: date('2018-09-15'),
-    date_separation: null,
+    date_joining: date('2018-09-15'), 
     email: 'dominiquemcdaniel@example.com',
     address: 'north kayla me 24616"',
     ssn: '184426607',
     iddepartment: '27',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'emily',
     emp_lname: 'rowe',
-    date_joining: date('2018-04-10'),
-    date_separation: date('to_date('23.01.05'),
+    date_joining: date('2018-04-10'), date_separation: data('to_date('23.01.05'),
     email: 'rr.mm.dd')',
     address: 'thompsonsuzanne@example.org''"2191 little fall apt. 951',
     ssn: '457794054',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'kenneth',
     emp_lname: 'ayers',
-    date_joining: date('2018-08-25'),
-    date_separation: null,
+    date_joining: date('2018-08-25'), 
     email: 'emily66@example.net',
     address: 'new sarahberg ia 31150"',
     ssn: '719506165',
     iddepartment: '25',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'daniel',
     emp_lname: 'mills',
-    date_joining: date('2018-08-10'),
-    date_separation: null,
+    date_joining: date('2018-08-10'), 
     email: 'lthompson@example.org',
     address: '"389 jeffrey mountain',
     ssn: '481584738',
     iddepartment: '17',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'tina',
     emp_lname: 'gilbert',
-    date_joining: date('2019-10-15'),
-    date_separation: null,
+    date_joining: date('2019-10-15'), 
     email: 'danjones@example.net',
     address: 'lindaview ma 29212"',
     ssn: '522524152',
     iddepartment: '21',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'scott',
     emp_lname: 'holmes',
-    date_joining: date('2023-05-10'),
-    date_separation: null,
+    date_joining: date('2023-05-10'), 
     email: 'tammy41@example.net',
     address: '"107 velasquez corner',
     ssn: '105899430',
     iddepartment: '1',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jennifer',
     emp_lname: 'ball',
-    date_joining: date('2019-11-28'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-11-28'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'brandymartinez@example.com''lake tina  ia 30662"',
     ssn: '404767927',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'stacy',
     emp_lname: 'logan',
-    date_joining: date('2019-12-01'),
-    date_separation: null,
+    date_joining: date('2019-12-01'), 
     email: 'uturner@example.net',
     address: '"771 jennifer bypass',
     ssn: '633814140',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jeffrey',
     emp_lname: 'jones',
-    date_joining: date('2019-01-05'),
-    date_separation: null,
+    date_joining: date('2019-01-05'), 
     email: 'uscott@example.com',
     address: 'candicefurt as 18171"',
     ssn: '258505600',
     iddepartment: '26',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'cheryl',
     emp_lname: 'christensen',
-    date_joining: date('2018-12-01'),
-    date_separation: null,
+    date_joining: date('2018-12-01'), 
     email: 'morganstephen@example.com',
     address: '"219 tammy meadows',
     ssn: '260911313',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'james',
     emp_lname: 'carpenter',
-    date_joining: date('2019-07-10'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-07-10'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'christineguzman@example.com''west brianshire  ne 37671"',
     ssn: '124291244',
     iddepartment: '20',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'matthew',
     emp_lname: 'espinoza',
-    date_joining: date('2018-09-15'),
-    date_separation: null,
+    date_joining: date('2018-09-15'), 
     email: 'roger32@example.net',
     address: '"1163 ethan underpass apt. 901',
     ssn: '402431746',
     iddepartment: '27',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'vickie',
     emp_lname: 'gonzalez',
-    date_joining: date('2018-04-10'),
-    date_separation: date('to_date('23.01.05'),
+    date_joining: date('2018-04-10'), date_separation: data('to_date('23.01.05'),
     email: 'rr.mm.dd')',
     address: 'lolson@example.com''east michael  ct 20442"',
     ssn: '925078857',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'denise',
     emp_lname: 'acosta',
-    date_joining: date('2018-08-25'),
-    date_separation: null,
+    date_joining: date('2018-08-25'), 
     email: 'emilylee@example.org',
     address: '"844 patel keys',
     ssn: '375062322',
     iddepartment: '25',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'emily',
     emp_lname: 'frederick',
-    date_joining: date('2018-08-10'),
-    date_separation: null,
+    date_joining: date('2018-08-10'), 
     email: 'caseyjoseph@example.com',
     address: 'lake lauren me 06845"',
     ssn: '634799699',
     iddepartment: '17',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'anthony',
     emp_lname: 'larson',
-    date_joining: date('2019-10-15'),
-    date_separation: null,
+    date_joining: date('2019-10-15'), 
     email: 'richardsoncheryl@example.org',
     address: '"98044 wood trafficway suite 896',
     ssn: '469016851',
     iddepartment: '21',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'noah',
     emp_lname: 'terry',
-    date_joining: date('2023-05-10'),
-    date_separation: null,
+    date_joining: date('2023-05-10'), 
     email: 'amandabooth@example.net',
     address: 'billyhaven ks 16701"',
     ssn: '487128573',
     iddepartment: '1',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'richard',
     emp_lname: 'tran',
-    date_joining: date('2019-11-28'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-11-28'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'onelson@example.net''"924 johnson glens',
     ssn: '501902807',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'nicole',
     emp_lname: 'elliott',
-    date_joining: date('2019-12-01'),
-    date_separation: null,
+    date_joining: date('2019-12-01'), 
     email: 'miguelrogers@example.org',
     address: 'steveshire ks 14385"',
     ssn: '155620842',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'david',
     emp_lname: 'barber',
-    date_joining: date('2019-01-05'),
-    date_separation: null,
+    date_joining: date('2019-01-05'), 
     email: 'christinawalker@example.net',
     address: '"0145 bowers fort suite 027',
     ssn: '340817770',
     iddepartment: '26',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'dillon',
     emp_lname: 'jones',
-    date_joining: date('2018-12-01'),
-    date_separation: null,
+    date_joining: date('2018-12-01'), 
     email: 'joshuajohnson@example.net',
     address: 'south deannaland la 85459"',
     ssn: '833281856',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'diamond',
     emp_lname: 'gonzalez',
-    date_joining: date('2019-07-10'),
-    date_separation: date('to_date('22.01.05'),
+    date_joining: date('2019-07-10'), date_separation: data('to_date('22.01.05'),
     email: 'rr.mm.dd')',
     address: 'sjoseph@example.com''"763 rangel roads suite 571',
     ssn: '525996493',
     iddepartment: '20',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'deanna',
     emp_lname: 'baker',
-    date_joining: date('2018-09-15'),
-    date_separation: null,
+    date_joining: date('2018-09-15'), 
     email: 'mcbridebriana@example.com',
     address: 'east ryan ny 85809"',
     ssn: '616581558',
     iddepartment: '27',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'teresa',
     emp_lname: 'harris',
-    date_joining: date('2018-04-10'),
-    date_separation: date('to_date('23.01.05'),
+    date_joining: date('2018-04-10'), date_separation: data('to_date('23.01.05'),
     email: 'rr.mm.dd')',
     address: 'bsalas@example.net''"971 chavez garden suite 571',
     ssn: '930993929',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'patrick',
     emp_lname: 'sparks',
-    date_joining: date('2018-08-25'),
-    date_separation: null,
+    date_joining: date('2018-08-25'), 
     email: 'nelsonmark@example.org',
     address: 'port emily ne 23873"',
     ssn: '909543569',
     iddepartment: '25',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'lance',
     emp_lname: 'scott',
-    date_joining: date('2018-08-10'),
-    date_separation: null,
+    date_joining: date('2018-08-10'), 
     email: 'peterdavis@example.com',
     address: '"68405 amanda island',
     ssn: '925578003',
     iddepartment: '17',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'chelsea',
     emp_lname: 'dodson',
-    date_joining: date('2019-10-15'),
-    date_separation: null,
+    date_joining: date('2019-10-15'), 
     email: 'daviscody@example.net',
     address: 'lake vickie vi 12026"',
     ssn: '642107275',
     iddepartment: '21',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'juan',
     emp_lname: 'harris',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'fryrenee@example.net',
     address: '"497 alexander camp',
     ssn: '393607883',
     iddepartment: '1',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'donna',
     emp_lname: 'adams',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'christopher30@example.net',
     address: 'daltonhaven mn 11752"',
     ssn: '246634358',
     iddepartment: '2',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'emily',
     emp_lname: 'ryan',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'mccormickbriana@example.net',
     address: '"81336 jacobson cove apt. 662',
     ssn: '838811834',
     iddepartment: '3',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jacob',
     emp_lname: 'henry',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'vanessabailey@example.com',
     address: 'kimberlymouth ok 53606"',
     ssn: '471655403',
     iddepartment: '4',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'joseph',
     emp_lname: 'jones',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'cshepard@example.org',
     address: '"99962 woods path apt. 757',
     ssn: '566403689',
     iddepartment: '5',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'allison',
     emp_lname: 'miller',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'zrichardson@example.org',
     address: 'zacharyshire mn 46324"',
     ssn: '129657421',
     iddepartment: '6',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jason',
     emp_lname: 'costa',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'edwardmorrow@example.com',
     address: '"5589 lance corners',
     ssn: '794001594',
     iddepartment: '7',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jennifer',
     emp_lname: 'haynes',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'joshua90@example.net',
     address: 'michaelburgh oh 60130"',
     ssn: '964443879',
     iddepartment: '8',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'ashley',
     emp_lname: 'stein',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'krystal59@example.org',
     address: '"8049 adrian throughway',
     ssn: '414092098',
     iddepartment: '9',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'holly',
     emp_lname: 'palmer',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'marygriffin@example.net',
     address: 'east josephton co 34654"',
     ssn: '726379798',
     iddepartment: '10',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'martha',
     emp_lname: 'smith',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'rebecca99@example.net',
     address: '"unit 3517 box 7175',
     ssn: '625642285',
     iddepartment: '11',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'christian',
     emp_lname: 'robertson',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'bushjoshua@example.net',
     address: 'dpo ae 73139"',
     ssn: '891778968',
     iddepartment: '12',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'lisa',
     emp_lname: 'dudley',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'kperkins@example.net',
     address: '"1786 debbie terrace',
     ssn: '336695154',
     iddepartment: '13',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jennifer',
     emp_lname: 'meyers',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'johnsonluis@example.com',
     address: 'new kathyfurt ct 94630"',
     ssn: '216467215',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'mr.',
     emp_lname: 'matthew',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'lblanchard@example.net',
     address: '"7808 melanie rue',
     ssn: '136100833',
     iddepartment: '15',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'aaron',
     emp_lname: 'turner',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'rodriguezmonica@example.com',
     address: 'shirleyhaven ri 48773"',
     ssn: '443298172',
     iddepartment: '16',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'ellen',
     emp_lname: 'wright',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'michaellee@example.net',
     address: '"19041 nicholson field apt. 592',
     ssn: '311230784',
     iddepartment: '17',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jane',
     emp_lname: 'stafford',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'michaelrowe@example.com',
     address: 'east andreaborough de 01264"',
     ssn: '974891597',
     iddepartment: '18',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'nichole',
     emp_lname: 'mckinney',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'phillipswilliam@example.com',
     address: '"4645 campos view',
     ssn: '868868976',
     iddepartment: '19',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'patricia',
     emp_lname: 'carrillo',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'nealbrandi@example.org',
     address: 'port kim ar 99466"',
     ssn: '810734855',
     iddepartment: '20',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'edward',
     emp_lname: 'allen',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'xadams@example.com',
     address: '"09780 johnson manor',
     ssn: '479489642',
     iddepartment: '21',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'kendra',
     emp_lname: 'russell',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'gregoryjohnson@example.net',
     address: 'port samuelmouth ny 96222"',
     ssn: '935471039',
     iddepartment: '22',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'destiny',
     emp_lname: 'nicholson',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'dana26@example.org',
     address: '"8796 rodney vista apt. 090',
     ssn: '434075072',
     iddepartment: '23',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'alexander',
     emp_lname: 'matthews',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'jvelazquez@example.com',
     address: 'stuartton ma 32158"',
     ssn: '573643588',
     iddepartment: '24',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jeffrey',
     emp_lname: 'vega',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'jayers@example.org',
     address: '"3237 scott centers',
     ssn: '785307933',
     iddepartment: '25',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'christina',
     emp_lname: 'dalton',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'josebriggs@example.net',
     address: 'east nicholasland in 92402"',
     ssn: '811295269',
     iddepartment: '26',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'lauren',
     emp_lname: 'campbell',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'rebeccayoung@example.net''"817 julie alley',
     ssn: '159971018',
     iddepartment: '27',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'david',
     emp_lname: 'mason',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'coltonlam@example.org''kimberlyland  co 43722"',
     ssn: '714135708',
     iddepartment: '1',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'maria',
     emp_lname: 'gentry',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'gallegoskathleen@example.net''"888 castro field',
     ssn: '111377409',
     iddepartment: '2',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'deborah',
     emp_lname: 'collins',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'julie57@example.org''freemanshire  fm 38384"',
     ssn: '187814750',
     iddepartment: '3',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'michael',
     emp_lname: 'peterson',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'cmiller@example.net''"498 thomas glen apt. 314',
     ssn: '488436028',
     iddepartment: '4',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'william',
     emp_lname: 'caldwell',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'christianmorgan@example.com''north bianca  ms 81219"',
     ssn: '847172402',
     iddepartment: '5',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'linda',
     emp_lname: 'white',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'janicedunn@example.net''"2256 robert trail suite 219',
     ssn: '132945328',
     iddepartment: '6',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'michelle',
     emp_lname: 'miller',
-    date_joining: date('2014-10-02'),
-    date_separation: date('to_date('18.10.02'),
+    date_joining: date('2014-10-02'), date_separation: data('to_date('18.10.02'),
     email: 'rr.mm.dd')',
     address: 'sarahpowers@example.net''west andrew  ar 42462"',
     ssn: '349210973',
     iddepartment: '7',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'sherri',
     emp_lname: 'owens',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'austin03@example.net',
     address: '"2933 jennifer rapids',
     ssn: '559964649',
     iddepartment: '8',
-    is_active_status: 'n',
+    is_active_status: 'n'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'robert',
     emp_lname: 'day',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'perkinsmaria@example.org',
     address: 'aprilmouth oh 09009"',
     ssn: '429282057',
     iddepartment: '9',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'andrea',
     emp_lname: 'levine',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'ianbrown@example.org',
     address: '"950 cynthia causeway',
     ssn: '737429945',
     iddepartment: '10',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'james',
     emp_lname: 'harris',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'ofrazier@example.org',
     address: 'willistown ia 71156"',
     ssn: '777328798',
     iddepartment: '11',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'april',
     emp_lname: 'gonzalez',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'ymiller@example.org',
     address: '"psc 4366 box 9602',
     ssn: '968052725',
     iddepartment: '12',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'chase',
     emp_lname: 'west',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'hmassey@example.net',
     address: 'apo aa 58037"',
     ssn: '833526949',
     iddepartment: '13',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'richard',
     emp_lname: 'mendez',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'william33@example.net',
     address: '"usnv buck',
     ssn: '881916036',
     iddepartment: '14',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'christopher',
     emp_lname: 'martinez',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'hberg@example.net',
     address: 'fpo ap 18208"',
     ssn: '205720841',
     iddepartment: '15',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'lee',
     emp_lname: 'collins',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'turnerjon@example.com',
     address: '"4849 loretta villages',
     ssn: '754480635',
     iddepartment: '16',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'jose',
     emp_lname: 'romero',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'mwhite@example.net',
     address: 'east brian in 88067"',
     ssn: '968791178',
     iddepartment: '17',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'ashley',
     emp_lname: 'lucas',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'sandovalapril@example.net',
     address: '"unit 0632 box 4702',
     ssn: '567117161',
     iddepartment: '18',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'duane',
     emp_lname: 'duncan',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'robin66@example.com',
     address: 'dpo ap 55248"',
     ssn: '692796134',
     iddepartment: '19',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'elizabeth',
     emp_lname: 'scott',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'nicholasmeyers@example.org',
     address: '"670 paul isle',
     ssn: '698260708',
     iddepartment: '20',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'matthew',
     emp_lname: 'luna',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'jeremyvasquez@example.com',
     address: 'brianstad mt 55405"',
     ssn: '248680279',
     iddepartment: '21',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'rebecca',
     emp_lname: 'reyes',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'plewis@example.org',
     address: '"00336 savage island',
     ssn: '530811045',
     iddepartment: '22',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'sarah',
     emp_lname: 'powell',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'calhounkelly@example.org',
     address: 'north tanya sc 55402"',
     ssn: '380193465',
     iddepartment: '23',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'antonio',
     emp_lname: 'mccall',
-    date_joining: date('2014-10-02'),
-    date_separation: null,
+    date_joining: date('2014-10-02'), 
     email: 'juliakelly@example.net',
     address: '"6608 lisa tunnel',
     ssn: '651169317',
     iddepartment: '24',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'sarah',
     emp_lname: 'boyd',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'dwatts@example.org',
     address: 'matthewstad mn 08177"',
     ssn: '448343637',
     iddepartment: '25',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'david',
     emp_lname: 'hawkins',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'michaelwarner@example.com',
     address: '"993 hunter squares apt. 437',
     ssn: '370797821',
     iddepartment: '26',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'david',
     emp_lname: 'chapman',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'garyriley@example.com',
     address: 'port sheilatown ca 09096"',
     ssn: '530216092',
     iddepartment: '27',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'kimberly',
     emp_lname: 'hernandez',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'kingjacob@example.com',
     address: '"006 daugherty forest',
     ssn: '562577558',
     iddepartment: '1',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'robert',
     emp_lname: 'perez',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'wagnersarah@example.net',
     address: 'south danielmouth tn 48233"',
     ssn: '433087970',
     iddepartment: '2',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'james',
     emp_lname: 'palmer',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'kjackson@example.org',
     address: '"92590 erickson ramp',
     ssn: '570917164',
     iddepartment: '3',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'joshua',
     emp_lname: 'clark',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'samueljones@example.com',
     address: 'frankbury wa 21042"',
     ssn: '914328842',
     iddepartment: '4',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'brittany',
     emp_lname: 'collins',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'jennifer69@example.net',
     address: '"6791 riggs avenue suite 321',
     ssn: '531214210',
     iddepartment: '5',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 
 CREATE (:Staff {
     emp_fname: 'angela',
     emp_lname: 'park',
-    date_joining: date('2013-10-02'),
-    date_separation: null,
+    date_joining: date('2013-10-02'), 
     email: 'williamsjames@example.net',
     address: 'west michellefort mo 61147"',
     ssn: '705689027',
     iddepartment: '6',
-    is_active_status: 'y',
+    is_active_status: 'y'
 
 });
                 

@@ -309,7 +309,7 @@ CREATE (:Emergency_contact {{
     contact_name: '{data_list[0]}',
     phone: '{data_list[1]}',
     relation: '{data_list[2]}',
-    idpatient: {data_list[3]},
+    idpatient: {data_list[3]}
 }});
                 """
                 pass
@@ -347,16 +347,12 @@ CREATE (:Medical_history {{
                 data_list = [s.strip("'") for s in data_list]
                 print(f"\t\tstaff: data_list {data_list}")
 
+                line1, line2 = "", ""
                 if data_list[2] != "null":
-                    data_list[2] = data_list[2].replace(" ", "")
-                    data_list[2] = f"date('{data_list[2]}')"
-                else:
-                    data_list[2] = "null"
+                    line1 = f"date_joining: date('{data_list[2].replace(" ", "")}'),"
 
                 if data_list[3] != "null":
-
-                    data_list[3] = data_list[3].replace(" ", "")
-                    data_list[3] = f"date('{data_list[3]}')"
+                    line2 = f"date_separation: data('{data_list[3].replace(" ", "")}'),"
                 else:
                     data_list[3] = "null"
 
@@ -365,13 +361,12 @@ CREATE (:Medical_history {{
 CREATE (:Staff {{
     emp_fname: '{data_list[0]}',
     emp_lname: '{data_list[1]}',
-    date_joining: {data_list[2]},
-    date_separation: {data_list[3]},
+    {line1} {line2}
     email: '{data_list[4]}',
     address: '{data_list[5]}',
     ssn: '{data_list[6]}',
     iddepartment: '{data_list[7]}',
-    is_active_status: '{data_list[8]}',
+    is_active_status: '{data_list[8]}'
 
 }});
                 """
