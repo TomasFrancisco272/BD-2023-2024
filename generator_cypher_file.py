@@ -348,11 +348,14 @@ CREATE (:Medical_history {{
                 print(f"\t\tstaff: data_list {data_list}")
 
                 if data_list[2] != "null":
+                    data_list[2] = data_list[2].replace(" ", "")
                     data_list[2] = f"date('{data_list[2]}')"
                 else:
                     data_list[2] = "null"
 
                 if data_list[3] != "null":
+
+                    data_list[3] = data_list[3].replace(" ", "")
                     data_list[3] = f"date('{data_list[3]}')"
                 else:
                     data_list[3] = "null"
@@ -430,6 +433,7 @@ CREATE (:Medicine {{
                 data_list[0] = data_list[0].replace("('", "")
                 data_list = [s.strip("'") for s in data_list]
                 data_list[-1] = data_list[-1].replace("to_date('", "")
+                data_list[7] = data_list[7].replace(" ", "")
 
                 new_command = f"""
 CREATE (:Patient {{

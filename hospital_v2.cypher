@@ -785,7 +785,7 @@ CREATE (:Patient {
     email: 'victoria.lam@example.com',
     gender: 'female',
     policy_number: 'pol007',
-    birthday: date(' 1983-09-20')
+    birthday: date('1983-09-20')
 });
                 
 CREATE (:Patient {
@@ -796,7 +796,7 @@ CREATE (:Patient {
     email: 'joseph.mai@example.com',
     gender: 'male',
     policy_number: 'pol008',
-    birthday: date(' 1977-08-15')
+    birthday: date('1977-08-15')
 });
                 
 CREATE (:Patient {
@@ -807,7 +807,7 @@ CREATE (:Patient {
     email: 'natalie.trinh@example.com',
     gender: 'female',
     policy_number: 'pol009',
-    birthday: date(' 1990-05-08')
+    birthday: date('1990-05-08')
 });
                 
 CREATE (:Patient {
@@ -818,7 +818,7 @@ CREATE (:Patient {
     email: 'samuel.vo@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1985-11-25')
+    birthday: date('1985-11-25')
 });
                 
 CREATE (:Patient {
@@ -829,7 +829,7 @@ CREATE (:Patient {
     email: 'olivia.nguyen@example.com',
     gender: 'female',
     policy_number: 'pol001',
-    birthday: date(' 1987-04-12')
+    birthday: date('1987-04-12')
 });
                 
 CREATE (:Patient {
@@ -840,7 +840,7 @@ CREATE (:Patient {
     email: 'ethan.tran@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1992-02-03')
+    birthday: date('1992-02-03')
 });
                 
 CREATE (:Patient {
@@ -851,7 +851,7 @@ CREATE (:Patient {
     email: 'emma.dinh@example.com',
     gender: 'female',
     policy_number: 'pol003',
-    birthday: date(' 1988-07-17')
+    birthday: date('1988-07-17')
 });
                 
 CREATE (:Patient {
@@ -862,7 +862,7 @@ CREATE (:Patient {
     email: 'noah.vo@example.com',
     gender: 'male',
     policy_number: 'pol004',
-    birthday: date(' 1983-12-05')
+    birthday: date('1983-12-05')
 });
                 
 CREATE (:Patient {
@@ -873,7 +873,7 @@ CREATE (:Patient {
     email: 'isabella.huynh@example.com',
     gender: 'female',
     policy_number: 'pol005',
-    birthday: date(' 1984-10-30')
+    birthday: date('1984-10-30')
 });
                 
 CREATE (:Patient {
@@ -884,7 +884,7 @@ CREATE (:Patient {
     email: 'william.do@example.com',
     gender: 'male',
     policy_number: 'pol006',
-    birthday: date(' 1990-01-14')
+    birthday: date('1990-01-14')
 });
                 
 CREATE (:Patient {
@@ -895,7 +895,7 @@ CREATE (:Patient {
     email: 'sophia.lam@example.com',
     gender: 'female',
     policy_number: 'pol007',
-    birthday: date(' 1986-06-28')
+    birthday: date('1986-06-28')
 });
                 
 CREATE (:Patient {
@@ -906,7 +906,7 @@ CREATE (:Patient {
     email: 'james.mai@example.com',
     gender: 'male',
     policy_number: 'pol008',
-    birthday: date(' 1982-09-03')
+    birthday: date('1982-09-03')
 });
                 
 CREATE (:Patient {
@@ -917,7 +917,7 @@ CREATE (:Patient {
     email: 'charlotte.trinh@example.com',
     gender: 'female',
     policy_number: 'pol009',
-    birthday: date(' 1995-03-22')
+    birthday: date('1995-03-22')
 });
                 
 CREATE (:Patient {
@@ -928,7 +928,7 @@ CREATE (:Patient {
     email: 'logan.vo@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1993-08-18')
+    birthday: date('1993-08-18')
 });
                 
 CREATE (:Patient {
@@ -939,7 +939,7 @@ CREATE (:Patient {
     email: 'ava.nguyen@example.com',
     gender: 'female',
     policy_number: 'pol001',
-    birthday: date(' 1989-05-27')
+    birthday: date('1989-05-27')
 });
                 
 CREATE (:Patient {
@@ -950,7 +950,7 @@ CREATE (:Patient {
     email: 'mason.pham@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1981-11-11')
+    birthday: date('1981-11-11')
 });
                 
 CREATE (:Patient {
@@ -961,7 +961,7 @@ CREATE (:Patient {
     email: 'harper.ho@example.com',
     gender: 'female',
     policy_number: 'pol003',
-    birthday: date(' 1987-07-07')
+    birthday: date('1987-07-07')
 });
                 
 CREATE (:Patient {
@@ -972,7 +972,7 @@ CREATE (:Patient {
     email: 'elijah.truong@example.com',
     gender: 'male',
     policy_number: 'pol004',
-    birthday: date(' 1980-01-30')
+    birthday: date('1980-01-30')
 });
                 
 CREATE (:Patient {
@@ -983,7 +983,7 @@ CREATE (:Patient {
     email: 'amelia.le@example.com',
     gender: 'female',
     policy_number: 'pol005',
-    birthday: date(' 1988-04-15')
+    birthday: date('1988-04-15')
 });
                 
 CREATE (:Patient {
@@ -994,7 +994,7 @@ CREATE (:Patient {
     email: 'benjamin.ngo@example.com',
     gender: 'male',
     policy_number: 'pol006',
-    birthday: date(' 1994-10-12')
+    birthday: date('1994-10-12')
 });
                 
 CREATE (:Patient {
@@ -1005,7 +1005,7 @@ CREATE (:Patient {
     email: 'evelyn.ly@example.com',
     gender: 'female',
     policy_number: 'pol007',
-    birthday: date(' 1993-07-08')
+    birthday: date('1993-07-08')
 });
                 
 CREATE (:Patient {
@@ -1016,7 +1016,7 @@ CREATE (:Patient {
     email: 'alexander.dang@example.com',
     gender: 'male',
     policy_number: 'pol008',
-    birthday: date(' 1988-12-25')
+    birthday: date('1988-12-25')
 });
                 
 CREATE (:Patient {
@@ -1027,7 +1027,7 @@ CREATE (:Patient {
     email: 'abigail.vuong@example.com',
     gender: 'female',
     policy_number: 'pol009',
-    birthday: date(' 1986-09-10')
+    birthday: date('1986-09-10')
 });
                 
 CREATE (:Patient {
@@ -1038,7 +1038,7 @@ CREATE (:Patient {
     email: 'michael.duong@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1991-04-28')
+    birthday: date('1991-04-28')
 });
                 
 CREATE (:Patient {
@@ -1049,7 +1049,7 @@ CREATE (:Patient {
     email: 'olivia.tran@example.com',
     gender: 'female',
     policy_number: 'pol001',
-    birthday: date(' 1985-08-14')
+    birthday: date('1985-08-14')
 });
                 
 CREATE (:Patient {
@@ -1060,7 +1060,7 @@ CREATE (:Patient {
     email: 'james.vo@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1983-01-18')
+    birthday: date('1983-01-18')
 });
                 
 CREATE (:Patient {
@@ -1071,7 +1071,7 @@ CREATE (:Patient {
     email: 'emma.luu@example.com',
     gender: 'female',
     policy_number: 'pol003',
-    birthday: date(' 1982-06-07')
+    birthday: date('1982-06-07')
 });
                 
 CREATE (:Patient {
@@ -1082,7 +1082,7 @@ CREATE (:Patient {
     email: 'lucas.ha@example.com',
     gender: 'male',
     policy_number: 'pol004',
-    birthday: date(' 1992-11-20')
+    birthday: date('1992-11-20')
 });
                 
 CREATE (:Patient {
@@ -1093,7 +1093,7 @@ CREATE (:Patient {
     email: 'avery.hoang@example.com',
     gender: 'female',
     policy_number: 'pol005',
-    birthday: date(' 1989-03-02')
+    birthday: date('1989-03-02')
 });
                 
 CREATE (:Patient {
@@ -1104,7 +1104,7 @@ CREATE (:Patient {
     email: 'william.bui@example.com',
     gender: 'male',
     policy_number: 'pol006',
-    birthday: date(' 1994-07-15')
+    birthday: date('1994-07-15')
 });
                 
 CREATE (:Patient {
@@ -1115,7 +1115,7 @@ CREATE (:Patient {
     email: 'sophia.phan@example.com',
     gender: 'female',
     policy_number: 'pol007',
-    birthday: date(' 1987-10-29')
+    birthday: date('1987-10-29')
 });
                 
 CREATE (:Patient {
@@ -1126,7 +1126,7 @@ CREATE (:Patient {
     email: 'logan.trinh@example.com',
     gender: 'male',
     policy_number: 'pol008',
-    birthday: date(' 1980-05-06')
+    birthday: date('1980-05-06')
 });
                 
 CREATE (:Patient {
@@ -1137,7 +1137,7 @@ CREATE (:Patient {
     email: 'mia.nguyen@example.com',
     gender: 'female',
     policy_number: 'pol009',
-    birthday: date(' 1983-12-25')
+    birthday: date('1983-12-25')
 });
                 
 CREATE (:Patient {
@@ -1148,7 +1148,7 @@ CREATE (:Patient {
     email: 'benjamin.vu@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1992-09-08')
+    birthday: date('1992-09-08')
 });
                 
 CREATE (:Patient {
@@ -1159,7 +1159,7 @@ CREATE (:Patient {
     email: 'ella.le@example.com',
     gender: 'female',
     policy_number: 'pol001',
-    birthday: date(' 1991-06-17')
+    birthday: date('1991-06-17')
 });
                 
 CREATE (:Patient {
@@ -1170,7 +1170,7 @@ CREATE (:Patient {
     email: 'alexander.ho@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1986-02-04')
+    birthday: date('1986-02-04')
 });
                 
 CREATE (:Patient {
@@ -1181,7 +1181,7 @@ CREATE (:Patient {
     email: 'sofia.pham@example.com',
     gender: 'female',
     policy_number: 'pol003',
-    birthday: date(' 1988-09-23')
+    birthday: date('1988-09-23')
 });
                 
 CREATE (:Patient {
@@ -1192,7 +1192,7 @@ CREATE (:Patient {
     email: 'henry.tran@example.com',
     gender: 'male',
     policy_number: 'pol004',
-    birthday: date(' 1985-04-18')
+    birthday: date('1985-04-18')
 });
                 
 CREATE (:Patient {
@@ -1203,7 +1203,7 @@ CREATE (:Patient {
     email: 'scarlett.dang@example.com',
     gender: 'female',
     policy_number: 'pol005',
-    birthday: date(' 1982-10-31')
+    birthday: date('1982-10-31')
 });
                 
 CREATE (:Patient {
@@ -1214,7 +1214,7 @@ CREATE (:Patient {
     email: 'ethan.duong@example.com',
     gender: 'male',
     policy_number: 'pol006',
-    birthday: date(' 1990-08-15')
+    birthday: date('1990-08-15')
 });
                 
 CREATE (:Patient {
@@ -1225,7 +1225,7 @@ CREATE (:Patient {
     email: 'madison.nguyen@example.com',
     gender: 'female',
     policy_number: 'pol007',
-    birthday: date(' 1984-12-20')
+    birthday: date('1984-12-20')
 });
                 
 CREATE (:Patient {
@@ -1236,7 +1236,7 @@ CREATE (:Patient {
     email: 'jacob.lam@example.com',
     gender: 'male',
     policy_number: 'pol008',
-    birthday: date(' 1983-11-17')
+    birthday: date('1983-11-17')
 });
                 
 CREATE (:Patient {
@@ -1247,7 +1247,7 @@ CREATE (:Patient {
     email: 'amelia.tran@example.com',
     gender: 'female',
     policy_number: 'pol009',
-    birthday: date(' 1988-08-29')
+    birthday: date('1988-08-29')
 });
                 
 CREATE (:Patient {
@@ -1258,7 +1258,7 @@ CREATE (:Patient {
     email: 'michael.do@example.com',
     gender: 'male',
     policy_number: 'pol002',
-    birthday: date(' 1995-01-12')
+    birthday: date('1995-01-12')
 });
                 
 CREATE (:Medicine {
