@@ -348,13 +348,15 @@ CREATE (:Medical_history {{
                 print(f"\t\tstaff: data_list {data_list}")
 
                 line1, line2 = "", ""
+
                 if data_list[2] != "null":
-                    line1 = f"date_joining: date('{data_list[2].replace(" ", "")}'),"
+                    data_list[2] = data_list[2].replace(" ", "")
+                    line1 = f"date_joining: date('{data_list[2]}'),"
 
                 if data_list[3] != "null":
-                    line2 = f"date_separation: data('{data_list[3].replace(" ", "")}'),"
-                else:
-                    data_list[3] = "null"
+                    data_list[3] = data_list[3].replace(".", "").replace(" ", "")
+                    print(f"data -> {data_list[3]}")
+                    line2 = f"date_separation: data('{data_list[3]}'),"
 
 
                 new_command = f"""
@@ -367,7 +369,6 @@ CREATE (:Staff {{
     ssn: '{data_list[6]}',
     iddepartment: '{data_list[7]}',
     is_active_status: '{data_list[8]}'
-
 }});
                 """
                 pass
