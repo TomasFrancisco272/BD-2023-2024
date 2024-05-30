@@ -24,8 +24,8 @@ if __name__ == "__main__":
     # Parameters to connect to the Neo4j database
     uri = "bolt://localhost:7687"  # Update with your Neo4j URI
     user = "neo4j"                 # Update with your Neo4j username
-    password = "password"          # Update with your Neo4j password
-    file_path = "path/to/your/file.cypher"  # Update with the path to your .cypher file
+    password = "abcd1234"          # Update with your Neo4j password
+    file_path = "hospital_v2.cypher"  # Update with the path to your .cypher file
 
     # Run the cypher commands
     run_cypher_commands(uri, user, password, file_path)
