@@ -27,7 +27,7 @@ def format_dates_yy(old_format):
             new_format = "19"+ old_format.replace(".", "-")
         return new_format
     else:
-        print("Yo.")
+        #print("Yo.")
         return ""
 
 def write_header_cypherFile(to_path):
@@ -335,9 +335,18 @@ CREATE (:Medical_history {{
                 print(f"{command}")
                 splitted = split_sql(command)
                 data_list = splitted[-1].split(",")
+                #print(f"data_list: {data_list}")
+
+
                 data_list[2]= data_list[2].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
                 data_list[2] = format_dates_yy(data_list[2])
-                data_list.pop(3)
+
+                if data_list[3] != "null":
+                    data_list[3]= data_list[3].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
+                    print(data_list[3])
+                    #data_list[3] = format_dates_yy(data_list[3])
+                else:
+                    data_list.pop(3)
 
                 if len(data_list) > 9:
                     data_list[5] += " ".join(data_list[6:-3])
@@ -345,7 +354,7 @@ CREATE (:Medical_history {{
                 
 
                 data_list = [s.strip("'") for s in data_list]
-                print(f"\t\tstaff: data_list {data_list}")
+                #print(f"\t\tstaff: data_list {data_list}")
 
                 line1, line2 = "", ""
 
@@ -355,7 +364,7 @@ CREATE (:Medical_history {{
 
                 if data_list[3] != "null":
                     data_list[3] = data_list[3].replace(".", "").replace(" ", "")
-                    print(f"data -> {data_list[3]}")
+                    #print(f"data -> {data_list[3]}")
                     line2 = f"date_separation: data('{data_list[3]}'),"
 
 
@@ -488,6 +497,7 @@ CREATE (:Technician {{
                 """
             else:
                 print(f"\n {cleaned_command[2]}")
+                pass
 
     return new_command
 
@@ -546,7 +556,7 @@ WHERE t.staff_emp_id = s.emp_id
 CREATE (t)-[:TECHNICIAN_STAFF]->(s);"""
     try:
         with open(to_path, 'a+') as file:
-            print("hello")
+            #print("hello")
             file.write(str_to_add)
     except Exception as e:
         print("An error occurred:", e)
