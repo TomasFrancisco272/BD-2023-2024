@@ -253,15 +253,12 @@ CREATE (:Bill {{
                 for i, elem in enumerate(data_list):
                     data_list[i]= data_list[i].replace("to_date(", "").replace("'", "").replace("(", "")
                 
-                #print(data_list)
                 data_list[1] = data_list[1].replace(".", "-")
-
 
                 print(f"1. {data_list}")
                 data_list[0] = format_dates_yy(data_list[0])
                 data_list[1] = format_dates_yy(data_list[1])
                 data_list = [s.strip("'") for s in data_list]
-
                 print(f"2. {data_list}")
 
                 new_command = f"""
