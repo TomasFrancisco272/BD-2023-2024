@@ -244,7 +244,6 @@ CREATE (:Bill {{
                 splitted = split_sql(command)
                 data_list = splitted[-1].split(",")
 
-
                 if data_list[1] == "'rr.mm.dd')":
                     data_list.pop(1)
                 if data_list[2] == "'rr.mm.dd')":
