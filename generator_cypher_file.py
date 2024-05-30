@@ -145,9 +145,9 @@ CREATE (:Staff {
     is_active_status: string
 });
 
-CREATE (:Technician {{
+CREATE (:Technician {
     staff_emp_id: integer
-}});
+});
     """
 
     #try:
@@ -492,7 +492,7 @@ CREATE (:Department {{
 
                 new_command = f"""
 CREATE (:Technician {{
-    staff_emp_id: {data_list[0]}
+    staff_emp_id: {int(data_list[0])}
 }});
                 """
             else:
