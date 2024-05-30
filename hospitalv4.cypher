@@ -1,9 +1,9 @@
 // Define nodes for entities
-    CREATE (:Appointment {
-        scheduled_on: date,
-        appointment_date: date,
-        appointment_time: string,
-        idepisode: integer
+CREATE (:Appointment {
+    scheduled_on: date,
+    appointment_date: date,
+    appointment_time: string,
+    idepisode: integer
     });
 
 CREATE (:Bill {
@@ -137,13 +137,13 @@ CREATE (e)-[:EPISODE_PATIENT]->(p);
 MATCH (h:Hospitalization), (e:Episode), (r:Room), (n:Nurse)
 WHERE h.idepisode = e.idepisode AND h.room_id = r.idroom AND h.responsible_nurse = n.staff_emp_id
 CREATE (h)-[:HOSPITALIZATION_EPISODE]->(e),
-       (h)-[:HOSPITALIZATION_ROOM]->(r),
-       (h)-[:HOSPITALIZATION_NURSE]->(n);
+        (h)-[:HOSPITALIZATION_ROOM]->(r),
+        (h)-[:HOSPITALIZATION_NURSE]->(n);
 
 MATCH (ls:LabScreening), (e:Episode), (t:Technician)
 WHERE ls.episode_idepisode = e.idepisode AND ls.idtechnician = t.staff_emp_id
 CREATE (ls)-[:LAB_SCREENING_EPISODE]->(e),
-       (ls)-[:LAB_SCREENING_TECHNICIAN]->(t);
+        (ls)-[:LAB_SCREENING_TECHNICIAN]->(t);
 
 MATCH (mh:MedicalHistory), (p:Patient)
 WHERE mh.idpatient = p.idpatient
@@ -156,7 +156,7 @@ CREATE (p)-[:PATIENT_INSURANCE]->(i);
 MATCH (pr:Prescription), (e:Episode), (m:Medicine)
 WHERE pr.idepisode = e.idepisode AND pr.idmedicine = m.idmedicine
 CREATE (pr)-[:PRESCRIPTION_EPISODE]->(e),
-       (pr)-[:PRESCRIPTION_MEDICINE]->(m);
+        (pr)-[:PRESCRIPTION_MEDICINE]->(m);
 
 MATCH (s:Staff), (d:Department)
 WHERE s.iddepartment = d.iddepartment
@@ -194,18 +194,18 @@ CALL {
     // Retrieve total value and current payment status of the bill
 }
 WITH total, paymentStatus, paidValue,
-     CASE 
-         WHEN paidValue < total THEN 'FAILURE'
-         ELSE 'PROCESSED'
-     END AS newStatus
+    CASE 
+        WHEN paidValue < total THEN 'FAILURE'
+        ELSE 'PROCESSED'
+    END AS newStatus
 MATCH (b:Bill {idbill: billId})
 SET b.payment_status = newStatus
 RETURN CASE
-           WHEN newStatus = 'FAILURE' THEN 
-               'Paid value is inferior to the total value of the bill.'
-           ELSE 
-               'Bill status updated successfully.'
-       END AS message;
+        WHEN newStatus = 'FAILURE' THEN 
+            'Paid value is inferior to the total value of the bill.'
+        ELSE 
+            'Bill status updated successfully.'
+        END AS message;
 
 // Simulated trigger-like behavior using a Cypher transaction
 CALL {

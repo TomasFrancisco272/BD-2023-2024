@@ -81,7 +81,7 @@ CREATE TABLE bill (
     idepisode     NUMBER(*, 0) NOT NULL,
     registered_at TIMESTAMP DEFAULT SYSTIMESTAMP NOT NULL,
     payment_status VARCHAR2(10) CONSTRAINT check__bill_payment_status CHECK
-                                     (payment_status IN ('PROCESSED', 'PENDING', 'FAILURE'))
+    (payment_status IN ('PROCESSED', 'PENDING', 'FAILURE'))
 
 );
 
@@ -119,7 +119,7 @@ CREATE TABLE emergency_contact (
 );
 
 ALTER TABLE emergency_contact ADD CONSTRAINT emergency_contact_pk PRIMARY KEY ( idpatient,
-                                                                                           phone );
+                                                                                            phone );
 
 CREATE TABLE episode (
     idepisode         NUMBER(*, 0) DEFAULT "SEQ_EPISODE_ID"."NEXTVAL" NOT NULL,
