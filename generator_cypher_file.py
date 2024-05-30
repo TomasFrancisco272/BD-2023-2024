@@ -579,7 +579,7 @@ def parse_sql(sql_file, output_file):
 
     write_cypherFile(output_file, lst_commands)
 
-    write_relationships_cypherFile(output_file)
+    #write_relationships_cypherFile(output_file)
 
     print("EVERYTHING OK.")
 
