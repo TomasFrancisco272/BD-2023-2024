@@ -332,21 +332,30 @@ CREATE (:Medical_history {{
 }});
                 """
             elif cleaned_command[2] == "staff":
-                print(f"{command}")
                 splitted = split_sql(command)
                 data_list = splitted[-1].split(",")
-                #print(f"data_list: {data_list}")
+                
+                line1, line2 = "", ""
+            
+                if data_list[2] != "null":
+                    data_list[2]= data_list[2].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
+                    data_list[2] = format_dates_yy(data_list[2])
+                    data_list.pop(3)
 
+                    #data_list[2] = data_list[2].replace(" ", "")
+                    line1 = f"date_joining: date('{data_list[2]}'),"
 
-                data_list[2]= data_list[2].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
-                data_list[2] = format_dates_yy(data_list[2])
 
                 if data_list[3] != "null":
-                    data_list[3]= data_list[3].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
-                    print(data_list[3])
-                    #data_list[3] = format_dates_yy(data_list[3])
-                else:
-                    data_list.pop(3)
+                    data_list[3]= data_list[3].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "").replace(".", "-")
+                    data_list[3] = format_dates_yy(data_list[3])
+                    data_list.pop(4)
+
+                    #data_list[3] = data_list[3].replace(".", "").replace(" ", "")
+                    line2 = f"date_separation: data('{data_list[3]}'),"
+
+                print(f"data_list: {data_list}")
+
 
                 if len(data_list) > 9:
                     data_list[5] += " ".join(data_list[6:-3])
@@ -355,17 +364,6 @@ CREATE (:Medical_history {{
 
                 data_list = [s.strip("'") for s in data_list]
                 #print(f"\t\tstaff: data_list {data_list}")
-
-                line1, line2 = "", ""
-
-                if data_list[2] != "null":
-                    data_list[2] = data_list[2].replace(" ", "")
-                    line1 = f"date_joining: date('{data_list[2]}'),"
-
-                if data_list[3] != "null":
-                    data_list[3] = data_list[3].replace(".", "").replace(" ", "")
-                    #print(f"data -> {data_list[3]}")
-                    line2 = f"date_separation: data('{data_list[3]}'),"
 
 
                 new_command = f"""
@@ -563,7 +561,7 @@ CREATE (t)-[:TECHNICIAN_STAFF]->(s);"""
 
 
 def parse_sql(sql_file, output_file):
-    write_header_cypherFile(output_file)
+    #write_header_cypherFile(output_file)
 
     # Read the SQL file
     with open(sql_file, 'r') as file:
