@@ -21,13 +21,12 @@ def split_sql(sql_string):
 
 def format_dates_yy(old_format):
     if old_format != "null":
-        if int(old_format[0:2]) < 24:
+        if int(old_format[0:2]) < 24 and int(old_format[0:2]) >= 0:
             new_format = "20"+ old_format.replace(".", "-")
         else:
             new_format = "19"+ old_format.replace(".", "-")
         return new_format
     else:
-        #print("Yo.")
         return ""
 
 def write_header_cypherFile(to_path):
@@ -245,6 +244,7 @@ CREATE (:Bill {{
                 splitted = split_sql(command)
                 data_list = splitted[-1].split(",")
 
+
                 if data_list[1] == "'rr.mm.dd')":
                     data_list.pop(1)
                 if data_list[2] == "'rr.mm.dd')":
@@ -253,9 +253,16 @@ CREATE (:Bill {{
                 for i, elem in enumerate(data_list):
                     data_list[i]= data_list[i].replace("to_date(", "").replace("'", "").replace("(", "")
                 
+                #print(data_list)
+                data_list[1] = data_list[1].replace(".", "-")
+
+
+                print(f"1. {data_list}")
                 data_list[0] = format_dates_yy(data_list[0])
-                data_list[0] = format_dates_yy(data_list[1].replace(".", "-"))
+                data_list[1] = format_dates_yy(data_list[1])
                 data_list = [s.strip("'") for s in data_list]
+
+                print(f"2. {data_list}")
 
                 new_command = f"""
 CREATE (:Hospitalization {{
