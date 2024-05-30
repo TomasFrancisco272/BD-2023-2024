@@ -564,7 +564,7 @@ CREATE (t)-[:TECHNICIAN_STAFF]->(s);"""
 
 
 def parse_sql(sql_file, output_file):
-    #write_header_cypherFile(output_file)
+    write_header_cypherFile(output_file)
 
     # Read the SQL file
     with open(sql_file, 'r') as file:

@@ -1,3 +1,4 @@
+
 CREATE (:Department {
     dept_head: 'john smith',
     dept_name: 'cardiology_1',
