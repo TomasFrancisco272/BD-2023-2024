@@ -16,9 +16,6 @@ def split_sql(sql_string):
     a = a[1:-1]
     return a
 
-
-
-
 def format_dates_yy(old_format):
     if old_format != "null":
         if int(old_format[0:2]) < 24 and int(old_format[0:2]) >= 0:
@@ -196,8 +193,8 @@ def sql_command_controller(command):
 
                 new_command = f"""
 CREATE (:Appointment {{
-    scheduled_on: date("{data_list[0]}"),
-    appointment_date: date("{data_list[1]}"),
+    scheduled_on: {f"date('{data_list[0]}')" if data_list[0] is not "" else 'null'},
+    appointment_date: {f"date('{data_list[1]}')" if data_list[1] is not "" else 'null'},
     appointment_time: "{data_list[2]}",
     iddoctor: {data_list[3]},
     idepisode: {data_list[4]}
@@ -217,7 +214,7 @@ CREATE (:Appointment {{
 
                 new_command = f"""
 CREATE (:Prescription {{
-    prescription_date: date("{data_list[0]}"),
+    prescription_date: {f"date('{data_list[1]}')" if data_list[1] is not "" else 'null'},
     dosage: {data_list[1]},
     idmedicine: {data_list[2]},
     idepisode: {data_list[3]}
@@ -262,8 +259,8 @@ CREATE (:Bill {{
 
                 new_command = f"""
 CREATE (:Hospitalization {{
-    admission_date: date({data_list[0]}),
-    discharge_date: date({data_list[1]}),
+    admission_date: {f"date('{data_list[0]}')" if data_list[0] is not "" else 'null'},
+    discharge_date: {f"date('{data_list[1]}')" if data_list[1] is not "" else 'null'},
     room_idroom: {data_list[2]},
     idepisode: {data_list[3]},
     responsible_nurse: {data_list[4]}
@@ -284,7 +281,7 @@ CREATE (:Hospitalization {{
                 new_command = f"""
 CREATE (:Lab_screening {{
     test_cost: {data_list[0]},
-    test_date: date('{data_list[1]}'),
+    test_date: {f"date('{data_list[1]}')" if data_list[1] is not "" else 'null'},
     idtechnician: {data_list[2]},
     episode_idepisode: {data_list[3]}
 }});
@@ -355,7 +352,7 @@ CREATE (:Medical_history {{
                     data_list.pop(4)
 
                     #data_list[3] = data_list[3].replace(".", "").replace(" ", "")
-                    line2 = f"date_separation: data('{data_list[3]}'),"
+                    line2 = f"date_separation: date('{data_list[3]}'),"
 
                 print(f"data_list: {data_list}")
 
@@ -450,7 +447,7 @@ CREATE (:Patient {{
     email: '{data_list[4]}',
     gender: '{data_list[5]}',
     policy_number: '{data_list[6]}',
-    birthday: date('{data_list[7]}')
+    birthday: {f"date('{data_list[7]}')" if data_list[1] is not "" else 'null'}
 }});
                 """
 
@@ -579,7 +576,7 @@ def parse_sql(sql_file, output_file):
 
     write_cypherFile(output_file, lst_commands)
 
-    #write_relationships_cypherFile(output_file)
+    write_relationships_cypherFile(output_file)
 
     print("EVERYTHING OK.")
 
