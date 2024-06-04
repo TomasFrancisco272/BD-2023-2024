@@ -51,6 +51,7 @@ CREATE (:Department {
 });
 
 CREATE (:Doctor {
+    emp_id: integer
     qualifications: string
 });
 
@@ -68,7 +69,7 @@ CREATE (:Episode {
 CREATE (:Hospitalization {
     admission_date: date,
     discharge_date: date,
-    room_id: integer,
+    room_idroom: integer,
     idepisode: integer,
     responsible_nurse: integer
 });
@@ -87,8 +88,8 @@ CREATE (:Insurance {
 CREATE (:LabScreening {
     test_cost: float,
     test_date: date,
-    episode_idepisode: integer,
     idtechnician: integer
+    episode_idepisode: integer,
 });
 
 CREATE (:MedicalHistory {
@@ -134,10 +135,11 @@ CREATE (:Staff {
     emp_fname: string,
     emp_lname: string,
     date_joining: date,
-    date_separation: date,
+    date_seperation: date,
     email: string,
     address: string,
     ssn: integer,
+    iddepartment: integer,
     is_active_status: string
 });
 
@@ -214,7 +216,7 @@ CREATE (:Appointment {{
 
                 new_command = f"""
 CREATE (:Prescription {{
-    prescription_date: {f"date('{data_list[1]}')" if data_list[1] is not "" else 'null'},
+    prescription_date: {f"date('{data_list[0]}')" if data_list[0] is not "" else 'null'},
     dosage: {data_list[1]},
     idmedicine: {data_list[2]},
     idepisode: {data_list[3]}
@@ -279,7 +281,7 @@ CREATE (:Hospitalization {{
                 data_list = [s.strip("'") for s in data_list]
 
                 new_command = f"""
-CREATE (:Lab_screening {{
+CREATE (:LabScreening {{
     test_cost: {data_list[0]},
     test_date: {f"date('{data_list[1]}')" if data_list[1] is not "" else 'null'},
     idtechnician: {data_list[2]},
@@ -305,7 +307,7 @@ CREATE (:Room {{
                 data_list = [s.strip("'") for s in data_list]
                 
                 new_command = f"""
-CREATE (:Emergency_contact {{
+CREATE (:EmergencyContact {{
     contact_name: '{data_list[0]}',
     phone: '{data_list[1]}',
     relation: '{data_list[2]}',
@@ -325,56 +327,42 @@ CREATE (:Emergency_contact {{
                 #print(f"medical_history: data_list {data_list}")
 
                 new_command = f"""
-CREATE (:Medical_history {{
+CREATE (:MedicalHistory {{
     condition: '{data_list[0]}',
     record_date: '{data_list[1]}',
-    relation: {data_list[2]}
+    idpatient: {data_list[2]}
 }});
                 """
             elif cleaned_command[2] == "staff":
                 splitted = split_sql(command)
                 data_list = splitted[-1].split(",")
                 
-                line1, line2 = "", ""
-            
                 if data_list[2] != "null":
                     data_list[2]= data_list[2].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "")
                     data_list[2] = format_dates_yy(data_list[2])
                     data_list.pop(3)
-
-                    #data_list[2] = data_list[2].replace(" ", "")
-                    line1 = f"date_joining: date('{data_list[2]}'),"
-
 
                 if data_list[3] != "null":
                     data_list[3]= data_list[3].replace("to_date(", "").replace(",'RR.MM.DD')", "").replace("'", "").replace(".", "-")
                     data_list[3] = format_dates_yy(data_list[3])
                     data_list.pop(4)
 
-                    #data_list[3] = data_list[3].replace(".", "").replace(" ", "")
-                    line2 = f"date_separation: date('{data_list[3]}'),"
-
-                print(f"data_list: {data_list}")
-
-
                 if len(data_list) > 9:
                     data_list[5] += " ".join(data_list[6:-3])
                     del data_list[6:-3]
                 
-
                 data_list = [s.strip("'") for s in data_list]
-                #print(f"\t\tstaff: data_list {data_list}")
-
 
                 new_command = f"""
 CREATE (:Staff {{
     emp_fname: '{data_list[0]}',
     emp_lname: '{data_list[1]}',
-    {line1} {line2}
+    date_joining: '{data_list[2]}',
+    date_seperation: '{data_list[3]}',
     email: '{data_list[4]}',
     address: '{data_list[5]}',
     ssn: '{data_list[6]}',
-    iddepartment: '{data_list[7]}',
+    iddepartment: {data_list[7]},
     is_active_status: '{data_list[8]}'
 }});
                 """
@@ -499,59 +487,159 @@ CREATE (:Technician {{
 
     return new_command
 
+def write_variable_unique_ids(to_path):
+    str_to_add = """
+MATCH (b:Bill) 
+WITH b
+ORDER BY id(b)
+WITH collect(b) AS bills
+UNWIND range(0, size(bills) - 1) AS idx
+WITH bills[idx] AS bill, idx + 1 AS new_id
+SET bill.idbill = new_id;
+    
+MATCH (d:Department)
+WITH d
+ORDER BY id(d)
+WITH collect(d) AS departments
+UNWIND range(0, size(departments) - 1) AS idx
+WITH departments[idx] AS department, idx + 1 AS new_id
+SET department.iddepartment = new_id;
+
+MATCH (e:Episode)
+WITH e
+ORDER BY id(e)
+WITH collect(e) AS episodes
+UNWIND range(0, size(episodes) - 1) AS idx
+WITH episodes[idx] AS episode, idx + 1 AS new_id
+SET episode.episode_id = new_id;
+
+MATCH (lb:LabScreening)
+WITH lb
+ORDER BY id(lb)
+WITH collect(lb) AS labscreenings
+UNWIND range(0, size(labscreenings) - 1) AS idx
+WITH labscreenings[idx] AS labscreening, idx + 1 AS new_id
+SET labscreening.lab_id = new_id;
+
+MATCH (mh:MedicalHistory)
+WITH mh
+ORDER BY id(mh)
+WITH collect(mh) AS histories
+UNWIND range(0, size(histories) - 1) AS idx
+WITH histories[idx] AS history, idx + 1 AS new_id
+SET history.record_id = new_id;
+
+MATCH (p:Patient)
+WITH p
+ORDER BY id(p)
+WITH collect(p) AS patients
+UNWIND range(0, size(patients) - 1) AS idx
+WITH patients[idx] AS patient, idx + 1 AS new_id
+SET patient.idpatient = new_id;
+
+MATCH (p:Prescription)
+WITH p
+ORDER BY id(p)
+WITH collect(p) AS prescriptions
+UNWIND range(0, size(prescriptions) - 1) AS idx
+WITH prescriptions[idx] AS prescription, idx + 1 AS new_id
+SET prescription.idprescription = new_id;
+
+MATCH (r:Room)
+WITH r
+ORDER BY id(r)
+WITH collect(r) AS rooms
+UNWIND range(0, size(rooms) - 1) AS idx
+WITH rooms[idx] AS room, idx + 1 AS new_id
+SET room.idroom = new_id;
+
+MATCH (s:Staff)
+WITH s
+ORDER BY id(s)
+WITH collect(s) AS staffs
+UNWIND range(0, size(staffs) - 1) AS idx
+WITH staffs[idx] AS staff, idx + 1 AS new_id
+SET staff.emp_id = new_id;
+"""
+    try:
+        with open(to_path, 'a+') as file:
+            #print("hello")
+            file.write(str_to_add)
+    except Exception as e:
+        print("An error occurred:", e)
+
 def write_relationships_cypherFile(to_path):
     str_to_add = """
-MATCH (a:Appointment), (e:Episode)
-WHERE a.idepisode = e.idepisode
-CREATE (a)-[:APPOINTMENT_EPISODE]->(e);
+MATCH (a:Appointment), (e:Episode), (d:Doctor)
+WHERE a.idepisode = e.idepisode AND a.iddoctor = d.emp_id
+WITH a, e, d
+CREATE (a)-[:APPOINTMENT_EPISODE]->(e),
+       (a)-[:APPOINTMENT_DOCTOR]->(d);
 
 MATCH (b:Bill), (e:Episode)
 WHERE b.idepisode = e.idepisode
+WITH b, e
 CREATE (b)-[:BILL_EPISODE]->(e);
 
 MATCH (d:Doctor), (s:Staff)
 WHERE d.emp_id = s.emp_id
+WITH d, s
 CREATE (d)-[:DOCTOR_STAFF]->(s);
 
 MATCH (e:EmergencyContact), (p:Patient)
 WHERE e.idpatient = p.idpatient
+WITH e, p
 CREATE (e)-[:EMERGENCY_CONTACT_PATIENT]->(p);
 
 MATCH (e:Episode), (p:Patient)
-WHERE e.patient_id = p.idpatient
+WHERE e.patient_idpatient = p.idpatient
+WITH e, p
 CREATE (e)-[:EPISODE_PATIENT]->(p);
 
 MATCH (h:Hospitalization), (e:Episode), (r:Room), (n:Nurse)
-WHERE h.idepisode = e.idepisode AND h.room_id = r.idroom AND h.responsible_nurse = n.staff_emp_id
+WHERE h.idepisode = e.idepisode AND h.room_idroom = r.idroom AND h.responsible_nurse = n.staff_emp_id
+WITH h, e, r, n
 CREATE (h)-[:HOSPITALIZATION_EPISODE]->(e),
        (h)-[:HOSPITALIZATION_ROOM]->(r),
        (h)-[:HOSPITALIZATION_NURSE]->(n);
 
 MATCH (ls:LabScreening), (e:Episode), (t:Technician)
 WHERE ls.episode_idepisode = e.idepisode AND ls.idtechnician = t.staff_emp_id
+WITH ls, e, t
 CREATE (ls)-[:LAB_SCREENING_EPISODE]->(e),
        (ls)-[:LAB_SCREENING_TECHNICIAN]->(t);
 
 MATCH (mh:MedicalHistory), (p:Patient)
 WHERE mh.idpatient = p.idpatient
+WITH mh, p
 CREATE (mh)-[:MEDICAL_HISTORY_PATIENT]->(p);
 
 MATCH (p:Patient), (i:Insurance)
 WHERE p.policy_number = i.policy_number
+WITH p, i
 CREATE (p)-[:PATIENT_INSURANCE]->(i);
 
 MATCH (pr:Prescription), (e:Episode), (m:Medicine)
 WHERE pr.idepisode = e.idepisode AND pr.idmedicine = m.idmedicine
+WITH pr, e, m
 CREATE (pr)-[:PRESCRIPTION_EPISODE]->(e),
        (pr)-[:PRESCRIPTION_MEDICINE]->(m);
 
 MATCH (s:Staff), (d:Department)
 WHERE s.iddepartment = d.iddepartment
+WITH s, d
 CREATE (s)-[:STAFF_DEPARTMENT]->(d);
 
 MATCH (t:Technician), (s:Staff)
 WHERE t.staff_emp_id = s.emp_id
-CREATE (t)-[:TECHNICIAN_STAFF]->(s);"""
+WITH t, s
+CREATE (t)-[:TECHNICIAN_STAFF]->(s);
+
+MATCH (n:Nurse), (s:Staff)
+WHERE n.staff_emp_id = s.emp_id
+WITH n, s
+CREATE (n)-[:TECHNICIAN_STAFF]->(s);
+"""
     try:
         with open(to_path, 'a+') as file:
             #print("hello")
@@ -575,6 +663,8 @@ def parse_sql(sql_file, output_file):
 
 
     write_cypherFile(output_file, lst_commands)
+
+    write_variable_unique_ids(output_file)
 
     write_relationships_cypherFile(output_file)
 

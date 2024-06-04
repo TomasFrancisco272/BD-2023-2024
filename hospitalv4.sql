@@ -118,8 +118,7 @@ CREATE TABLE emergency_contact (
     idpatient    NUMBER(*, 0) NOT NULL
 );
 
-ALTER TABLE emergency_contact ADD CONSTRAINT emergency_contact_pk PRIMARY KEY ( idpatient,
-                                                                                           phone );
+ALTER TABLE emergency_contact ADD CONSTRAINT emergency_contact_pk PRIMARY KEY ( idpatient, phone );
 
 CREATE TABLE episode (
     idepisode         NUMBER(*, 0) DEFAULT "SEQ_EPISODE_ID"."NEXTVAL" NOT NULL,
@@ -2574,5 +2573,3 @@ Insert into BILL (ROOM_COST,TEST_COST,OTHER_CHARGES,TOTAL,IDEPISODE,PAYMENT_STAT
 Insert into BILL (ROOM_COST,TEST_COST,OTHER_CHARGES,TOTAL,IDEPISODE,PAYMENT_STATUS) values ('500','90.97','3530','4120.97','122','PENDING');
 Insert into BILL (ROOM_COST,TEST_COST,OTHER_CHARGES,TOTAL,IDEPISODE,PAYMENT_STATUS) values ('400','0','2730','3130','125','PENDING');
 Insert into BILL (ROOM_COST,TEST_COST,OTHER_CHARGES,TOTAL,IDEPISODE,PAYMENT_STATUS) values ('100','198.34','9905','10203.34','2','PENDING');
-
-
