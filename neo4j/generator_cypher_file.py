@@ -156,7 +156,7 @@ CREATE (:Technician {
     #    print("An error occurred:", e)
 
 def write_cypherFile(to_path, lst_commands):
-    with open(to_path, 'a') as file:
+    with open(to_path, 'w') as file:
         for query_str in lst_commands:
             file.write(query_str)
 
