@@ -14846,13 +14846,13 @@ WITH staffs[idx] AS staff, idx + 1 AS new_id
 SET staff.emp_id = new_id;
 
 MATCH (a:Appointment), (e:Episode), (d:Doctor)
-WHERE a.idepisode = e.idepisode AND a.iddoctor = d.emp_id
+WHERE a.idepisode = e.episode_id AND a.iddoctor = d.emp_id
 WITH a, e, d
 CREATE (a)-[:APPOINTMENT_EPISODE]->(e),
        (a)-[:APPOINTMENT_DOCTOR]->(d);
 
 MATCH (b:Bill), (e:Episode)
-WHERE b.idepisode = e.idepisode
+WHERE b.idepisode = e.episode_id
 WITH b, e
 CREATE (b)-[:BILL_EPISODE]->(e);
 
@@ -14872,14 +14872,14 @@ WITH e, p
 CREATE (e)-[:EPISODE_PATIENT]->(p);
 
 MATCH (h:Hospitalization), (e:Episode), (r:Room), (n:Nurse)
-WHERE h.idepisode = e.idepisode AND h.room_idroom = r.idroom AND h.responsible_nurse = n.staff_emp_id
+WHERE h.idepisode = e.episode_id AND h.room_idroom = r.idroom AND h.responsible_nurse = n.staff_emp_id
 WITH h, e, r, n
 CREATE (h)-[:HOSPITALIZATION_EPISODE]->(e),
        (h)-[:HOSPITALIZATION_ROOM]->(r),
        (h)-[:HOSPITALIZATION_NURSE]->(n);
 
 MATCH (ls:LabScreening), (e:Episode), (t:Technician)
-WHERE ls.episode_idepisode = e.idepisode AND ls.idtechnician = t.staff_emp_id
+WHERE ls.episode_idepisode = e.episode_id AND ls.idtechnician = t.staff_emp_id
 WITH ls, e, t
 CREATE (ls)-[:LAB_SCREENING_EPISODE]->(e),
        (ls)-[:LAB_SCREENING_TECHNICIAN]->(t);
@@ -14895,7 +14895,7 @@ WITH p, i
 CREATE (p)-[:PATIENT_INSURANCE]->(i);
 
 MATCH (pr:Prescription), (e:Episode), (m:Medicine)
-WHERE pr.idepisode = e.idepisode AND pr.idmedicine = m.idmedicine
+WHERE pr.idepisode = e.episode_id AND pr.idmedicine = m.idmedicine
 WITH pr, e, m
 CREATE (pr)-[:PRESCRIPTION_EPISODE]->(e),
        (pr)-[:PRESCRIPTION_MEDICINE]->(m);
