@@ -22,4 +22,4 @@
 
 # Importar os dados do noSQL Oracle para Mongo
 
-Para popular os dados no mongo a partir do oracle, deve se iniciar ambos os ambientes e criar as databases e a seguir executar o "sql_to_mongo_py"
+Para popular os dados no mongo a partir do oracle, deve se iniciar ambos os ambientes, criar as databases e a seguir executar o "sql_to_mongo_py"
